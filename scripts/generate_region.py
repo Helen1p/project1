@@ -355,7 +355,7 @@ def delete_overlap_anns(anns, p=0.8):
             j-=1
         i+=1
 
-    anns['annotations'] = [x for x in sorted_anns if 3000 < x['area']]
+    anns['annotations'] = [x for x in sorted_anns if 3500 < x['area']]
     # anns['annotations'] = sorted_anns
 
     return anns

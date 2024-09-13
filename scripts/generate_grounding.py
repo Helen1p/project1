@@ -11,13 +11,24 @@ q_template = {
 #   整体失真level比较
   'all': 
   ['which is the most degraded region in all the regions? ',
-  'Which region exhibits the highest level of degradation among all the regions? ',
+  'Which region exhibits the highest impact from distortions among all the regions? ',
   'Which region shows the most severe degradation across all the regions? ', 
+  'Which region suffers the most degradation compared to the other regions?', 
+  'Among all the regions, which is the most severely degraded?', 
+  'Which region has the lowest quality among all the regions due to distortions?', 
+  'Which region exhibits the lowest quality as a result of distortions?', 
+  'What region shows the greatest decline in quality because of distortions?', 
+  'What is the region with the poorest quality because of distortions?', 
 
   'which is the least degraded region in all the regions? ', 
-  'Which region is least affected by degradation compared to others regions? ',
+  'Which region is least affected by distortions compared to others regions? ',
   'Which region has experienced the minimal level of degradation in all the regions? ',
-  'Which region exhibits the lowest degree of degradation compared to all the other regions? '],
+  'Which region exhibits the lowest degree of degradation compared to all the other regions? ',
+  'Among all regions, which one has the best quality with minimal distortion influence?', 
+  'What is the region with the highest quality and minimal distortion effects?', 
+  'Which region has the highest quality with minimal impact from distortion?', 
+  'In terms of quality, which region is the least affected by distortion?', 
+  'Which region demonstrates the best quality?'],
 #   单一失真level比较：最大和最小 注意：不比较统一区域的
   # 'Which region has the most noticeable distortion of [Gaussian noise]',
   # 'Which region is most affected by [distortion]',
@@ -27,10 +38,14 @@ q_template = {
   ['Which region shows the highest level of ',
   'Which region shows the most severe ',
   'What region has the highest amount of ',
+  'Which region experiences the highest degree of ', 
+  'Which region has the greatest level of ', 
 
   'What region exhibits the least amount of ',
-  'What region has the minimal level of ',
-  'Which region exhibits the lowest degree of '],
+  'What is the region with the minimal level of ',
+  'Which region exhibits the lowest degree of ',
+  'Which region ranks the lowest in terms of ', 
+  'Which region demonstrates the least extent of '],
 #   失真order
   'order': 
   ['Which region follows the distortion addition sequence of ',
@@ -58,7 +73,10 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 	
 	def gen_choice(region, exist_qu):
 		# if random.random()<p:
-		q_template_choice = ['A. region ', 'B. region ', 'C. region ']
+		if len(annotations['annotations']) >=3:
+			q_template_choice = ['A. region ', 'B. region ', 'C. region ']
+		else: 
+			q_template_choice = ['A. region ', 'B. region ']
 		rand_choice_abc=random.sample(range(3), 2)
 		rand_choice=random.sample(list(set(range(len(annotations['annotations'])))-set([region])), 2)
 		q_template_choice[rand_choice_abc[0]]+=str(rand_choice[0])
@@ -89,11 +107,6 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 
 			distortion = annotations['annotations'][m]['distortion']
 			for d in distortion:
-				# if d in dis_count.keys():
-				# 	dis_count[d]+=1
-				# else:
-				# 	dis_count[d]=1
-
 				if d in dis_region_id.keys():
 					dis_region_id[d].append(m)
 				else:
@@ -144,7 +157,7 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 
 		all_choice=random.sample(range(len(q_template['all'])), question[0])
 		for i in all_choice:
-			if i < 3:
+			if i < 9:
 				num = most_num
 			else:
 				num = least_num
@@ -176,12 +189,11 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 				# 去掉level相同的
 				if len(set(dis_region_level[target_dis]))>1:
 					# 最大
-					if i < 3:
+					if i < 5:
 						region_index=dis_region_level[target_dis].index(max(dis_region_level[target_dis]))
 					else:
 						region_index=dis_region_level[target_dis].index(min(dis_region_level[target_dis]))
 					region_id=dis_region_id[target_dis][region_index]
-					# region_id ???????
 					if random.random()<p:
 						qu, answer = gen_choice(region=region_id, exist_qu=qu)
 					else:
@@ -197,5 +209,5 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 
 
 if __name__ == '__main__':
-    os_walk(input_img=r'/root/autodl-tmp/example_new/DIV2K_output1', input_json=r'/root/autodl-tmp/example_new/json',
-             out_path=r'/root/autodl-tmp/example_new/grounding', p=0.3, question=[1, 2, 1])
+    os_walk(input_img=r'/data1/pxg/autodl-tmp/example/kadis_output', input_json=r'/data1/pxg/autodl-tmp/example/json',
+             out_path=r'/data1/pxg/autodl-tmp/example/grounding', p=0.3, question=[1, 2, 1])

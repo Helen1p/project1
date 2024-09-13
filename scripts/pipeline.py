@@ -77,104 +77,105 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
     # 太多了，去掉一些
     anns = region_regress(anns, 8, img_area=h*w)
     anns = delete_overlap_anns(anns, p=0.8)
-    bitmasks, class_names = [], []
-    class_ids_from_oneformer_coco = oneformer_coco_segmentation(Image.fromarray(img),oneformer_coco_processor,oneformer_coco_model, rank)
-    class_ids_from_oneformer_ade20k = oneformer_ade20k_segmentation(Image.fromarray(img),oneformer_ade20k_processor,oneformer_ade20k_model, rank)
-    for ann in anns['annotations']:
-        valid_mask = torch.tensor(maskUtils.decode(ann['segmentation'])).bool()
-        # ann['segmentation']['counts']=valid_mask # TypeError: <class 'torch.Tensor'> is unsupported for json dump
-        # get the class ids of the valid pixels
-        coco_propose_classes_ids = class_ids_from_oneformer_coco[valid_mask]
-        ade20k_propose_classes_ids = class_ids_from_oneformer_ade20k[valid_mask]
-        top_k_coco_propose_classes_ids = torch.bincount(coco_propose_classes_ids.flatten()).topk(1).indices
-        top_k_ade20k_propose_classes_ids = torch.bincount(ade20k_propose_classes_ids.flatten()).topk(1).indices
-        local_class_names = set()
-        local_class_names = set.union(local_class_names, set([CONFIG_ADE20K_ID2LABEL['id2label'][str(class_id.item())] for class_id in top_k_ade20k_propose_classes_ids]))
-        local_class_names = set.union(local_class_names, set(([CONFIG_COCO_ID2LABEL['refined_id2label'][str(class_id.item())] for class_id in top_k_coco_propose_classes_ids])))
-        patch_small = mmcv.imcrop(img, np.array(
-            [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
-                                  scale=scale_small)
-        patch_large = mmcv.imcrop(img, np.array(
-            [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
-                                  scale=scale_large)
-        patch_huge = mmcv.imcrop(img, np.array(
-            [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
-                                  scale=scale_huge)
-        valid_mask_huge_crop = mmcv.imcrop(valid_mask.numpy(), np.array(
-            [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
+    if anns['annotations']>=2:
+        bitmasks, class_names = [], []
+        class_ids_from_oneformer_coco = oneformer_coco_segmentation(Image.fromarray(img),oneformer_coco_processor,oneformer_coco_model, rank)
+        class_ids_from_oneformer_ade20k = oneformer_ade20k_segmentation(Image.fromarray(img),oneformer_ade20k_processor,oneformer_ade20k_model, rank)
+        for ann in anns['annotations']:
+            valid_mask = torch.tensor(maskUtils.decode(ann['segmentation'])).bool()
+            # ann['segmentation']['counts']=valid_mask # TypeError: <class 'torch.Tensor'> is unsupported for json dump
+            # get the class ids of the valid pixels
+            coco_propose_classes_ids = class_ids_from_oneformer_coco[valid_mask]
+            ade20k_propose_classes_ids = class_ids_from_oneformer_ade20k[valid_mask]
+            top_k_coco_propose_classes_ids = torch.bincount(coco_propose_classes_ids.flatten()).topk(1).indices
+            top_k_ade20k_propose_classes_ids = torch.bincount(ade20k_propose_classes_ids.flatten()).topk(1).indices
+            local_class_names = set()
+            local_class_names = set.union(local_class_names, set([CONFIG_ADE20K_ID2LABEL['id2label'][str(class_id.item())] for class_id in top_k_ade20k_propose_classes_ids]))
+            local_class_names = set.union(local_class_names, set(([CONFIG_COCO_ID2LABEL['refined_id2label'][str(class_id.item())] for class_id in top_k_coco_propose_classes_ids])))
+            patch_small = mmcv.imcrop(img, np.array(
+                [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
+                                    scale=scale_small)
+            patch_large = mmcv.imcrop(img, np.array(
+                [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
+                                    scale=scale_large)
+            patch_huge = mmcv.imcrop(img, np.array(
+                [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
                                     scale=scale_huge)
-        op_class_list = open_vocabulary_classification_blip(patch_large,blip_processor, blip_model, rank)
-        local_class_list = list(set.union(local_class_names, set(op_class_list))) # , set(refined_imagenet_class_names)
-        mask_categories = clip_classification(patch_small, local_class_list, 3 if len(local_class_list)> 3 else len(local_class_list), clip_processor, clip_model, rank)
-        class_ids_patch_huge = clipseg_segmentation(patch_huge, mask_categories, clipseg_processor, clipseg_model, rank).argmax(0)
-        valid_mask_huge_crop = torch.tensor(valid_mask_huge_crop)
-        if valid_mask_huge_crop.shape != class_ids_patch_huge.shape:
-            valid_mask_huge_crop = F.interpolate(
-                valid_mask_huge_crop.unsqueeze(0).unsqueeze(0).float(),
-                size=(class_ids_patch_huge.shape[-2], class_ids_patch_huge.shape[-1]),
-                mode='nearest').squeeze(0).squeeze(0).bool()
-        top_1_patch_huge = torch.bincount(class_ids_patch_huge[valid_mask_huge_crop].flatten()).topk(1).indices
-        top_1_mask_category = mask_categories[top_1_patch_huge.item()]
+            valid_mask_huge_crop = mmcv.imcrop(valid_mask.numpy(), np.array(
+                [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]),
+                                        scale=scale_huge)
+            op_class_list = open_vocabulary_classification_blip(patch_large,blip_processor, blip_model, rank)
+            local_class_list = list(set.union(local_class_names, set(op_class_list))) # , set(refined_imagenet_class_names)
+            mask_categories = clip_classification(patch_small, local_class_list, 3 if len(local_class_list)> 3 else len(local_class_list), clip_processor, clip_model, rank)
+            class_ids_patch_huge = clipseg_segmentation(patch_huge, mask_categories, clipseg_processor, clipseg_model, rank).argmax(0)
+            valid_mask_huge_crop = torch.tensor(valid_mask_huge_crop)
+            if valid_mask_huge_crop.shape != class_ids_patch_huge.shape:
+                valid_mask_huge_crop = F.interpolate(
+                    valid_mask_huge_crop.unsqueeze(0).unsqueeze(0).float(),
+                    size=(class_ids_patch_huge.shape[-2], class_ids_patch_huge.shape[-1]),
+                    mode='nearest').squeeze(0).squeeze(0).bool()
+            top_1_patch_huge = torch.bincount(class_ids_patch_huge[valid_mask_huge_crop].flatten()).topk(1).indices
+            top_1_mask_category = mask_categories[top_1_patch_huge.item()]
 
-        ann['class_name'] = str(top_1_mask_category)
-        ann['class_proposals'] = mask_categories
-        class_names.append(str(top_1_mask_category))
-        # bitmasks.append(maskUtils.decode(ann['segmentation']))
+            ann['class_name'] = str(top_1_mask_category)
+            ann['class_proposals'] = mask_categories
+            class_names.append(str(top_1_mask_category))
+            # bitmasks.append(maskUtils.decode(ann['segmentation']))
 
+            # Delete variables that are no longer needed
+            del coco_propose_classes_ids
+            del ade20k_propose_classes_ids
+            del top_k_coco_propose_classes_ids
+            del top_k_ade20k_propose_classes_ids
+            del patch_small
+            del patch_large
+            del patch_huge
+            del valid_mask_huge_crop
+            del op_class_list
+            del mask_categories
+            del class_ids_patch_huge
+        if len(anns['annotations']) ==0:
+                with open ('/root/autodl-tmp/log.txt','a') as f:
+                    f.write(filename+'\n')
+        else: 
+            # 每张图给1个正样本，4个负样本
+            # 正样本是自身不完全重复的区域，负样本是其他4张图的对应区域？
+            # for i in range(0,5):
+            #     anns_1 = anns.copy()
+            #     image = add_single_region_distortion(anns_1, img)
+            #     mmcv.imwrite(image, os.path.join(output_path_dis, filename +'_' + str(i) + '.png'))
+            #     mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_' + str(i) + '_semantic.json'))
+            
+            anns_1 = anns.copy()
+            image = add_single_region_distortion(anns_1, img)
+            # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
+            mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
+            mmengine.dump(anns_1, os.path.join(output_path_json, filename + '_info.json'))
+            # mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_semantic.json'))
+            # image = add_region_distortion(anns, img)
+            # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
+            # mmcv.dump(anns, os.path.join(output_path_json, filename + '_semantic.json'))
+            print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
+            if save_img:
+                for ann in anns['annotations']:
+                    bitmasks.append(maskUtils.decode(ann['segmentation']))
+            imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
+                        bboxes=None,
+                        labels=np.arange(len(bitmasks)),
+                        segms=np.stack(bitmasks),
+                        # class_names=class_names,
+                        # class_names=[str(x) for x in range(len(bitmasks))],
+                        class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names)],
+                        # font_size=25,
+                        font_size=15,
+                        show=False,
+                        out_file=os.path.join(output_path_semantic, filename+'_semantic.png'))
+        print('finish process: ',filename)
         # Delete variables that are no longer needed
-        del coco_propose_classes_ids
-        del ade20k_propose_classes_ids
-        del top_k_coco_propose_classes_ids
-        del top_k_ade20k_propose_classes_ids
-        del patch_small
-        del patch_large
-        del patch_huge
-        del valid_mask_huge_crop
-        del op_class_list
-        del mask_categories
-        del class_ids_patch_huge
-    if len(anns['annotations']) ==0:
-            with open ('/root/autodl-tmp/log.txt','a') as f:
-                f.write(filename+'\n')
-    else: 
-        # 每张图给1个正样本，4个负样本
-        # 正样本是自身不完全重复的区域，负样本是其他4张图的对应区域？
-        # for i in range(0,5):
-        #     anns_1 = anns.copy()
-        #     image = add_single_region_distortion(anns_1, img)
-        #     mmcv.imwrite(image, os.path.join(output_path_dis, filename +'_' + str(i) + '.png'))
-        #     mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_' + str(i) + '_semantic.json'))
-        
-        anns_1 = anns.copy()
-        image = add_single_region_distortion(anns_1, img)
-        # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
-        mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
-        mmengine.dump(anns_1, os.path.join(output_path_json, filename + '_info.json'))
-        # mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_semantic.json'))
-        # image = add_region_distortion(anns, img)
-        # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
-        # mmcv.dump(anns, os.path.join(output_path_json, filename + '_semantic.json'))
-        print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
-        if save_img:
-            for ann in anns['annotations']:
-                bitmasks.append(maskUtils.decode(ann['segmentation']))
-        imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
-                    bboxes=None,
-                    labels=np.arange(len(bitmasks)),
-                    segms=np.stack(bitmasks),
-                    # class_names=class_names,
-                    # class_names=[str(x) for x in range(len(bitmasks))],
-                    class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names)],
-                    # font_size=25,
-                    font_size=15,
-                    show=False,
-                    out_file=os.path.join(output_path_semantic, filename+'_semantic.png'))
-    print('finish process: ',filename)
-    # Delete variables that are no longer needed
-    del img
-    del anns
-    del class_ids_from_oneformer_coco
-    del class_ids_from_oneformer_ade20k
+        del img
+        del anns
+        del class_ids_from_oneformer_coco
+        del class_ids_from_oneformer_ade20k
 
 def img_load(data_path, filename, dataset):
     # load image

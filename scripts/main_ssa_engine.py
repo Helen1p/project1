@@ -3,6 +3,7 @@ import torch
 import argparse
 import sys
 sys.path.append('/root/Semantic-Segment-Anything')
+sys.path.append('/data1/pxg/Semantic-Segment-Anything')
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 from pipeline import semantic_annotation_pipeline
 from transformers import CLIPProcessor, CLIPModel
@@ -23,10 +24,10 @@ os.environ['MASTER_PORT'] = '6006'
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Semantically segment anything.')
-    parser.add_argument('--data_dir', default='/root/autodl-tmp/example_new1/DIV2K_train_HR', help='specify the root path of images and masks')
-    parser.add_argument('--out_dir_json', default='/root/autodl-tmp/example_new1/json/', help='the dir to save semantic annotations')
-    parser.add_argument('--out_dir_semantic', default='/root/autodl-tmp/example_new1/semantic/', help='the dir to save semantic annotations')
-    parser.add_argument('--out_dir_dis', default='/root/autodl-tmp/example_new1/DIV2K_output/', help='the dir to save semantic annotations')
+    parser.add_argument('--data_dir', default='/data1/pxg/autodl-tmp/example/kadis_HR/', help='specify the root path of images and masks')
+    parser.add_argument('--out_dir_json', default='/data1/pxg/autodl-tmp/example/json/', help='the dir to save semantic annotations')
+    parser.add_argument('--out_dir_semantic', default='/data1/pxg/autodl-tmp/example/semantic/', help='the dir to save semantic annotations')
+    parser.add_argument('--out_dir_dis', default='/data1/pxg/autodl-tmp/example/kadis_output/', help='the dir to save semantic annotations')
     
     # 删
     # parser.add_argument('--data_dir', default='/root/pic/', help='specify the root path of images and masks')
@@ -38,7 +39,7 @@ def parse_args():
     # parser.add_argument('--world_size', type=int, default=0, help='number of nodes')
     parser.add_argument('--world_size', type=int, default=1, help='number of nodes')
     parser.add_argument('--sam', default=True, action='store_true', help='use SAM but not given annotation json, default is False')
-    parser.add_argument('--ckpt_path', default='/root/Semantic-Segment-Anything/ckp/sam_vit_h_4b8939.pth', help='specify the root path of SAM checkpoint')
+    parser.add_argument('--ckpt_path', default='/data1/pxg/Semantic-Segment-Anything/ckp/sam_vit_h_4b8939.pth', help='specify the root path of SAM checkpoint')
     parser.add_argument('--light_mode', default=False, action='store_true', help='use light mode')
     args = parser.parse_args()
     return args
@@ -52,8 +53,8 @@ def main(rank, args):
     else:
         # clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
         # clip_model = CLIPModel.from_pretrained("openai/clip-vit-large-patch14").to(rank)
-        clip_processor = CLIPProcessor.from_pretrained("/root/autodl-tmp/pretrained/clip-vit-large-patch14")
-        clip_model = CLIPModel.from_pretrained("/root/autodl-tmp/pretrained/clip-vit-large-patch14").to(rank)
+        clip_processor = CLIPProcessor.from_pretrained("/data1/pxg/autodl-tmp/pretrained/clip-vit-large-patch14")
+        clip_model = CLIPModel.from_pretrained("/data1/pxg/autodl-tmp/pretrained/clip-vit-large-patch14").to(rank)
 
     if args.light_mode:
         oneformer_ade20k_processor = OneFormerProcessor.from_pretrained("shi-labs/oneformer_ade20k_swin_tiny")
@@ -61,13 +62,13 @@ def main(rank, args):
     else:
         # oneformer_ade20k_processor = OneFormerProcessor.from_pretrained("shi-labs/oneformer_ade20k_swin_large")
         # oneformer_ade20k_model = OneFormerForUniversalSegmentation.from_pretrained("shi-labs/oneformer_ade20k_swin_large").to(rank)
-        oneformer_ade20k_processor = OneFormerProcessor.from_pretrained("/root/autodl-tmp/pretrained/oneformer_ade20k_swin_large")
-        oneformer_ade20k_model = OneFormerForUniversalSegmentation.from_pretrained("/root/autodl-tmp/pretrained/oneformer_ade20k_swin_large").to(rank)
+        oneformer_ade20k_processor = OneFormerProcessor.from_pretrained("/data1/pxg/autodl-tmp/pretrained/oneformer_ade20k_swin_large")
+        oneformer_ade20k_model = OneFormerForUniversalSegmentation.from_pretrained("/data1/pxg/autodl-tmp/pretrained/oneformer_ade20k_swin_large").to(rank)
 
     # oneformer_coco_processor = OneFormerProcessor.from_pretrained("shi-labs/oneformer_coco_swin_large")
     # oneformer_coco_model = OneFormerForUniversalSegmentation.from_pretrained("shi-labs/oneformer_coco_swin_large").to(rank)
-    oneformer_coco_processor = OneFormerProcessor.from_pretrained("/root/autodl-tmp/pretrained/oneformer_coco_swin_large")
-    oneformer_coco_model = OneFormerForUniversalSegmentation.from_pretrained("/root/autodl-tmp/pretrained/oneformer_coco_swin_large").to(rank)
+    oneformer_coco_processor = OneFormerProcessor.from_pretrained("/data1/pxg/autodl-tmp/pretrained/oneformer_coco_swin_large")
+    oneformer_coco_model = OneFormerForUniversalSegmentation.from_pretrained("/data1/pxg/autodl-tmp/pretrained/oneformer_coco_swin_large").to(rank)
 
     # blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
     # blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large").to(rank)
@@ -78,8 +79,8 @@ def main(rank, args):
     else:
         # blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
         # blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large").to(rank)
-        blip_processor = BlipProcessor.from_pretrained("/root/autodl-tmp/pretrained/blip-image-captioning-large")
-        blip_model = BlipForConditionalGeneration.from_pretrained("/root/autodl-tmp/pretrained/blip-image-captioning-large").to(rank)
+        blip_processor = BlipProcessor.from_pretrained("/data1/pxg/autodl-tmp/pretrained/blip-image-captioning-large")
+        blip_model = BlipForConditionalGeneration.from_pretrained("/data1/pxg/autodl-tmp/pretrained/blip-image-captioning-large").to(rank)
 
     if args.light_mode:
         clipseg_processor = AutoProcessor.from_pretrained("CIDAS/clipseg-rd16")
@@ -88,8 +89,8 @@ def main(rank, args):
     else:
         # clipseg_processor = AutoProcessor.from_pretrained("CIDAS/clipseg-rd64-refined")
         # clipseg_model = CLIPSegForImageSegmentation.from_pretrained("CIDAS/clipseg-rd64-refined").to(rank)
-        clipseg_processor = AutoProcessor.from_pretrained("/root/autodl-tmp/pretrained/clipseg-rd64-refined")
-        clipseg_model = CLIPSegForImageSegmentation.from_pretrained("/root/autodl-tmp/pretrained/clipseg-rd64-refined").to(rank)
+        clipseg_processor = AutoProcessor.from_pretrained("/data1/pxg/autodl-tmp/pretrained/clipseg-rd64-refined")
+        clipseg_model = CLIPSegForImageSegmentation.from_pretrained("/data1/pxg/autodl-tmp/pretrained/clipseg-rd64-refined").to(rank)
         clipseg_processor.image_processor.do_resize = False
     if args.sam:
         # from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
