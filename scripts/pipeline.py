@@ -77,7 +77,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
     # 太多了，去掉一些
     anns = region_regress(anns, 8, img_area=h*w)
     anns = delete_overlap_anns(anns, p=0.8)
-    if anns['annotations']>=2:
+    if len(anns['annotations']) >= 2:
         bitmasks, class_names = [], []
         class_ids_from_oneformer_coco = oneformer_coco_segmentation(Image.fromarray(img),oneformer_coco_processor,oneformer_coco_model, rank)
         class_ids_from_oneformer_ade20k = oneformer_ade20k_segmentation(Image.fromarray(img),oneformer_ade20k_processor,oneformer_ade20k_model, rank)

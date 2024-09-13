@@ -75,13 +75,18 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 		# if random.random()<p:
 		if len(annotations['annotations']) >=3:
 			q_template_choice = ['A. region ', 'B. region ', 'C. region ']
+			flag = 3
 		else: 
 			q_template_choice = ['A. region ', 'B. region ']
-		rand_choice_abc=random.sample(range(3), 2)
-		rand_choice=random.sample(list(set(range(len(annotations['annotations'])))-set([region])), 2)
-		q_template_choice[rand_choice_abc[0]]+=str(rand_choice[0])
-		q_template_choice[rand_choice_abc[1]]+=str(rand_choice[1])
-		answer_index = list(set([0, 1, 2]).difference(set(rand_choice_abc)))[0]
+			flag = 2
+			print(name)
+		rand_choice_abc=random.sample(range(flag), flag-1)
+		rand_choice=random.sample(list(set(range(len(annotations['annotations'])))-set([region])), flag-1)
+		for f in range(len(rand_choice_abc)):
+			q_template_choice[rand_choice_abc[f]]+=str(rand_choice[f])
+		# q_template_choice[rand_choice_abc[0]]+=str(rand_choice[0])
+		# q_template_choice[rand_choice_abc[1]]+=str(rand_choice[1])
+		answer_index = list(set(range(flag)).difference(set(rand_choice_abc)))[0]
 		q_template_choice[answer_index]+=str(region)
 		q_template_choice2str=', '.join(q_template_choice)
 		exist_qu+=q_template_choice2str
@@ -154,7 +159,7 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 		most_num=all_answer.index(max(all_answer))
 		least_num=all_answer.index(min(all_answer))
 
-
+        # 2个level加起来一样的就随机选一个吧哈哈哈哈
 		all_choice=random.sample(range(len(q_template['all'])), question[0])
 		for i in all_choice:
 			if i < 9:
@@ -209,5 +214,5 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 
 
 if __name__ == '__main__':
-    os_walk(input_img=r'/data1/pxg/autodl-tmp/example/kadis_output', input_json=r'/data1/pxg/autodl-tmp/example/json',
-             out_path=r'/data1/pxg/autodl-tmp/example/grounding', p=0.3, question=[1, 2, 1])
+    os_walk(input_img=r'/root/autodl-tmp/example/kadis_output', input_json=r'/root/autodl-tmp/example/json',
+             out_path=r'/root/autodl-tmp/example/grounding', p=0.3, question=[1, 2, 1])
