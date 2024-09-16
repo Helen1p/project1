@@ -4,8 +4,6 @@ import argparse
 import sys
 sys.path.append('/root/project1')
 sys.path.append('/data1/pxg/project1')
-sys.path.append('/root/project1')
-sys.path.append('/data1/pxg/project1')
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 from pipeline import semantic_annotation_pipeline
 from transformers import CLIPProcessor, CLIPModel
