@@ -134,9 +134,6 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
             del op_class_list
             del mask_categories
             del class_ids_patch_huge
-        if len(anns['annotations']) ==0:
-                with open ('/root/autodl-tmp/log.txt','a') as f:
-                    f.write(filename+'\n')
         else: 
             # 每张图给1个正样本，4个负样本
             # 正样本是自身不完全重复的区域，负样本是其他4张图的对应区域？
@@ -159,7 +156,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
             if save_img:
                 for ann in anns['annotations']:
                     bitmasks.append(maskUtils.decode(ann['segmentation']))
-            if len(anns['annotations'])>5 or len(anns['annotations']) <2:
+            if len(anns['annotations'])>5:
                 output_path_semantic='/data1/pxg/autodl-tmp/example/semantic_555'
             imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
                         bboxes=None,
