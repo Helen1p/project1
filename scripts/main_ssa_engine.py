@@ -24,16 +24,10 @@ os.environ['MASTER_PORT'] = '6006'
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Semantically segment anything.')
-    parser.add_argument('--data_dir', default='/data1/pxg/autodl-tmp/example/kadis_HR/', help='specify the root path of images and masks')
-    parser.add_argument('--out_dir_json', default='/data1/pxg/autodl-tmp/example/json/', help='the dir to save semantic annotations')
-    parser.add_argument('--out_dir_semantic', default='/data1/pxg/autodl-tmp/example/semantic/', help='the dir to save semantic annotations')
-    parser.add_argument('--out_dir_dis', default='/data1/pxg/autodl-tmp/example/kadis_output/', help='the dir to save semantic annotations')
-    
-    # 删
-    # parser.add_argument('--data_dir', default='/root/pic/', help='specify the root path of images and masks')
-    # parser.add_argument('--out_dir_json', default='/root/', help='the dir to save semantic annotations')
-    # parser.add_argument('--out_dir_semantic', default='/root', help='the dir to save semantic annotations')
-    # parser.add_argument('--out_dir_dis', default='/root/', help='the dir to save semantic annotations')
+    parser.add_argument('--data_dir', default='/data1/pxg/autodl-tmp/example/kadis_HR/', help='HR image root')
+    parser.add_argument('--out_dir_json', default='/data1/pxg/autodl-tmp/example/json/', help='semantic annotations root')
+    parser.add_argument('--out_dir_semantic', default='/data1/pxg/autodl-tmp/example/semantic/', help='semantic img root')
+    parser.add_argument('--out_dir_dis', default='/data1/pxg/autodl-tmp/example/kadis_output/', help='output img root')
     
     parser.add_argument('--save_img', default=True, action='store_true', help='whether to save annotated images')
     # parser.add_argument('--world_size', type=int, default=0, help='number of nodes')

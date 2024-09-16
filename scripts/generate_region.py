@@ -67,16 +67,16 @@ def iqa_transformations(choice, im):
 
         level = random.randint(0,2)
 
-        dis_dict={'1':'gaussian blur', '2':'lens blur', '3':'color diffuse', '4':'color shift', '5':'color saturate', '6':'JPEG_compression', \
-                  '7':'white noise', '8':'impulse noise', '9':'multiplicative noise', '10':'over exposure', '11':'low light', '12':'mean shift', \
-                  '13':'bicubic interpolation resize', '14':'sharpen', '15':'contrast change', '16':'color block', '17':'pixelate', '18':'jitter', '19':'motion blur', \
+        dis_dict={'1':'gaussian blur', '2':'lens blur', '3':'color diffuse', '4':'color shift', '5':'color saturation decrease', '6':'JPEG_compression', \
+                  '7':'white noise', '8':'impulse noise', '9':'multiplicative noise', '10':'over exposure', '11':'low light', '12':['mean increase', 'mean decrease'], \
+                  '13':'bicubic interpolation resize', '14':'sharpen', '15':['contrast increase', 'contrast decrease'], '16':'color block', '17':'pixelate', '18':'jitter', '19':'motion blur', \
                     '20':'lanczos interpolation resize', '21':'bilinear interpolation resize'}
 
         # 去掉color相关distortion里面levels出现的负值level
         if choice == 1:
             # gaussian blur
             im = imblurgauss(im, level)
- 
+
         elif choice == 2 :
             # lens blur
             im = imblurlens(im,level)
@@ -90,12 +90,8 @@ def iqa_transformations(choice, im):
             im = imcolorshift(im,level)
 
         elif choice == 5 :
-            # color saturate in HSV color space
+            # color saturate decrease in HSV color space
             im = imcolorsaturate(im,level)
-
-        # elif choice == 5 :
-        #     # color saturate in LAB color space
-        #     im = imsaturate(im,level)
 
         elif choice == 6 :
             # jpeg compression
@@ -105,10 +101,6 @@ def iqa_transformations(choice, im):
             # white noise in RGB space
             im = imnoisegauss(im,level)
 
-        # elif choice == 9 :
-        #     # white noise in YCbCr space
-        #     im = imnoisecolormap(im,level)
-
         elif choice == 8 :
             # impulse noise
             im = imnoiseimpulse(im,level)
@@ -116,10 +108,6 @@ def iqa_transformations(choice, im):
         elif choice == 9 :
             # multiplicative noise
             im = imnoisemultiplicative(im,level)
-
-        # elif choice == 12 :
-        #     # denoise
-        #     im = imdenoise(im,level)
 
         elif choice == 10 :
             # brighten
@@ -155,19 +143,9 @@ def iqa_transformations(choice, im):
             # pixelate
             im = impixelate(im,level)
 
-        # elif choice == 21 :
-        # 错的
-        # non-eccentricity
-        #     im = imnoneccentricity(im,level)
-
         elif choice == 18 :
             # jitter
             im = imjitter(im,level)
-
-        # elif choice == 23:
-        #     # 这个是论文里没有的，和pixelate一样
-        #     # resize by nearest interpolation
-        #     im = imresizedist_nearest(im,level)
 
         elif choice == 19:
             # motion blur
@@ -183,8 +161,11 @@ def iqa_transformations(choice, im):
 
         else :
             pass
-
-        return im, dis_dict[str(choice)], level
+        
+        if choice == 12 or choice == 15:
+            return im, dis_dict[str(choice)][i], level
+        else:
+            return im, dis_dict[str(choice)], level
 
 
 def add_single_region_distortion(anns, image: np.ndarray):

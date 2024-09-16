@@ -86,65 +86,6 @@ def imblurlens(im, level):
     im = Image.fromarray(im)
     return im
 
-"""
-def imblurmotion (im, level):
-
-    # MATLAB version https://github.com/alexandrovteam/IMS_quality/blob/master/codebase/fspecialIM.m
-    levels = [1, 2, 4, 6, 8]
-    
-
-    im = np.array(im)
-
-    radius = levels[level]
-    length = max(1,radius)
-    half = (length-1)/2
-    phi = (random.randint(0,180))/(180)*np.pi
-
-    cosphi = np.cos(phi)
-    sinphi = np.sin(phi)
-    xsign = np.sign(cosphi)
-    linewdt = 1
-
-    sx = np.fix(half*cosphi + linewdt*xsign - length*np.finfo(float).eps)
-    sy = np.fix(half*sinphi + linewdt - length*np.finfo(float).eps)
-
-    if sx > 0:
-        end_sx = sx + 1
-    else :
-        end_sx = sx - 1 
-
-    if sy >= 0:
-        end_sy = sy + 1
-    else :
-        end_sy = sy - 1 
-    
-    [x,y] = np.meshgrid(np.arange(0,end_sx,xsign), np.arange(0,end_sy,1), indexing='xy')
-    
-    dist2line = (y*cosphi-x*sinphi) 
-
-    rad = np.sqrt(x**2 + y**2)
-    x2lastpix = half - abs((x[(rad >= half)&(abs(dist2line)<=linewdt)] + dist2line[(rad >= half)&(abs(dist2line)<=linewdt)]*sinphi)/cosphi)
-
-    dist2line[(rad >= half)&(abs(dist2line)<=linewdt)] = np.sqrt(dist2line[(rad >= half)&(abs(dist2line)<=linewdt)]**2 + x2lastpix**2)
-    dist2line = linewdt + np.finfo(float).eps - abs(dist2line)
-    dist2line[dist2line<0] = 0 
-
-
-    h1 = np.rot90(dist2line,2)
-    h2 = np.zeros([h1.shape[0]*2-1,h1.shape[1]*2-1])
-    h2[0:h1.shape[0],0:h1.shape[1]] = h1
-    h2[h1.shape[0]-1:2*h1.shape[0]-1,h1.shape[1]-1:h1.shape[1]*2-1] = np.rot90(np.rot90(h1))
-    h2 = h2/(h2.sum() + np.finfo(float).eps*length*length)
-    if cosphi>0 :
-        h2 = np.flipud(h2)
-    
-    ndimage.convolve(im[:,:,0],  h2, output = im[:,:,0], mode='nearest')
-    ndimage.convolve(im[:,:,1],  h2, output = im[:,:,1], mode='nearest')
-    ndimage.convolve(im[:,:,2],  h2, output = im[:,:,2], mode='nearest')
-    im = Image.fromarray(im)
-    return im
-"""
-
 def imblurmotion (im, level):
     # levels = [12, 16, 20, 24, 28]
     levels = [6, 8, 10, 12, 14]
@@ -167,21 +108,16 @@ def imblurmotion (im, level):
     return im
 
 def imcolordiffuse(im,level):
-
     # levels = [1, 3, 6, 8, 12]
-    levels = [2, 3, 4, 5, 6]
-
+    levels = [6, 8, 10, 12, 14]
     amount = levels[level]
     im = np.array(im)
-
     # sigma = 1.5*amount + 2
     # scaling = amount
     sigma = 1.1 * amount + 1  
     scaling = 0.5 * amount
-    
     lab = color.rgb2lab(im)
     l = lab[:,:,0]
-
     lab = filters.gaussian(lab, sigma=sigma, channel_axis=-1)* scaling
     lab[:,:,0] = l
     im = 255*color.lab2rgb(lab)
@@ -241,7 +177,8 @@ def imcolorshift(im,level):
 def imcolorsaturate(im,level):
 
     # levels = [0.4, 0.2, 0.1, 0, -0.4]
-    levels = [0.6, 0.4, 0.2, 0.1, 0]
+    # levels = [0.6, 0.4, 0.2, 0.1, 0]
+    levels = [0.65,0.4, 0.25, 0.1, 0]
 
     amount = levels[level]
 
@@ -390,7 +327,8 @@ def imdenoise (im,level):
 
 def imbrighten(im,level) :
  
-    levels = [0.1, 0.2, 0.4, 0.7, 1.1]
+    # levels = [0.1, 0.2, 0.4, 0.7, 1.1]
+    levels = [0.5, 0.8, 1.1]
 
     amount = levels[level]
     im = np.float32(np.array(im)/255.0)
@@ -410,7 +348,8 @@ def imbrighten(im,level) :
 
 
 def imdarken(im, level):
-    levels = [0.05, 0.1, 0.2, 0.4, 0.8]
+    # levels = [0.05, 0.1, 0.2, 0.4, 0.8]
+    levels = [0.4, 0.6, 0.8]
     param = levels[level]
     ## convert 0-1
     im = np.array(im).astype(np.float32)/255.0
@@ -553,7 +492,7 @@ def imsharpenHi(im, level):
 
 def imcontrastc(im, level, i):
     # levels = [0.3, 0.15, 0, -0.4, -0.6]
-    levels = [(0, 0), (0.15, -0.15), (0.25, -0.25), (0.35, -0.35), (0.5, -0.5)]
+    levels = [(0.1, -0.4), (0.3, -0.6), (0.5, -0.8)]
     param = levels[level][i]
     ## convert 0-1
     im = np.array(im).astype(np.float32)/255.0
