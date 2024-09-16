@@ -120,7 +120,6 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
             ann['class_name'] = str(top_1_mask_category)
             ann['class_proposals'] = mask_categories
             class_names.append(str(top_1_mask_category))
-            # bitmasks.append(maskUtils.decode(ann['segmentation']))
 
             # Delete variables that are no longer needed
             del coco_propose_classes_ids
@@ -134,41 +133,45 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
             del op_class_list
             del mask_categories
             del class_ids_patch_huge
-        else: 
-            # 每张图给1个正样本，4个负样本
-            # 正样本是自身不完全重复的区域，负样本是其他4张图的对应区域？
-            # for i in range(0,5):
-            #     anns_1 = anns.copy()
-            #     image = add_single_region_distortion(anns_1, img)
-            #     mmcv.imwrite(image, os.path.join(output_path_dis, filename +'_' + str(i) + '.png'))
-            #     mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_' + str(i) + '_semantic.json'))
-            
-            anns_1 = anns.copy()
-            image = add_single_region_distortion(anns_1, img)
-            # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
-            mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
-            mmengine.dump(anns_1, os.path.join(output_path_json, filename + '_info.json'))
-            # mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_semantic.json'))
-            # image = add_region_distortion(anns, img)
-            # mmcv.imwrite(image, os.path.join(output_path_dis, filename + '.png'))
-            # mmcv.dump(anns, os.path.join(output_path_json, filename + '_semantic.json'))
-            print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
-            if save_img:
-                for ann in anns['annotations']:
-                    bitmasks.append(maskUtils.decode(ann['segmentation']))
-            if len(anns['annotations'])>5:
-                output_path_semantic='/data1/pxg/autodl-tmp/example/semantic_555'
-            imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
-                        bboxes=None,
-                        labels=np.arange(len(bitmasks)),
-                        segms=np.stack(bitmasks),
-                        # class_names=class_names,
-                        # class_names=[str(x) for x in range(len(bitmasks))],
-                        class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names)],
-                        # font_size=25,
-                        font_size=15,
-                        show=False,
-                        out_file=os.path.join(output_path_semantic, filename+'_semantic.png'))
+
+        # 每张图给1个正样本，4个负样本
+        # 正样本是自身不完全重复的区域，负样本是其他4张图的对应区域？
+        # for i in range(0,5):
+        #     anns_1 = anns.copy()
+        #     image = add_single_region_distortion(anns_1, img)
+        #     mmcv.imwrite(image, os.path.join(output_path_dis, filename +'_' + str(i) + '.png'))
+        #     mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_' + str(i) + '_semantic.json'))
+        
+        anns_1 = anns.copy()
+        '''
+        it/that/something 丢掉，flower plant
+        多个semantic label相同的丢掉，
+        多个mask加起来面积过小 丢掉
+        如果是多个mask，6个，并且有3个大的的，可以留下 aalto-theatre-228663.png, andalusia-106714.png, horses-918757_semantic
+        > 4的就可以重新分一下了
+        '''
+        image = add_single_region_distortion(anns_1, img)
+        mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
+        mmengine.dump(anns_1, os.path.join(output_path_json, filename + '_info.json'))
+        print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
+        if save_img:
+            for ann in anns['annotations']:
+                bitmasks.append(maskUtils.decode(ann['segmentation']))
+
+        # > 4的就可以重新分一下了
+        if len(anns['annotations'])>4:
+            output_path_semantic='/root/autodl-tmp/example/semantic_555/'
+        imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
+                    bboxes=None,
+                    labels=np.arange(len(bitmasks)),
+                    segms=np.stack(bitmasks),
+                    # class_names=class_names,
+                    # class_names=[str(x) for x in range(len(bitmasks))],
+                    class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names)],
+                    # font_size=25,
+                    font_size=15,
+                    show=False,
+                    out_file=os.path.join(output_path_semantic, filename+'_semantic.png'))
         print('finish process: ',filename)
         # Delete variables that are no longer needed
         del img
@@ -216,7 +219,6 @@ def semantic_segment_anything_inference(filename, output_path, rank, img=None, s
             ann['class_name'] = id2label['id2label'][str(propose_classes_ids[0].item())]
             ann['class_proposals'] = id2label['id2label'][str(propose_classes_ids[0].item())]
             class_names.append(ann['class_name'])
-            # bitmasks.append(maskUtils.decode(ann['segmentation']))
             continue
         top_1_propose_class_ids = torch.bincount(propose_classes_ids.flatten()).topk(1).indices
         top_1_propose_class_names = [id2label['id2label'][str(class_id.item())] for class_id in top_1_propose_class_ids]
@@ -225,7 +227,6 @@ def semantic_segment_anything_inference(filename, output_path, rank, img=None, s
         ann['class_name'] = top_1_propose_class_names[0]
         ann['class_proposals'] = top_1_propose_class_names[0]
         class_names.append(ann['class_name'])
-        # bitmasks.append(maskUtils.decode(ann['segmentation']))
 
         del valid_mask
         del propose_classes_ids
@@ -257,7 +258,6 @@ def semantic_segment_anything_inference(filename, output_path, rank, img=None, s
                             show=False,
                             out_file=os.path.join(output_path, filename + '_semantic.png'))
         print('[Save] save SSA prediction: ', os.path.join(output_path, filename + '_semantic.png'))
-    # mmcv.dump(anns, os.path.join(output_path, filename + '_semantic.json'))
     mmengine.dump(anns, os.path.join(output_path, filename + '_semantic.json'))
     # 手动清理不再需要的变量
     del img
