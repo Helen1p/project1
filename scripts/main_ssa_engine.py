@@ -2,8 +2,8 @@ import os
 import torch
 import argparse
 import sys
-sys.path.append('/root/Semantic-Segment-Anything')
-sys.path.append('/data1/pxg/Semantic-Segment-Anything')
+sys.path.append('/root/project1')
+sys.path.append('/data1/pxg/project1')
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 from pipeline import semantic_annotation_pipeline
 from transformers import CLIPProcessor, CLIPModel
@@ -33,7 +33,7 @@ def parse_args():
     # parser.add_argument('--world_size', type=int, default=0, help='number of nodes')
     parser.add_argument('--world_size', type=int, default=1, help='number of nodes')
     parser.add_argument('--sam', default=True, action='store_true', help='use SAM but not given annotation json, default is False')
-    parser.add_argument('--ckpt_path', default='/data1/pxg/Semantic-Segment-Anything/ckp/sam_vit_h_4b8939.pth', help='specify the root path of SAM checkpoint')
+    parser.add_argument('--ckpt_path', default='/data1/pxg/project1/ckp/sam_vit_h_4b8939.pth', help='specify the root path of SAM checkpoint')
     parser.add_argument('--light_mode', default=False, action='store_true', help='use light mode')
     args = parser.parse_args()
     return args
