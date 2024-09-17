@@ -14,6 +14,9 @@ import os
 import torch
 import pycocotools.mask as maskUtils
 import random
+from typing import Dict, Optional
+from functools import reduce
+import operator
 
 # np.random.seed(666)
 
@@ -219,10 +222,39 @@ def add_single_region_distortion(anns, image: np.ndarray):
     return np.clip(d_image, 0, 255).astype(np.uint8)
 
 
+# 包括去除mask过小的功能
+def delete_overlap_anns(anns, p=0.8):
+    # 如果丢弃重复的，那么不同部分之间存在边缘微小重复，会导致丢弃过多
+    # 如果丢弃存在包含关系的，那么存在不同部分之间非完全包含，仅大部分包含的情况
+    if len(anns['annotations']) == 0:
+        return
+    anns_1 = anns['annotations']
+    # 从大到小
+    sorted_anns = sorted(anns_1, key=(lambda x: x['area']), reverse=True)
+    i=0
+    while i < len(sorted_anns):
+        ann2int = maskUtils.decode(sorted_anns[i]['segmentation'])
+        j=len(sorted_anns)-1
+        while j>i:
+            # torch.tensor(maskUtils.decode(ann['segmentation'])).bool()
+            x = ann2int+maskUtils.decode(sorted_anns[j]['segmentation']).astype(int)
+            overlap=np.sum(x==2)
+            thresh=np.sum(maskUtils.decode(sorted_anns[j]['segmentation']).astype(int))*p
+            # print('overlap',overlap,'thresh',thresh)
+            if overlap>thresh:
+            # 丢弃具有包含关系的
+            # if -1 not in x:
+                del sorted_anns[j]
+            j-=1
+        i+=1
+
+    anns['annotations'] = [x for x in sorted_anns if 3500 < x['area']]
+    # anns['annotations'] = sorted_anns
+    return anns
+
+
 def add_region_distortion(anns, image: np.ndarray):
     d_image = image.copy().astype(np.float32) / 255.
-    # bbox_list=[]
-    # distortion_list=[]
     if anns['annotations'] is not None:
         for i in range(len(anns['annotations'])):
             ann = anns['annotations'][i]
@@ -247,6 +279,46 @@ def add_region_distortion(anns, image: np.ndarray):
     return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
         
         
+def mask_filter(anns) -> Optional[dict], Optional[Dict[str, str]]:
+    '''
+    it/that/something 丢掉，flower plant
+    多个semantic label相同的丢掉，
+    多个mask加起来面积过小 丢掉
+    如果是多个mask，6个，并且有3个大的的，可以留下 aalto-theatre-228663.png, andalusia-106714.png, horses-918757_semantic
+    > 4的就可以重新分一下了
+    '''
+    label_dict={}
+    reason=['specific words', 'repetition', 'overall too small']
+    words1=['flower', 'plant']
+    words2=['it', 'that', 'something']
+    # 注意顺序不要变
+    if len(anns['annotations']) >= 7 :
+        return None
+
+    for i in anns['annotations']:
+        if any(i['class_name'] in item for item in words1):
+            return None
+        if any(i['class_name'] in item for item in words2):
+            del i
+            continue
+        if i['class_name'] not in label_dict.keys():
+            label_dict[i['class_name']] = 1
+        else:
+            label_dict[i['class_name']] += 1
+    if any(map(lambda x : x >1, label_dict.values())):
+        return None
+
+    if len(anns['annotations']) <= 4 :
+        return anns
+
+    size = reduce(operator.add, [x['area'] for x in anns['annotations']])
+    if size < 65000:
+        return None
+
+    anns['annotations']=[i for i in anns['annotations'] if i['area']> 30000]
+    return anns
+
+
 def main():
 
     parser = argparse.ArgumentParser()
@@ -305,41 +377,6 @@ def main():
 
         print('************{} is done***********'.format(i))
 
-    # with open('data1.json','a') as f:   
-    #     # 写'bbox'和'distortion'
-    #     # f.write(json.dumps(dict((('name', name), list(ann.items())[2], list(ann.items())[-1]))))
-    #     f.write(json.dumps(dict_write))
-
-# 包括去除mask过小的功能
-def delete_overlap_anns(anns, p=0.8):
-    # 如果丢弃重复的，那么不同部分之间存在边缘微小重复，会导致丢弃过多
-    # 如果丢弃存在包含关系的，那么存在不同部分之间非完全包含，仅大部分包含的情况
-    if len(anns['annotations']) == 0:
-        return
-    anns_1 = anns['annotations']
-    # 从大到小
-    sorted_anns = sorted(anns_1, key=(lambda x: x['area']), reverse=True)
-    i=0
-    while i < len(sorted_anns):
-        ann2int = maskUtils.decode(sorted_anns[i]['segmentation'])
-        j=len(sorted_anns)-1
-        while j>i:
-            # torch.tensor(maskUtils.decode(ann['segmentation'])).bool()
-            x = ann2int+maskUtils.decode(sorted_anns[j]['segmentation']).astype(int)
-            overlap=np.sum(x==2)
-            thresh=np.sum(maskUtils.decode(sorted_anns[j]['segmentation']).astype(int))*p
-            # print('overlap',overlap,'thresh',thresh)
-            if overlap>thresh:
-            # 丢弃具有包含关系的
-            # if -1 not in x:
-                del sorted_anns[j]
-            j-=1
-        i+=1
-
-    anns['annotations'] = [x for x in sorted_anns if 3500 < x['area']]
-    # anns['annotations'] = sorted_anns
-
-    return anns
 
 # 细节的东西一般都没有distortion
 if __name__ == '__main__':
