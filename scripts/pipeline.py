@@ -142,7 +142,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
         #     mmcv.imwrite(image, os.path.join(output_path_dis, filename +'_' + str(i) + '.png'))
         #     mmcv.dump(anns_1, os.path.join(output_path_json, filename + '_' + str(i) + '_semantic.json'))
         
-        anns_1 = anns.copy()
+        # anns_1 = anns.copy()
         '''
         it/that/something 丢掉，flower plant
         多个semantic label相同的丢掉，
@@ -150,12 +150,12 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
         如果是多个mask，6个，并且有3个大的的，可以留下 aalto-theatre-228663.png, andalusia-106714.png, horses-918757_semantic
         > 4的就可以重新分一下了
         '''
-        anns_1 = mask_filter(anns_1)
-        if anns_1 is None:
+        anns = mask_filter(anns)
+        if anns is None:
             return
-        image = add_single_region_distortion(anns_1, img)
+        image = add_single_region_distortion(anns, img)
         mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
-        mmengine.dump(anns_1, os.path.join(output_path_json, filename + '_info.json'))
+        mmengine.dump(anns, os.path.join(output_path_json, filename + '_info.json'))
         print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
         if save_img:
             for ann in anns['annotations']:
@@ -163,7 +163,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
 
         # > 4的就可以重新分一下了
         if len(anns['annotations'])>4:
-            output_path_semantic='/data1/pxg/autodl-tmp/example/semantic_555/'
+            output_path_semantic='/root/autodl-tmp/example/semantic_555/'
         imshow_det_bboxes(cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
                     bboxes=None,
                     labels=np.arange(len(bitmasks)),
