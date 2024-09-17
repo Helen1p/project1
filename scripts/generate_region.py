@@ -294,21 +294,21 @@ def mask_filter(anns) -> Union[Optional[dict], Optional[Dict[str, str]]]:
     # 注意顺序不要变
     if len(anns['annotations']) >= 7 :
         return None
-
+    
+    to_remove = []
     for i in anns['annotations']:
-        # if any(i['class_name'] in item for item in words1):
         if any(item in i['class_name'] for item in words1):
             return None
         if any(i['class_name'] in item for item in words2):
-            anns['annotations'].remove(i)
-            # del i
+            to_remove.append(i)
             continue
-        # if i['class_name'] not in label_dict.keys():
         if any(i['class_name'] in item for item in label_dict.keys()) or any(item in i['class_name'] for item in label_dict.keys()):
             return None
-            # label_dict[i['class_name']] = 1
         else:
             label_dict[i['class_name']] = 1
+    for i in to_remove:
+        anns['annotations'].remove(i)
+
     if any(map(lambda x : x >1, label_dict.values())):
         return None
 

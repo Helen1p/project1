@@ -158,8 +158,10 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
         mmengine.dump(anns, os.path.join(output_path_json, filename + '_info.json'))
         print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
         if save_img:
+            class_names_new = []
             for ann in anns['annotations']:
                 bitmasks.append(maskUtils.decode(ann['segmentation']))
+                class_names_new.append(ann['class_name'])
 
         # > 4的就可以重新分一下了
         if len(anns['annotations'])>4:
@@ -170,7 +172,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
                     segms=np.stack(bitmasks),
                     # class_names=class_names,
                     # class_names=[str(x) for x in range(len(bitmasks))],
-                    class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names)],
+                    class_names=[str(x)+','+y for x,y in zip(range(len(bitmasks)),class_names_new)],
                     # font_size=25,
                     font_size=15,
                     show=False,
