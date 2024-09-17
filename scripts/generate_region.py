@@ -14,7 +14,7 @@ import os
 import torch
 import pycocotools.mask as maskUtils
 import random
-from typing import Dict, Optional
+from typing import Dict, Optional, Union
 from functools import reduce
 import operator
 
@@ -279,7 +279,7 @@ def add_region_distortion(anns, image: np.ndarray):
     return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
         
         
-def mask_filter(anns) -> Optional[dict], Optional[Dict[str, str]]:
+def mask_filter(anns) -> Union[Optional[dict], Optional[Dict[str, str]]]:
     '''
     it/that/something 丢掉，flower plant
     多个semantic label相同的丢掉，
