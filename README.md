@@ -18,3 +18,9 @@ CUDA_VISIBLE_DEVICES=0 python generate_grounding.py
 CUDA_VISIBLE_DEVICES='1,2,3,4' python chat.py
 ```
 
+
+
+to modify human label:
+```
+python to_json.py
+``` 
