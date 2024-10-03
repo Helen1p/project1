@@ -23,7 +23,7 @@ from clipseg import clipseg_segmentation
 from oneformer import oneformer_coco_segmentation, oneformer_ade20k_segmentation, oneformer_cityscapes_segmentation
 from blip import open_vocabulary_classification_blip
 from segformer import segformer_segmentation as segformer_func
-from generate_region import region_regress, add_region_distortion, add_single_region_distortion, delete_overlap_anns, mask_filter
+from generate_region import region_regress, add_single_region_distortion, delete_overlap_anns, mask_filter
 import cv2
 
 oneformer_func = {

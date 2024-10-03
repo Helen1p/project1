@@ -223,7 +223,7 @@ def add_single_region_distortion(anns, image: np.ndarray):
                         break
             for m in distortion_type_list:
                 distortion_name = random.choice(distortions_dict[m])
-                distortion_name_list.append(distortion_name_list)
+                distortion_name_list.append(distortion_name)
 
             for n in distortion_name_list:
                 # 直接改成[2,3,4]算了
