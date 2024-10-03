@@ -17,44 +17,10 @@ import random
 from typing import Dict, Optional, Union
 from functools import reduce
 import operator
+from x_distortion import add_distortion, distortions_dict, multi_distortions_dict
+
 
 # np.random.seed(666)
-
-distortion = {
-    1: 'noise',
-    2: 'blur',
-    3: 'jpeg',
-}
-
-
-def show_anns(anns, image):
-    if len(anns) == 0:
-        return
-    print(len(anns))
-    sorted_anns = sorted(anns, key=(lambda x: x['area']), reverse=True)
-    dpi = plt.rcParams['figure.dpi']
-    height, width = image.shape[:2]
-    plt.figure(figsize=(width/dpi, height/dpi))
-    plt.imshow(image)
-    plt.axis('off')
-    ax = plt.gca()
-    ax.set_autoscale_on(False)
-
-    img = np.ones((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1], 4))
-    img[:,:,3] = 0
-    for ann in sorted_anns:
-        m = ann['segmentation']
-        color_mask = np.concatenate([np.random.random(3), [0.6]])
-        img[m] = color_mask
-    ax.imshow(img)
-    buf = io.BytesIO()
-    plt.savefig(buf, bbox_inches='tight', pad_inches=0, format='png')
-    buf.seek(0)
-    img = Image.open(buf)
-    img = np.asarray(img)
-    buf.close()
-    plt.close()
-    return img
 
 
 def region_regress(anns, region_thresh, img_area, area_initial=0.01):
@@ -170,7 +136,7 @@ def iqa_transformations(choice, im):
         else:
             return im, dis_dict[str(choice)], level
 
-
+# use with iqa_distortions.py and iqa_transformations
 def add_single_region_distortion(anns, image: np.ndarray):
     # d_image = image.copy().astype(np.float32) / 255.
     d_image = image.copy()
@@ -222,6 +188,69 @@ def add_single_region_distortion(anns, image: np.ndarray):
     return np.clip(d_image, 0, 255).astype(np.uint8)
 
 
+# use with x_distortion
+def add_single_region_distortion(anns, image: np.ndarray):
+    # d_image = image.copy().astype(np.float32) / 255.
+    d_image = image.copy()
+    if anns['annotations'] is not None:
+        for i in range(len(anns['annotations'])):
+            ann = anns['annotations'][i]
+            x, y, w, h = ann['bbox']
+            x, y, w, h = int(x), int(y), int(w), int(h)
+            d_region = d_image[y: y+h, x: x+w]
+            
+            d_region_ori = d_region.copy()
+            d_mask = torch.tensor(maskUtils.decode(ann['segmentation'])).bool()[y: y+h, x: x+w]
+            
+            # d_region: np.array -> Image
+            # d_region = Image.fromarray(np.uint8(d_region))
+
+            # d_region = Image.fromarray((d_region * 255).astype(np.uint8))
+
+            # d_region = Image.fromarray(d_region)
+            # distortion_type_list =[]
+            distortion_name_list =[]
+            distortion_level_list = []
+            # 单一还是多种
+            num_distortion = random.randint(1,2)
+            if num_distortion==1:
+                # distortion不重复
+                distortion_type_list = random.sample(list(distortions_dict.keys()), num_distortion)
+            elif num_distortion==2:
+                while True:
+                    distortion_type_list = random.sample(list(distortions_dict.keys()), num_distortion)
+                    if distortion_type_list[1] in multi_distortions_dict[distortion_type_list[0]]:
+                        break
+            for m in distortion_type_list:
+                distortion_name = random.choice(distortions_dict[m])
+                distortion_name_list.append(distortion_name_list)
+
+            for n in distortion_name_list:
+                # 直接改成[2,3,4]算了
+                severity = random.randint(2,4)
+                d_region=add_distortion(img=d_region, severity=severity, distortion_name=n)
+                distortion_level_list.append(severity)
+
+            # d_region: Image -> np.array
+            # d_region = np.array(d_region)/225.
+                
+            # d_region = np.array(d_region)
+
+            ann.update({'distortion_type':distortion_type_list})
+            ann.update({'distortion_name':distortion_name_list})
+            ann.update({'distortion_level':distortion_level_list})
+            # discription = anns['annotations'][i]['class_name'] + ' with ' + distortion_type
+            # ann.update({'discription': discription})
+
+            d_region_ori[d_mask == True] = d_region[d_mask == True]
+            d_image[y: y+h, x: x+w] = d_region_ori
+            
+            # distortion_list.append(ann['distortion'])
+
+    # return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
+    return np.clip(d_image, 0, 255).astype(np.uint8)
+
+
 # 包括去除mask过小的功能
 def delete_overlap_anns(anns, p=0.8):
     # 如果丢弃重复的，那么不同部分之间存在边缘微小重复，会导致丢弃过多
@@ -251,32 +280,6 @@ def delete_overlap_anns(anns, p=0.8):
     anns['annotations'] = [x for x in sorted_anns if 3500 < x['area']]
     # anns['annotations'] = sorted_anns
     return anns
-
-
-def add_region_distortion(anns, image: np.ndarray):
-    d_image = image.copy().astype(np.float32) / 255.
-    if anns['annotations'] is not None:
-        for i in range(len(anns['annotations'])):
-            ann = anns['annotations'][i]
-            # ann['segmentation']['counts']=torch.tensor(maskUtils.decode(ann['segmentation'])).bool()
-            x, y, w, h = ann['bbox']
-            x, y, w, h = int(x), int(y), int(w), int(h)
-            d_region = d_image[y: y+h, x: x+w]
-            
-            d_region_ori = d_region.copy()
-            d_mask = torch.tensor(maskUtils.decode(ann['segmentation'])).bool()[y: y+h, x: x+w]
-            # d_mask = ann['segmentation']['counts'][y: y+h, x: x+w]
-            
-            order = [1 if np.random.rand()< 0.8 else 0 for i in range(4)]
-            d_region, distortion_type = utils_image.task(d_region, order)
-            ann.update({'distortion':distortion_type})
-
-            d_region_ori[d_mask == True] = d_region[d_mask == True]
-            d_image[y: y+h, x: x+w] = d_region_ori
-            
-            # distortion_list.append(ann['distortion'])
-
-    return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
         
         
 def mask_filter(anns) -> Union[Optional[dict], Optional[Dict[str, str]]]:
@@ -321,6 +324,35 @@ def mask_filter(anns) -> Union[Optional[dict], Optional[Dict[str, str]]]:
 
     anns['annotations']=[i for i in anns['annotations'] if i['area']> 11000]
     return anns
+
+def show_anns(anns, image):
+    if len(anns) == 0:
+        return
+    print(len(anns))
+    sorted_anns = sorted(anns, key=(lambda x: x['area']), reverse=True)
+    dpi = plt.rcParams['figure.dpi']
+    height, width = image.shape[:2]
+    plt.figure(figsize=(width/dpi, height/dpi))
+    plt.imshow(image)
+    plt.axis('off')
+    ax = plt.gca()
+    ax.set_autoscale_on(False)
+
+    img = np.ones((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1], 4))
+    img[:,:,3] = 0
+    for ann in sorted_anns:
+        m = ann['segmentation']
+        color_mask = np.concatenate([np.random.random(3), [0.6]])
+        img[m] = color_mask
+    ax.imshow(img)
+    buf = io.BytesIO()
+    plt.savefig(buf, bbox_inches='tight', pad_inches=0, format='png')
+    buf.seek(0)
+    img = Image.open(buf)
+    img = np.asarray(img)
+    buf.close()
+    plt.close()
+    return img
 
 
 def main():
