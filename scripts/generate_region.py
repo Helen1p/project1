@@ -17,7 +17,7 @@ import random
 from typing import Dict, Optional, Union
 from functools import reduce
 import operator
-from x_distortion import add_distortion, distortions_dict, multi_distortions_dict
+from x_distortion import add_distortion, distortions_dict, multi_distortions_dict, remove_slight_distortions_dict, distortions_order_dict
 
 
 # np.random.seed(666)
@@ -190,7 +190,6 @@ def add_single_region_distortion(anns, image: np.ndarray):
 
 # use with x_distortion
 def add_single_region_distortion(anns, image: np.ndarray):
-    # d_image = image.copy().astype(np.float32) / 255.
     d_image = image.copy()
     if anns['annotations'] is not None:
         for i in range(len(anns['annotations'])):
@@ -202,17 +201,12 @@ def add_single_region_distortion(anns, image: np.ndarray):
             d_region_ori = d_region.copy()
             d_mask = torch.tensor(maskUtils.decode(ann['segmentation'])).bool()[y: y+h, x: x+w]
             
-            # d_region: np.array -> Image
-            # d_region = Image.fromarray(np.uint8(d_region))
-
-            # d_region = Image.fromarray((d_region * 255).astype(np.uint8))
-
-            # d_region = Image.fromarray(d_region)
-            # distortion_type_list =[]
+            order_flag = False
             distortion_name_list =[]
             distortion_level_list = []
-            # 单一还是多种
-            num_distortion = random.randint(1,2)
+            # 单一还是多种，设置概率
+            p = random.random()
+            num_distortion=1 if p < 0.25 else 2
             if num_distortion==1:
                 # distortion不重复
                 distortion_type_list = random.sample(list(distortions_dict.keys()), num_distortion)
@@ -225,29 +219,36 @@ def add_single_region_distortion(anns, image: np.ndarray):
                 distortion_name = random.choice(distortions_dict[m])
                 distortion_name_list.append(distortion_name)
 
-            for n in distortion_name_list:
-                # 直接改成[2,3,4]算了
-                severity = random.randint(2,4)
+            for idx, n in enumerate(distortion_name_list):
+                if idx==1 and distortion_type_list[1] == 'blur':
+                    # 第二个时只能是1,2
+                    severity = random.randint(1,2)
+                elif idx==1 and distortion_type_list[1] == 'compression':
+                    # 最多比第一个大1
+                    severity = random.randint(1,distortion_level_list[0]+1)
+                elif idx==1 and distortion_type_list[1] == 'quantization':
+                    # 最多和第一个一样
+                    severity = random.randint(1,distortion_level_list[0])
+                elif distortion_type_list[idx] in remove_slight_distortions_dict:
+                    # 去掉 5 了
+                    severity = random.randint(2,4)
+                else:
+                    severity = random.randint(1,4)
+
                 d_region=add_distortion(img=d_region, severity=severity, distortion_name=n)
                 distortion_level_list.append(severity)
 
-            # d_region: Image -> np.array
-            # d_region = np.array(d_region)/225.
+            if len(distortion_type_list) == 1 and distortion_type_list[1] in distortions_order_dict[distortion_type_list[0]]:
+                order_flag = True
                 
-            # d_region = np.array(d_region)
-
             ann.update({'distortion_type':distortion_type_list})
             ann.update({'distortion_name':distortion_name_list})
             ann.update({'distortion_level':distortion_level_list})
-            # discription = anns['annotations'][i]['class_name'] + ' with ' + distortion_type
-            # ann.update({'discription': discription})
+            ann.update({'order_flag':order_flag})
 
             d_region_ori[d_mask == True] = d_region[d_mask == True]
             d_image[y: y+h, x: x+w] = d_region_ori
-            
-            # distortion_list.append(ann['distortion'])
 
-    # return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
     return np.clip(d_image, 0, 255).astype(np.uint8)
 
 

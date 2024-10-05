@@ -189,6 +189,98 @@ multi_distortions_dict = {
 }
 
 
+remove_slight_distortions_dict = {
+    'brighten',
+    'darken',
+    'contrast_weaken',
+    'contrast_strengthen',
+    'saturate_weaken',
+    'saturate_strengthen',
+    # 'quantization',
+    'oversharpen'
+}
+
+
+distortions_order_dict = {
+    "blur": [
+        "brighten",
+        "compression",
+        "contrast_strengthen",
+        "contrast_weaken",
+        "darken",
+        "noise",
+        "quantization",
+        "saturate_strengthen",
+        "saturate_weaken",
+    ],
+    "brighten": ["blur", "compression", "noise", "pixelate", "quantization"],
+    "compression": [
+        "blur",
+        "brighten",
+        "contrast_strengthen",
+        "contrast_weaken",
+        "darken",
+        "noise",
+        "saturate_strengthen",
+        "saturate_weaken",
+    ],
+    "contrast_strengthen": ["blur", "compression", "noise", "pixelate", "quantization"],
+    "contrast_weaken": ["blur", "compression", "noise", "pixelate", "quantization"],
+    "darken": ["blur", "compression", "noise", "pixelate", "quantization"],
+    "noise": [
+        "blur",
+        "brighten",
+        "compression",
+        "contrast_strengthen",
+        "contrast_weaken",
+        "darken",
+        "oversharpen",
+        "pixelate",
+        "saturate_strengthen",
+        "saturate_weaken",
+    ],
+    "oversharpen": ["brighten"],
+    "pixelate": [
+        "brighten",
+        "contrast_strengthen",
+        "contrast_weaken",
+        "darken",
+        "noise",
+        "oversharpen",
+        "quantization",
+        "saturate_strengthen",
+        "saturate_weaken",
+    ],
+    "quantization": [
+        "brighten",
+        "contrast_strengthen",
+        "contrast_weaken",
+        "darken",
+        "noise",
+        "oversharpen",
+        "pixelate",
+        "saturate_strengthen",
+        "saturate_weaken",
+    ],
+    "saturate_strengthen": [
+        "blur",
+        "compression",
+        "noise",
+        "oversharpen",
+        "pixelate",
+        "quantization",
+    ],
+    "saturate_weaken": [
+        "blur",
+        "compression",
+        "noise",
+        "oversharpen",
+        "pixelate",
+        "quantization",
+    ],
+}
+
+
 def get_distortion_names(subset=None):
     if subset in distortions_dict:
         print(distortions_dict[subset])
