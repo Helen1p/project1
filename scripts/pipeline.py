@@ -155,7 +155,7 @@ def semantic_annotation_pipeline(filename, data_path, output_path_json, output_p
             return
         image = add_single_region_distortion(anns, img)
         mmcv.imwrite(cv2.cvtColor(image, cv2.COLOR_RGB2BGR), os.path.join(output_path_dis, filename + '.png'))
-        mmengine.dump(anns, os.path.join(output_path_json, filename + '_info.json'))
+        mmengine.dump(anns, os.path.join(output_path_json, filename + '_info.json'), indent=4)
         print('[Save] save SSA-engine annotation results: ', os.path.join(output_path_json, filename + '_info.json'))
         if save_img:
             class_names_new = []
