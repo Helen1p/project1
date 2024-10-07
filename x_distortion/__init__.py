@@ -60,7 +60,7 @@ distortions_dict = {
         "noise_gaussian_RGB",
         "noise_gaussian_YCrCb",
         "noise_speckle",
-        "noise_spatially_correlated",
+        # "noise_spatially_correlated",
         "noise_poisson",
         "noise_impulse",
     ],
@@ -201,82 +201,61 @@ remove_slight_distortions_dict = {
 }
 
 
-distortions_order_dict = {
+distortions_order_dict_og = {
     "blur": [
-        "brighten",
         "compression",
-        "contrast_strengthen",
-        "contrast_weaken",
-        "darken",
         "noise",
         "quantization",
-        "saturate_strengthen",
-        "saturate_weaken",
     ],
-    "brighten": ["blur", "compression", "noise", "pixelate", "quantization"],
     "compression": [
         "blur",
-        "brighten",
-        "contrast_strengthen",
-        "contrast_weaken",
-        "darken",
         "noise",
-        "saturate_strengthen",
-        "saturate_weaken",
     ],
-    "contrast_strengthen": ["blur", "compression", "noise", "pixelate", "quantization"],
-    "contrast_weaken": ["blur", "compression", "noise", "pixelate", "quantization"],
-    "darken": ["blur", "compression", "noise", "pixelate", "quantization"],
+    "contrast_weaken": ["noise"],
+    "darken": ["noise", "pixelate", "quantization"],
     "noise": [
         "blur",
-        "brighten",
         "compression",
-        "contrast_strengthen",
         "contrast_weaken",
-        "darken",
         "oversharpen",
         "pixelate",
-        "saturate_strengthen",
         "saturate_weaken",
     ],
-    "oversharpen": ["brighten"],
     "pixelate": [
-        "brighten",
-        "contrast_strengthen",
-        "contrast_weaken",
-        "darken",
         "noise",
-        "oversharpen",
-        "quantization",
-        "saturate_strengthen",
-        "saturate_weaken",
     ],
     "quantization": [
-        "brighten",
-        "contrast_strengthen",
-        "contrast_weaken",
-        "darken",
-        "noise",
         "oversharpen",
-        "pixelate",
-        "saturate_strengthen",
-        "saturate_weaken",
-    ],
-    "saturate_strengthen": [
-        "blur",
-        "compression",
-        "noise",
-        "oversharpen",
-        "pixelate",
-        "quantization",
     ],
     "saturate_weaken": [
-        "blur",
-        "compression",
         "noise",
         "oversharpen",
+    ],
+}
+
+# 只留下有两种失真有两种顺序的
+distortions_order_dict = {
+    "blur": [
+        "compression",
+        "noise",
+    ],
+    "compression": [
+        "blur",
+        "noise",
+    ],
+    "contrast_weaken": ["noise"],
+    "noise": [
+        "blur",
+        "compression",
+        "contrast_weaken",
         "pixelate",
-        "quantization",
+        "saturate_weaken",
+    ],
+    "pixelate": [
+        "noise",
+    ],
+    "saturate_weaken": [
+        "noise",
     ],
 }
 
