@@ -16,6 +16,7 @@ def tojson(path_in, path_out):
     for i in output['shapes']:
         every_json_file={}
         poly = i['points']
+        # mask大小是整图的
         mask=poly2mask(poly,height,width)
         all=np.argwhere(mask != 0)
         x_1=np.min(all[:, 0]).item()
