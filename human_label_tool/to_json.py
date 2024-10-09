@@ -10,14 +10,29 @@ def tojson(path_in, path_out):
     height, width = output['imageHeight'], output['imageWidth']
     caption = output['image_text']
     name = output['imagePath'].split('.')[0]
-    # 同一个mask分离成2块的就当做两个mask
+    # mask 合并
     json_file={'annotations':[], 'caption':caption}
-    label_list=[]
+    label_mask={}
     for i in output['shapes']:
-        every_json_file={}
+        # a boy on the left;blur:1;noise:2
         poly = i['points']
-        # mask大小是整图的
         mask=poly2mask(poly,height,width)
+
+        if i['label'] not in label_mask.keys():
+            label_mask[i['label']]=mask
+        else:
+            label_mask[i['label']]+=mask
+
+    for k, mask in label_mask.items():
+        every_json_file={'distortion': [], 'distortion_level': []}
+        class_name, distortion = k.split(';')[0],k.split(';')[1:]
+        dis_ = [(x.split(':')[0], x.split(':')[1]) for x in distortion]
+
+        for d in dis_:
+            every_json_file['distortion'].append(d[0])
+            every_json_file['distortion_level'].append(eval(d[1]))
+
+        # mask大小是整图的
         all=np.argwhere(mask != 0)
         x_1=np.min(all[:, 0]).item()
         y_1=np.min(all[:, 1]).item()
@@ -25,13 +40,12 @@ def tojson(path_in, path_out):
         y_2=np.max(all[:, 1]).item()
         bbox=[y_1,x_1,y_2,x_2]
         rle=singleMask2rle(mask)
-        class_name, distortion = i['label'].split(';')[0],i['label'].split(';')[1:]
         every_json_file['segmentation']=rle
         every_json_file['area']=len(all)
         every_json_file['bbox']=bbox
         every_json_file['class_name']=class_name
-        every_json_file['distortion']=distortion
         json_file['annotations'].append(every_json_file)
+
     with open(os.path.join(path_out, name+'.json'), 'w') as ff:
         json.dump(json_file, ff, indent=4)
 
@@ -64,6 +78,7 @@ def walk_json(path_in, path_out):
         tojson(os.path.join(path_in,i), path_out)
 
 if __name__ == '__main__':
-    path_in = r'/Users/helenpeng/Desktop/img_in/'
-    path_out = r'/Users/helenpeng/Desktop/img_out/'
-    walk_json(path_in, path_out)
+    # path_in = r'/Users/helenpeng/Desktop/img_in/'
+    # path_out = r'/Users/helenpeng/Desktop/img_out/'
+    # walk_json(path_in, path_out)
+    tojson('/Users/helenpeng/Desktop/img_in/7345.json', '/Users/helenpeng/Desktop/project1/')
