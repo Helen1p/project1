@@ -150,7 +150,7 @@ class chat_internvl(torch.nn.Module):
         prompt_gen.append('There are {} main visual elements in this image'.format(len(s['annotations'])))
         for idx, i in enumerate(s['annotations']):
             dis_list = []
-            for x, y in zip(i['distortion'], i['distortion_level']):
+            for x, y in zip(i['distortion_type'], i['distortion_level']):
                 sstr = x+'(level '+ str(y+1)+')'
                 dis_list.append(sstr)
             output_dis = (', ').join(dis_list)
