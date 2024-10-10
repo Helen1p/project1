@@ -9,6 +9,7 @@ def tojson(path_in, path_out):
         output = json.load(f)
     height, width = output['imageHeight'], output['imageWidth']
     brief_description = output['image_text'].split('\n')
+    # print(brief_description)
     iterator=iter(brief_description)
     name = output['imagePath'].split('.')[0]
     # mask 合并
@@ -25,8 +26,9 @@ def tojson(path_in, path_out):
             label_mask[i['label']]+=mask
 
     for k, mask in label_mask.items():
-        every_json_file={'distortion_type': [], 'distortion_level': []}
+        every_json_file={'distortion_type': [], 'distortion_level': [], 'brief_description': []}
         class_name, distortion = k.split(';')[0],k.split(';')[1:]
+        every_json_file['class_name']=class_name
         dis_ = [(x.split(':')[0], x.split(':')[1]) for x in distortion]
 
         for d in dis_:
@@ -44,7 +46,6 @@ def tojson(path_in, path_out):
         every_json_file['segmentation']=rle
         every_json_file['area']=len(all)
         every_json_file['bbox']=bbox
-        every_json_file['class_name']=class_name
         every_json_file['brief_description'].append(next(iterator))
         json_file['annotations'].append(every_json_file)
 
@@ -83,4 +84,4 @@ if __name__ == '__main__':
     # path_in = r'/Users/helenpeng/Desktop/img_in/'
     # path_out = r'/Users/helenpeng/Desktop/img_out/'
     # walk_json(path_in, path_out)
-    tojson('/Users/helenpeng/Desktop/img_in/7345.json', '/Users/helenpeng/Desktop/project1/')
+    tojson('/Users/helenpeng/Desktop/img_in/07824.json', '/Users/helenpeng/Desktop/project1/')
