@@ -187,7 +187,7 @@ def add_single_region_distortion(anns, image: np.ndarray):
     # return np.clip((d_image * 255.).round(), 0, 255).astype(np.uint8)
     return np.clip(d_image, 0, 255).astype(np.uint8)
 
-
+# “slight”, “moderate”, “obvious”, “serious”, and “catastrophic”
 # use with x_distortion
 def add_single_region_distortion(anns, image: np.ndarray):
     d_image = image.copy()
