@@ -264,10 +264,9 @@ The answer must be the distortion of the visual elements. Modify the level to di
 
 
 class chat_internvl_humanlabel(torch.nn.Module):
-    def __init__(self, model_path, img_prefix, semantic_prefix, json_prefix, output_json_prefix):
+    def __init__(self, model_path, img_prefix, json_prefix, output_json_prefix):
         super().__init__()
         self.img_prefix = img_prefix
-        self.semantic_prefix = semantic_prefix
         self.json_prefix = json_prefix
         self.output_json_prefix = output_json_prefix
         split_model_path=model_path.split('/')[-1]
@@ -284,7 +283,7 @@ class chat_internvl_humanlabel(torch.nn.Module):
 
     def forward(self, img):
         img_path = self.img_prefix+str(img)
-        json_path = self.json_prefix+img.split('.')[0]+'_info.json'
+        json_path = self.json_prefix+img.split('.')[0]+'.json'
         with open(json_path) as f:
             s=json.load(f)
         
@@ -305,11 +304,11 @@ class chat_internvl_humanlabel(torch.nn.Module):
         question_im = ('. ').join(prompt_gen)
         
         basic_prompt = 'The provided semantic label is accurate and specific, additionally some also have the detailed attributes or the spatial description of the element. \
-        There is also a brief discription about the detailed information of each element, which hlp you to understand the distortion and texture damage of each element. \
-        These are the rules you have to follow: \
-        1. The coordinate origin (0,0) of bounding box is at the top-left corner of the image. The given coordinates of the bounding box is the top-left and bottom-right corners, respectively. \
-        2. There is only one target visual element in each bounding box, it can either be a foreground object(e.g., cat, bird) or or a couple of foreground objects in the same type (e.g., 3 cats) or just the background(e.g., sky, floor). \
-        3. The distortion levels are categorized into three tiers: Level 1 is the lowest, while Level 3 is the highest. '
+There is also a brief discription about the detailed information of each element, which hlp you to understand the distortion and texture damage of each element. \
+These are the rules you have to follow: \
+1. The coordinate origin (0,0) of bounding box is at the top-left corner of the image. The given coordinates of the bounding box is the top-left and bottom-right corners, respectively. \
+2. There is only one target visual element in each bounding box, it can either be a foreground object(e.g., cat, bird) or or a couple of foreground objects in the same type (e.g., 3 cats) or just the background(e.g., sky, floor). \
+3. The distortion levels are categorized into three tiers: Level 1 is the lowest, while Level 3 is the highest. '
         # 3. If the bounding box contains multiple objects, identify the taget visual element whose entire area is contained within the box.  \
         
         
@@ -397,13 +396,12 @@ if __name__ == '__main__':
     #                json_prefix='/root/autodl-tmp/example/json/', 
     #                output_json_prefix='/root/autodl-tmp/example/chat/'
     #                )
-    chat=chat_internvl_humanlabel(model_path='/root/autodl-tmp/pretrained/OpenGVLab/InternVL2-Llama3-76B', 
-                   img_prefix='/root/autodl-tmp/example/kadis_output/', 
-                   semantic_prefix='/root/autodl-tmp/example/semantic/', 
-                   json_prefix='/root/autodl-tmp/example/json/', 
-                   output_json_prefix='/root/autodl-tmp/example/chat/'
+    chat=chat_internvl_humanlabel(model_path='/hy-tmp/OpenGVLab/InternVL2-Llama3-76B', 
+                   img_prefix='/hy-tmp/example/kadis_output/', 
+                   json_prefix='/hy-tmp/example/json/', 
+                   output_json_prefix='/hy-tmp/example/chat/'
                    )
-    chat('6-1238605.png')
+    chat('07824.jpg')
 
     # for i in os.listdir('/root/autodl-tmp/example/kadis_output/'):
     #     if i.endswith('png'):
