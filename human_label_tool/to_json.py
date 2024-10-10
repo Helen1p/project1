@@ -8,10 +8,11 @@ def tojson(path_in, path_out):
     with open(path_in, 'r') as f:
         output = json.load(f)
     height, width = output['imageHeight'], output['imageWidth']
-    caption = output['image_text']
+    brief_description = output['image_text'].split('\n')
+    iterator=iter(brief_description)
     name = output['imagePath'].split('.')[0]
     # mask 合并
-    json_file={'annotations':[], 'caption':caption}
+    json_file={'annotations':[]}
     label_mask={}
     for i in output['shapes']:
         # a boy on the left;blur:1;noise:2
@@ -24,12 +25,12 @@ def tojson(path_in, path_out):
             label_mask[i['label']]+=mask
 
     for k, mask in label_mask.items():
-        every_json_file={'distortion': [], 'distortion_level': []}
+        every_json_file={'distortion_type': [], 'distortion_level': []}
         class_name, distortion = k.split(';')[0],k.split(';')[1:]
         dis_ = [(x.split(':')[0], x.split(':')[1]) for x in distortion]
 
         for d in dis_:
-            every_json_file['distortion'].append(d[0])
+            every_json_file['distortion_type'].append(d[0])
             every_json_file['distortion_level'].append(eval(d[1]))
 
         # mask大小是整图的
@@ -44,6 +45,7 @@ def tojson(path_in, path_out):
         every_json_file['area']=len(all)
         every_json_file['bbox']=bbox
         every_json_file['class_name']=class_name
+        every_json_file['brief_description'].append(next(iterator))
         json_file['annotations'].append(every_json_file)
 
     with open(os.path.join(path_out, name+'.json'), 'w') as ff:

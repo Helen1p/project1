@@ -112,7 +112,7 @@ def split_model(model_name):
     return device_map
 
 
-class chat_internvl(torch.nn.Module):
+class chat_internvl_artificial(torch.nn.Module):
     def __init__(self, model_path, img_prefix, semantic_prefix, json_prefix, output_json_prefix):
         super().__init__()
         self.img_prefix = img_prefix
@@ -156,8 +156,6 @@ class chat_internvl(torch.nn.Module):
             output_dis = (', ').join(dis_list)
             sstr1 = 'element {}: bounding box: [{},{}],[{},{}]; semantic label reference: {}; distortion type and level: {}' \
         .format(str(idx+1), i['bbox'][0],i['bbox'][1],i['bbox'][0]+i['bbox'][2],i['bbox'][1]+i['bbox'][3],i['class_name'],output_dis)
-        #     sstr1 = 'element {}: bounding box: [{},{}],[{},{}]; distortion type and level: {}' \
-        # .format(str(idx+1), i['bbox'][0],i['bbox'][1],i['bbox'][2],i['bbox'][3],output_dis)
             prompt_gen.append(sstr1)
         question_im = ('. ').join(prompt_gen)
         
@@ -178,7 +176,7 @@ class chat_internvl(torch.nn.Module):
         basic_prompt = 'provide the most accurate semantic label for the target visual element in each bounding box. The semantic label should be specific, for example, instead of output the label as "pen", you might specify it to "crayon". \
 These are the rules you have to follow: \
 1. The coordinate origin (0,0) of bounding box is at the top-left corner of the image. The given coordinates of the bounding box is the top-left and bottom-right corners, respectively. \
-2. There is only one target visual elements in each bounding box, it can either be a foreground object(e.g., cat, bird) or just the background(e.g., sky, floor). \
+2. There is only one target visual element in each bounding box, it can either be a foreground object(e.g., cat, bird) or just the background(e.g., sky, floor). \
 3. If the bounding box contains multiple objects, identify the taget visual element whose entire area is contained within the box.  \
 4. The provided semantic label references are probably wrong. You have to output accurate semantic labels by your own. \
 5. If the semantic labels in your output are identical, please add distinguishing details to differentiate them. For example, instead of labeling both as "bird," you might specify "blue bird" for one of them. \
@@ -197,7 +195,7 @@ These are the rules you have to follow: \
         question_base = 'You have generate descriptions for the image. Take use of the accurate semantic lable you have generated in last question. \
 Firstly, give a mixed description of 3 acpects for each visual element in each bounding box. \
 The mixed description is compriseed of 3 acpects: 1.Basic Information: the type, color, and any notable features of the target; 2.Position and Orientation of the target; \
-3.the visual effects of each distortion, if there are more than one distortions, state the the visual effects of each distortion one by one. \
+3.the visual effects and texture damage of each distortion, if there are more than one distortions, state the the visual effects and texture damage of each distortion one by one. \
 The description should not contain the number of level, bounding box, use vivid words to replace them. '
 
         question_format = 'The output must be a raw json format, I will give you an example and do not imitate the sentence structure in the example, make it diverse. \
@@ -217,8 +215,7 @@ making the white exterior and roof appear less bright and more subdued."}}}'
             response=response.replace(weird_str[i],'')
         with open(caption1_json_path, 'w') as f:
             json.dump(json.loads(response), f, indent=4)
-        # with open(caption1_json_path, 'w') as f:
-        #     json.dump(response,f)
+
 
         question_base = 'refer to the mixed description for each visual element the and give a global description about this whole image, you should mention every element and the whole image structure, \
 especially for the impact of the distortions and quality evaluation. \
@@ -238,8 +235,7 @@ but the details are compromised due to a resizing effect that has softened its e
             response=response.replace(weird_str[i],'')
         with open(caption2_json_path, 'w') as f:
             json.dump(json.loads(response), f, indent=4)
-        # with open(caption2_json_path, 'w') as f:
-        #     json.dump(response,f)
+
 
         question = 'Give a description about the spatial relations of each visual element of each bounding box in this image.'.format(str(len(s['annotations'])))
         question_format = 'The answer must be a json format. This is an example: {"spatial relations of all elements": {"element 1": {"bounding box": [[12, 34], [56, 78]], "spatial relations": "The cabinet is positioned in the background, behind the keyboard and synthesizer. It is placed against the wall and is partially visible due to the angle of the image."}'
@@ -250,8 +246,7 @@ but the details are compromised due to a resizing effect that has softened its e
             response=response.replace(weird_str[i],'')
         with open(spatial_json_path, 'w') as f:
             json.dump(json.loads(response), f, indent=4)
-        # with open(spatial_json_path, 'w') as f:
-        #     json.dump(response,f)
+
         
         question_base1 = 'use the spatial relations of {} main visual element in the previous question to generate {} referring questions for {} objects. \
 The question must include spatial relations of the visual elements. \
@@ -266,12 +261,143 @@ The answer must be the distortion of the visual elements. Modify the level to di
             response=response.replace(weird_str[i],'')
         with open(referring_json_path, 'w') as f:
             json.dump(json.loads(response), f, indent=4)
-        # with open(referring_json_path, 'w') as f:
-        #     json.dump(response,f)
+
+
+class chat_internvl_humanlabel(torch.nn.Module):
+    def __init__(self, model_path, img_prefix, semantic_prefix, json_prefix, output_json_prefix):
+        super().__init__()
+        self.img_prefix = img_prefix
+        self.semantic_prefix = semantic_prefix
+        self.json_prefix = json_prefix
+        self.output_json_prefix = output_json_prefix
+        split_model_path=model_path.split('/')[-1]
+        device_map = split_model(split_model_path)
+        self.model = AutoModel.from_pretrained(
+        model_path,
+        torch_dtype=torch.bfloat16,
+        low_cpu_mem_usage=True,
+        use_flash_attn=True,
+        trust_remote_code=True,
+        device_map=device_map).eval()
+
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True, use_fast=False)
+
+    def forward(self, img):
+        img_path = self.img_prefix+str(img)
+        json_path = self.json_prefix+img.split('.')[0]+'_info.json'
+        with open(json_path) as f:
+            s=json.load(f)
+        
+        pixel_values = load_image(img_path, max_num=12).to(torch.bfloat16).cuda()
+        generation_config = dict(max_new_tokens=1024, do_sample=False)
+
+        prompt_gen = []
+        prompt_gen.append('There are {} main visual elements in this image'.format(len(s['annotations'])))
+        for idx, i in enumerate(s['annotations']):
+            dis_list = []
+            for x, y in zip(i['distortion_type'], i['distortion_level']):
+                sstr = x+'(level '+ str(y+1)+')'
+                dis_list.append(sstr)
+            output_dis = (', ').join(dis_list)
+            sstr1 = 'element {}: bounding box: [{},{}],[{},{}]; semantic label: {}; distortion type and level: {}; brief description: {} ' \
+        .format(str(idx+1), i['bbox'][0],i['bbox'][1],i['bbox'][0]+i['bbox'][2],i['bbox'][1]+i['bbox'][3],i['class_name'],output_dis,i['brief_description'])
+            prompt_gen.append(sstr1)
+        question_im = ('. ').join(prompt_gen)
+        
+        basic_prompt = 'The provided semantic label is accurate and specific, additionally some also have the detailed attributes or the spatial description of the element. \
+        There is also a brief discription about the detailed information of each element, which hlp you to understand the distortion and texture damage of each element. \
+        These are the rules you have to follow: \
+        1. The coordinate origin (0,0) of bounding box is at the top-left corner of the image. The given coordinates of the bounding box is the top-left and bottom-right corners, respectively. \
+        2. There is only one target visual element in each bounding box, it can either be a foreground object(e.g., cat, bird) or or a couple of foreground objects in the same type (e.g., 3 cats) or just the background(e.g., sky, floor). \
+        3. The distortion levels are categorized into three tiers: Level 1 is the lowest, while Level 3 is the highest. '
+        # 3. If the bounding box contains multiple objects, identify the taget visual element whose entire area is contained within the box.  \
+        
+        
+        # question = "<image>\n" + question_im + basic_prompt
+        
+        # response, history = self.model.chat(self.tokenizer, pixel_values, question, generation_config, history=None, return_history=True)
+        # print(f'User: {question}\nAssistant: {response}')
+
+        
+        question_base = 'You have generate descriptions for the image. Take use of the accurate semantic lable and the brief discription carefully. \
+Firstly, give a mixed description of 3 acpects for each visual element in each bounding box. \
+The mixed description is compriseed of 3 acpects: 1.Basic Information: the type, color, and any notable features of the target; 2.Position and Orientation of the target; \
+3.the visual effects and texture damage of each distortion, if there are more than one distortions, state the the visual effects and texture damage of each distortion one by one. \
+The description should not contain the number of level, bounding box, use vivid words to replace them. '
+
+        question_format = 'The output must be a raw json format, I will give you an example and do not imitate the sentence structure in the example, make it diverse. \
+If the Basic Information is: "There is a building with a white exterior. It has a window and a door, both of which are made of glass and wood, respectively.", \
+and Position and Orientation information is: "The building occupies the left side of the image, with the window and door positioned centrally.", \
+and the Distortion Effects: 1.Gaussian Blur(Level 1): "The edges of the building appear slightly blurred, reducing the sharpness of the structure.", 2.Mean Shift(Level 2): "The colors of the building are slightly shifted, especially the roof, making the white exterior appear less bright and more muted."}, \
+Then, the output should be like: \
+{"element description": {"element 1": {"semantic label": "building", "bounding box": [[12, 34], [56, 78]], \
+"mixed description": "A building with a white exterior is positioned on the left side, featuring a glass window and a wooden door centrally placed. The edges are slightly blurred due to a Gaussian effect, giving a soft, hazy look. Additionally, a mean shift effect has muted the colors, \
+making the white exterior and roof appear less bright and more subdued."}}}'
+        
+        question = "<image>\n" + question_im + basic_prompt+question_base + question_format
+        response, history = self.model.chat(self.tokenizer, pixel_values, question, generation_config, history=None, return_history=True)
+        print(f'User: {question}\nAssistant: {response}')
+        caption1_json_path = os.path.join(self.output_json_prefix, 'caption1', img.split('.')[0]+'.json')
+        for i in range(len(weird_str)):
+            response=response.replace(weird_str[i],'')
+        with open(caption1_json_path, 'w') as f:
+            json.dump(json.loads(response), f, indent=4)
+
+
+        question_base = 'refer to the mixed description for each visual element the and give a global description about this whole image, you should mention every element and the whole image structure, \
+especially for the impact of the distortions and quality evaluation. \
+The description should not contain the number of level, bounding box, use vivid words to replace them. '
+
+        question_format = 'The output must be a raw json format, this is a format example and do not imitate the sentence structure in the example, make it diverse. \
+{"global description": "The image showcases a scene with a building dominating the background, with three distinct elements in the foreground: a fire hydrant, a wooden fence, and a plant. The building, occupying most of the image, is rendered with a soft blur and shifted colors, \
+giving it a slightly hazy and surreal appearance. This creates a backdrop that feels out of focus and less defined. In the foreground, the fire hydrant stands out with its colors subtly diffused, making it less vibrant and somewhat muted. Nearby, the wooden fence appears smeared due to motion blur, \
+with its colors slightly intensified and softened by additional blurring. This combination results in a fence that lacks clear definition and sharpness. Finally, the plant is depicted under dim lighting, making it appear darker and less prominent. Its colors are intensely vivid, \
+but the details are compromised due to a resizing effect that has softened its edges and textures."}'
+        
+        question = question_base + question_format
+        response, history = self.model.chat(self.tokenizer, pixel_values, question, generation_config, history=history, return_history=True)
+        print(f'User: {question}\nAssistant: {response}')
+        caption2_json_path = os.path.join(self.output_json_prefix, 'caption2', img.split('.')[0]+'.json')
+        for i in range(len(weird_str)):
+            response=response.replace(weird_str[i],'')
+        with open(caption2_json_path, 'w') as f:
+            json.dump(json.loads(response), f, indent=4)
+
+
+        # question = 'Give a description about the spatial relations of each visual element of each bounding box in this image.'.format(str(len(s['annotations'])))
+        # question_format = 'The answer must be a json format. This is an example: {"spatial relations of all elements": {"element 1": {"bounding box": [[12, 34], [56, 78]], "spatial relations": "The cabinet is positioned in the background, behind the keyboard and synthesizer. It is placed against the wall and is partially visible due to the angle of the image."}'
+        # response, history = self.model.chat(self.tokenizer, pixel_values, question, generation_config, history=history, return_history=True)
+        # print(f'User: {question}\nAssistant: {response}')
+        # spatial_json_path = os.path.join(self.output_json_prefix, 'spatial', img.split('.')[0]+'.json')
+        # for i in range(len(weird_str)):
+        #     response=response.replace(weird_str[i],'')
+        # with open(spatial_json_path, 'w') as f:
+        #     json.dump(json.loads(response), f, indent=4)
+
+        
+        question_base1 = 'use the spatial relations of {} main visual element in the previous question to generate {} referring questions for {} objects. \
+The question must include spatial relations of the visual elements. \
+The answer must be the distortion of the visual elements. Modify the level to diverse adjectives. For example, modify "jpeg compression(level 1)" to "moderate jpeg compression".'\
+        .format(str(len(s['annotations'])),str(len(s['annotations'])),str(len(s['annotations'])))
+        question_format1 = 'The output must be a json format, follow this example: {"referring": {"element 1": {"question": "What is the distortion of the book in the lower-right corner?", "answer": "Minor jpeg compression, severe motion blur."}}}'
+        question = question_base1 + question_format1
+        response, history = self.model.chat(self.tokenizer, pixel_values, question, generation_config, history=history, return_history=True)
+        print(f'User: {question}\nAssistant: {response}')
+        referring_json_path = os.path.join(self.output_json_prefix, 'referring', img.split('.')[0]+'.json')
+        for i in range(len(weird_str)):
+            response=response.replace(weird_str[i],'')
+        with open(referring_json_path, 'w') as f:
+            json.dump(json.loads(response), f, indent=4)
 
 
 if __name__ == '__main__':
-    chat=chat_internvl(model_path='/root/autodl-tmp/pretrained/OpenGVLab/InternVL2-Llama3-76B', 
+    # chat=chat_internvl_artificial(model_path='/root/autodl-tmp/pretrained/OpenGVLab/InternVL2-Llama3-76B', 
+    #                img_prefix='/root/autodl-tmp/example/kadis_output/', 
+    #                semantic_prefix='/root/autodl-tmp/example/semantic/', 
+    #                json_prefix='/root/autodl-tmp/example/json/', 
+    #                output_json_prefix='/root/autodl-tmp/example/chat/'
+    #                )
+    chat=chat_internvl_humanlabel(model_path='/root/autodl-tmp/pretrained/OpenGVLab/InternVL2-Llama3-76B', 
                    img_prefix='/root/autodl-tmp/example/kadis_output/', 
                    semantic_prefix='/root/autodl-tmp/example/semantic/', 
                    json_prefix='/root/autodl-tmp/example/json/', 
