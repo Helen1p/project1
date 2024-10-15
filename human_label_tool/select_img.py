@@ -37,7 +37,7 @@ def select(path, each_num=[63, 231, 429, 264, 13]):
 
 # 将图片转移到每个打分者的文件夹里面
 def move_img(img_path, json_path):
-    path_=r'/data/pxg1/data/q-instruct-images/'
+    path_=r'/data2/luyt/iqa_dataset/koniq/1024x768'
     with open(json_path) as f:
         file=json.load(f)
     random.shuffle(file)
