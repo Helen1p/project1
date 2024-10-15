@@ -1,0 +1,4002 @@
+[
+    {
+        "img_path": "spaq_koniq/8871477031.jpg",
+        "gt_score": 0.8455379745470655
+    },
+    {
+        "img_path": "spaq_koniq/242503451.jpg",
+        "gt_score": 0.9594694510140246
+    },
+    {
+        "img_path": "spaq_koniq/8078070846.jpg",
+        "gt_score": 0.9818747552112794
+    },
+    {
+        "img_path": "spaq_koniq/7064847959.jpg",
+        "gt_score": 0.4781730535049803
+    },
+    {
+        "img_path": "spaq_koniq/3904942577.jpg",
+        "gt_score": 0.9616699719619664
+    },
+    {
+        "img_path": "spaq_koniq/6225884368.jpg",
+        "gt_score": 0.7350594617933254
+    },
+    {
+        "img_path": "spaq_koniq/146926363.jpg",
+        "gt_score": 0.3393626478834591
+    },
+    {
+        "img_path": "spaq_koniq/411090819.jpg",
+        "gt_score": 0.9132585111072045
+    },
+    {
+        "img_path": "spaq_koniq/4193794378.jpg",
+        "gt_score": 0.5534944949736711
+    },
+    {
+        "img_path": "spaq_koniq/2332998569.jpg",
+        "gt_score": 0.6127333652465242
+    },
+    {
+        "img_path": "spaq_koniq/2035975268.jpg",
+        "gt_score": 0.7629248444231616
+    },
+    {
+        "img_path": "spaq_koniq/19502065.jpg",
+        "gt_score": 0.1097016116164028
+    },
+    {
+        "img_path": "spaq_koniq/4247073360.jpg",
+        "gt_score": 0.5497889776505104
+    },
+    {
+        "img_path": "spaq_koniq/5893652818.jpg",
+        "gt_score": 0.9952175366023184
+    },
+    {
+        "img_path": "spaq_koniq/5363058682.jpg",
+        "gt_score": 0.9764868130114552
+    },
+    {
+        "img_path": "spaq_koniq/9681377633.jpg",
+        "gt_score": 0.979101549667251
+    },
+    {
+        "img_path": "spaq_koniq/4206004485.jpg",
+        "gt_score": 0.9637089867852979
+    },
+    {
+        "img_path": "spaq_koniq/6759678037.jpg",
+        "gt_score": 0.3129326070924909
+    },
+    {
+        "img_path": "spaq_koniq/8152535252.jpg",
+        "gt_score": 0.9873145045476245
+    },
+    {
+        "img_path": "spaq_koniq/139611767.jpg",
+        "gt_score": 0.9661599237951557
+    },
+    {
+        "img_path": "spaq_koniq/6332883956.jpg",
+        "gt_score": 0.8775160689139061
+    },
+    {
+        "img_path": "spaq_koniq/135352055.jpg",
+        "gt_score": 0.7932967782177942
+    },
+    {
+        "img_path": "spaq_koniq/7627340946.jpg",
+        "gt_score": 0.49619751257710343
+    },
+    {
+        "img_path": "spaq_koniq/272411695.jpg",
+        "gt_score": 0.7664200104687131
+    },
+    {
+        "img_path": "spaq_koniq/1154962046.jpg",
+        "gt_score": 0.7690510383186246
+    },
+    {
+        "img_path": "spaq_koniq/352744670.jpg",
+        "gt_score": 0.8044157627103266
+    },
+    {
+        "img_path": "spaq_koniq/4953282690.jpg",
+        "gt_score": 0.4901620862282607
+    },
+    {
+        "img_path": "spaq_koniq/3149433848.jpg",
+        "gt_score": 0.8078027764480638
+    },
+    {
+        "img_path": "spaq_koniq/9264499657.jpg",
+        "gt_score": 0.9208896754954872
+    },
+    {
+        "img_path": "spaq_koniq/5825243642.jpg",
+        "gt_score": 0.576432104675283
+    },
+    {
+        "img_path": "spaq_koniq/8163644568.jpg",
+        "gt_score": 0.9596120773717616
+    },
+    {
+        "img_path": "spaq_koniq/33000255.jpg",
+        "gt_score": 0.08523984573281593
+    },
+    {
+        "img_path": "spaq_koniq/10058760545.jpg",
+        "gt_score": 0.8149832455720394
+    },
+    {
+        "img_path": "spaq_koniq/2325353113.jpg",
+        "gt_score": 0.7373402289697283
+    },
+    {
+        "img_path": "spaq_koniq/3225818665.jpg",
+        "gt_score": 0.7082604474707275
+    },
+    {
+        "img_path": "spaq_koniq/2496466506.jpg",
+        "gt_score": 0.8019933354092303
+    },
+    {
+        "img_path": "spaq_koniq/5932591132.jpg",
+        "gt_score": 0.9452068152403136
+    },
+    {
+        "img_path": "spaq_koniq/5643675511.jpg",
+        "gt_score": 0.9308015531088655
+    },
+    {
+        "img_path": "spaq_koniq/4423100872.jpg",
+        "gt_score": 0.8827391364647007
+    },
+    {
+        "img_path": "spaq_koniq/4232014784.jpg",
+        "gt_score": 0.3883828509817656
+    },
+    {
+        "img_path": "spaq_koniq/10344921126.jpg",
+        "gt_score": 0.07877655346265217
+    },
+    {
+        "img_path": "spaq_koniq/461213420.jpg",
+        "gt_score": 0.5994805240855909
+    },
+    {
+        "img_path": "spaq_koniq/5973209084.jpg",
+        "gt_score": 0.9351627792587626
+    },
+    {
+        "img_path": "spaq_koniq/5660281772.jpg",
+        "gt_score": 0.9748730976496317
+    },
+    {
+        "img_path": "spaq_koniq/8137767984.jpg",
+        "gt_score": 0.7350594617933254
+    },
+    {
+        "img_path": "spaq_koniq/3091624267.jpg",
+        "gt_score": 0.18083556090265218
+    },
+    {
+        "img_path": "spaq_koniq/8473611231.jpg",
+        "gt_score": 0.6435436788406113
+    },
+    {
+        "img_path": "spaq_koniq/10981006796.jpg",
+        "gt_score": 0.950445092379032
+    },
+    {
+        "img_path": "spaq_koniq/3632417985.jpg",
+        "gt_score": 0.14020687260063563
+    },
+    {
+        "img_path": "spaq_koniq/5369434001.jpg",
+        "gt_score": 0.8681992457152082
+    },
+    {
+        "img_path": "spaq_koniq/9211913717.jpg",
+        "gt_score": 0.7894742516571039
+    },
+    {
+        "img_path": "spaq_koniq/4080245276.jpg",
+        "gt_score": 0.963848919175127
+    },
+    {
+        "img_path": "spaq_koniq/7756578200.jpg",
+        "gt_score": 0.9779820905485581
+    },
+    {
+        "img_path": "spaq_koniq/244484608.jpg",
+        "gt_score": 0.8561561038822894
+    },
+    {
+        "img_path": "spaq_koniq/8667640386.jpg",
+        "gt_score": 0.915617628159502
+    },
+    {
+        "img_path": "spaq_koniq/3350005307.jpg",
+        "gt_score": 0.719394598044667
+    },
+    {
+        "img_path": "spaq_koniq/45323583.jpg",
+        "gt_score": 0.36396148108212945
+    },
+    {
+        "img_path": "spaq_koniq/3483143101.jpg",
+        "gt_score": 0.1673226601421794
+    },
+    {
+        "img_path": "spaq_koniq/1626230781.jpg",
+        "gt_score": 0.832202428811107
+    },
+    {
+        "img_path": "spaq_koniq/4806036650.jpg",
+        "gt_score": 0.96814334911952
+    },
+    {
+        "img_path": "spaq_koniq/8721056397.jpg",
+        "gt_score": 0.9308015531088655
+    },
+    {
+        "img_path": "spaq_koniq/2196513263.jpg",
+        "gt_score": 0.6064812122242479
+    },
+    {
+        "img_path": "spaq_koniq/155711788.jpg",
+        "gt_score": 0.5912489457247723
+    },
+    {
+        "img_path": "spaq_koniq/392103652.jpg",
+        "gt_score": 1.8546849865662685
+    },
+    {
+        "img_path": "spaq_koniq/665094052.jpg",
+        "gt_score": 1.632743403960633
+    },
+    {
+        "img_path": "spaq_koniq/6993179262.jpg",
+        "gt_score": 1.9011923930545276
+    },
+    {
+        "img_path": "spaq_koniq/552629141.jpg",
+        "gt_score": 1.6388134554385803
+    },
+    {
+        "img_path": "spaq_koniq/4289036535.jpg",
+        "gt_score": 1.8682846025148243
+    },
+    {
+        "img_path": "spaq_koniq/8434381156.jpg",
+        "gt_score": 1.7592573731365555
+    },
+    {
+        "img_path": "spaq_koniq/4023100592.jpg",
+        "gt_score": 1.4460666985798656
+    },
+    {
+        "img_path": "spaq_koniq/10631630073.jpg",
+        "gt_score": 1.1691057466548125
+    },
+    {
+        "img_path": "spaq_koniq/5137971670.jpg",
+        "gt_score": 1.7731016917004525
+    },
+    {
+        "img_path": "spaq_koniq/7493136824.jpg",
+        "gt_score": 1.6904021062709431
+    },
+    {
+        "img_path": "spaq_koniq/8330807035.jpg",
+        "gt_score": 1.9296112704285413
+    },
+    {
+        "img_path": "spaq_koniq/163977327.jpg",
+        "gt_score": 1.1566651914340056
+    },
+    {
+        "img_path": "spaq_koniq/6403149971.jpg",
+        "gt_score": 1.9297510770703628
+    },
+    {
+        "img_path": "spaq_koniq/6098120607.jpg",
+        "gt_score": 1.2958370254185214
+    },
+    {
+        "img_path": "spaq_koniq/518876891.jpg",
+        "gt_score": 1.748729693765062
+    },
+    {
+        "img_path": "spaq_koniq/4254945684.jpg",
+        "gt_score": 1.1299172792061682
+    },
+    {
+        "img_path": "spaq_koniq/5762320263.jpg",
+        "gt_score": 1.9586910519275418
+    },
+    {
+        "img_path": "spaq_koniq/9037452749.jpg",
+        "gt_score": 1.9046252445774592
+    },
+    {
+        "img_path": "spaq_koniq/4250403356.jpg",
+        "gt_score": 1.7731016917004525
+    },
+    {
+        "img_path": "spaq_koniq/11393787465.jpg",
+        "gt_score": 1.0802047003578787
+    },
+    {
+        "img_path": "spaq_koniq/6661741471.jpg",
+        "gt_score": 1.0686028342530938
+    },
+    {
+        "img_path": "spaq_koniq/1332211559.jpg",
+        "gt_score": 1.1947115496335319
+    },
+    {
+        "img_path": "spaq_koniq/2638753115.jpg",
+        "gt_score": 1.8905181679416838
+    },
+    {
+        "img_path": "spaq_koniq/1195689121.jpg",
+        "gt_score": 1.746962547584853
+    },
+    {
+        "img_path": "spaq_koniq/3171148345.jpg",
+        "gt_score": 1.220624854524133
+    },
+    {
+        "img_path": "spaq_koniq/6788530155.jpg",
+        "gt_score": 1.6064226097095093
+    },
+    {
+        "img_path": "spaq_koniq/6027079771.jpg",
+        "gt_score": 1.9011923930545276
+    },
+    {
+        "img_path": "spaq_koniq/82183009.jpg",
+        "gt_score": 1.9395814812281942
+    },
+    {
+        "img_path": "spaq_koniq/15012954.jpg",
+        "gt_score": 1.4360938247965507
+    },
+    {
+        "img_path": "spaq_koniq/3304800536.jpg",
+        "gt_score": 1.7951172809956881
+    },
+    {
+        "img_path": "spaq_koniq/10458703674.jpg",
+        "gt_score": 1.955269901162954
+    },
+    {
+        "img_path": "spaq_koniq/9135317445.jpg",
+        "gt_score": 1.4207150941961135
+    },
+    {
+        "img_path": "spaq_koniq/4216117221.jpg",
+        "gt_score": 1.6064226097095093
+    },
+    {
+        "img_path": "spaq_koniq/5230623311.jpg",
+        "gt_score": 1.7269521746211103
+    },
+    {
+        "img_path": "spaq_koniq/9808126155.jpg",
+        "gt_score": 1.6084250837721359
+    },
+    {
+        "img_path": "spaq_koniq/3115828038.jpg",
+        "gt_score": 1.2702342831382076
+    },
+    {
+        "img_path": "spaq_koniq/9767151984.jpg",
+        "gt_score": 1.525849688846339
+    },
+    {
+        "img_path": "spaq_koniq/6038701648.jpg",
+        "gt_score": 1.7361866631852205
+    },
+    {
+        "img_path": "spaq_koniq/26344318.jpg",
+        "gt_score": 1.8699138343705037
+    },
+    {
+        "img_path": "spaq_koniq/3250381402.jpg",
+        "gt_score": 1.6959751827969038
+    },
+    {
+        "img_path": "spaq_koniq/5209944633.jpg",
+        "gt_score": 1.9692151633271726
+    },
+    {
+        "img_path": "spaq_koniq/5456373866.jpg",
+        "gt_score": 1.900531488929541
+    },
+    {
+        "img_path": "spaq_koniq/5001626870.jpg",
+        "gt_score": 1.0572178254586742
+    },
+    {
+        "img_path": "spaq_koniq/9823089054.jpg",
+        "gt_score": 1.8062299117828085
+    },
+    {
+        "img_path": "spaq_koniq/6824806522.jpg",
+        "gt_score": 1.7142481361587563
+    },
+    {
+        "img_path": "spaq_koniq/9109755543.jpg",
+        "gt_score": 1.4788746571941154
+    },
+    {
+        "img_path": "spaq_koniq/5680571645.jpg",
+        "gt_score": 1.632743403960633
+    },
+    {
+        "img_path": "spaq_koniq/8696567124.jpg",
+        "gt_score": 1.9801479780821352
+    },
+    {
+        "img_path": "spaq_koniq/358433606.jpg",
+        "gt_score": 1.4926067762353092
+    },
+    {
+        "img_path": "spaq_koniq/6534182163.jpg",
+        "gt_score": 1.336095549834169
+    },
+    {
+        "img_path": "spaq_koniq/6827830343.jpg",
+        "gt_score": 1.7630027975283378
+    },
+    {
+        "img_path": "spaq_koniq/7992243526.jpg",
+        "gt_score": 1.4622389263365831
+    },
+    {
+        "img_path": "spaq_koniq/3305968848.jpg",
+        "gt_score": 1.2266634753470445
+    },
+    {
+        "img_path": "spaq_koniq/1693839090.jpg",
+        "gt_score": 1.1735369514546616
+    },
+    {
+        "img_path": "spaq_koniq/5962747.jpg",
+        "gt_score": 1.3490827883935501
+    },
+    {
+        "img_path": "spaq_koniq/2339673410.jpg",
+        "gt_score": 1.6455241742460414
+    },
+    {
+        "img_path": "spaq_koniq/9093638609.jpg",
+        "gt_score": 1.4344618999956469
+    },
+    {
+        "img_path": "spaq_koniq/2716631816.jpg",
+        "gt_score": 1.3916353126971286
+    },
+    {
+        "img_path": "spaq_koniq/6278202326.jpg",
+        "gt_score": 1.612552632350208
+    },
+    {
+        "img_path": "spaq_koniq/4902504109.jpg",
+        "gt_score": 1.1940249793289424
+    },
+    {
+        "img_path": "spaq_koniq/3483459470.jpg",
+        "gt_score": 1.839995213020575
+    },
+    {
+        "img_path": "spaq_koniq/6071930227.jpg",
+        "gt_score": 1.07789381689144
+    },
+    {
+        "img_path": "spaq_koniq/872022815.jpg",
+        "gt_score": 1.6862134992819497
+    },
+    {
+        "img_path": "spaq_koniq/10125013364.jpg",
+        "gt_score": 1.7030775527207207
+    },
+    {
+        "img_path": "spaq_koniq/346617303.jpg",
+        "gt_score": 1.7914130707333196
+    },
+    {
+        "img_path": "spaq_koniq/7452245552.jpg",
+        "gt_score": 1.7173288654858752
+    },
+    {
+        "img_path": "spaq_koniq/5984121563.jpg",
+        "gt_score": 1.04604365016045
+    },
+    {
+        "img_path": "spaq_koniq/491839128.jpg",
+        "gt_score": 1.7951172809956881
+    },
+    {
+        "img_path": "spaq_koniq/10895044423.jpg",
+        "gt_score": 1.7915490050548732
+    },
+    {
+        "img_path": "spaq_koniq/1418012844.jpg",
+        "gt_score": 1.1796070029326091
+    },
+    {
+        "img_path": "spaq_koniq/2720757001.jpg",
+        "gt_score": 1.8179962267338665
+    },
+    {
+        "img_path": "spaq_koniq/3615562.jpg",
+        "gt_score": 1.3327899057958612
+    },
+    {
+        "img_path": "spaq_koniq/4004417944.jpg",
+        "gt_score": 1.6654699218126712
+    },
+    {
+        "img_path": "spaq_koniq/3092999912.jpg",
+        "gt_score": 1.8027435962417429
+    },
+    {
+        "img_path": "spaq_koniq/8257779790.jpg",
+        "gt_score": 1.202616732953647
+    },
+    {
+        "img_path": "spaq_koniq/7977665407.jpg",
+        "gt_score": 1.434985727709517
+    },
+    {
+        "img_path": "spaq_koniq/2904337110.jpg",
+        "gt_score": 1.7673357040279019
+    },
+    {
+        "img_path": "spaq_koniq/5564925519.jpg",
+        "gt_score": 1.965043431381197
+    },
+    {
+        "img_path": "spaq_koniq/10089027076.jpg",
+        "gt_score": 1.2045015336063636
+    },
+    {
+        "img_path": "spaq_koniq/9494293866.jpg",
+        "gt_score": 1.817132870290924
+    },
+    {
+        "img_path": "spaq_koniq/5709659001.jpg",
+        "gt_score": 1.1069889899473422
+    },
+    {
+        "img_path": "spaq_koniq/446796521.jpg",
+        "gt_score": 1.8758411084115323
+    },
+    {
+        "img_path": "spaq_koniq/6473904775.jpg",
+        "gt_score": 1.686493817896399
+    },
+    {
+        "img_path": "spaq_koniq/5069309990.jpg",
+        "gt_score": 1.256582096696974
+    },
+    {
+        "img_path": "spaq_koniq/8560249157.jpg",
+        "gt_score": 1.8446189999564757
+    },
+    {
+        "img_path": "spaq_koniq/1807195948.jpg",
+        "gt_score": 1.764001914791763
+    },
+    {
+        "img_path": "spaq_koniq/4769301151.jpg",
+        "gt_score": 1.8442070577737222
+    },
+    {
+        "img_path": "spaq_koniq/11232665444.jpg",
+        "gt_score": 1.7059103824752668
+    },
+    {
+        "img_path": "spaq_koniq/9541231306.jpg",
+        "gt_score": 1.361724680298154
+    },
+    {
+        "img_path": "spaq_koniq/202551289.jpg",
+        "gt_score": 1.955269901162954
+    },
+    {
+        "img_path": "spaq_koniq/5581852297.jpg",
+        "gt_score": 1.6824331276870734
+    },
+    {
+        "img_path": "spaq_koniq/8933319583.jpg",
+        "gt_score": 1.9139606935801274
+    },
+    {
+        "img_path": "spaq_koniq/6656935539.jpg",
+        "gt_score": 1.017233125897554
+    },
+    {
+        "img_path": "spaq_koniq/2867718050.jpg",
+        "gt_score": 1.6916372787119909
+    },
+    {
+        "img_path": "spaq_koniq/6427589897.jpg",
+        "gt_score": 1.4214278339387454
+    },
+    {
+        "img_path": "spaq_koniq/299211567.jpg",
+        "gt_score": 1.6807225523047797
+    },
+    {
+        "img_path": "spaq_koniq/563494328.jpg",
+        "gt_score": 1.3062634771037394
+    },
+    {
+        "img_path": "spaq_koniq/5402777838.jpg",
+        "gt_score": 1.6176388572597102
+    },
+    {
+        "img_path": "spaq_koniq/2960552821.jpg",
+        "gt_score": 1.282946030361767
+    },
+    {
+        "img_path": "spaq_koniq/9707926050.jpg",
+        "gt_score": 1.570727620871225
+    },
+    {
+        "img_path": "spaq_koniq/6160253188.jpg",
+        "gt_score": 1.5934436111554304
+    },
+    {
+        "img_path": "spaq_koniq/3017896883.jpg",
+        "gt_score": 1.0281380439596735
+    },
+    {
+        "img_path": "spaq_koniq/9294636383.jpg",
+        "gt_score": 1.635446322843963
+    },
+    {
+        "img_path": "spaq_koniq/1459611891.jpg",
+        "gt_score": 1.8699138343705037
+    },
+    {
+        "img_path": "spaq_koniq/8644207930.jpg",
+        "gt_score": 1.4654425676445773
+    },
+    {
+        "img_path": "spaq_koniq/5434982423.jpg",
+        "gt_score": 1.9966858029371748
+    },
+    {
+        "img_path": "spaq_koniq/3706984010.jpg",
+        "gt_score": 1.5529457987481567
+    },
+    {
+        "img_path": "spaq_koniq/4984086049.jpg",
+        "gt_score": 1.3146594204939066
+    },
+    {
+        "img_path": "spaq_koniq/4195632386.jpg",
+        "gt_score": 1.5476086861917349
+    },
+    {
+        "img_path": "spaq_koniq/1312413141.jpg",
+        "gt_score": 1.017233125897554
+    },
+    {
+        "img_path": "spaq_koniq/5657799294.jpg",
+        "gt_score": 1.900531488929541
+    },
+    {
+        "img_path": "spaq_koniq/3670448728.jpg",
+        "gt_score": 1.8506804349312758
+    },
+    {
+        "img_path": "spaq_koniq/8084640023.jpg",
+        "gt_score": 1.268901529017534
+    },
+    {
+        "img_path": "spaq_koniq/10536668436.jpg",
+        "gt_score": 1.9925801819052193
+    },
+    {
+        "img_path": "spaq_koniq/6486375983.jpg",
+        "gt_score": 1.1219483006222994
+    },
+    {
+        "img_path": "spaq_koniq/323541643.jpg",
+        "gt_score": 1.239026542020569
+    },
+    {
+        "img_path": "spaq_koniq/5082552221.jpg",
+        "gt_score": 1.9930000923803006
+    },
+    {
+        "img_path": "spaq_koniq/2786566950.jpg",
+        "gt_score": 1.7115129091860746
+    },
+    {
+        "img_path": "spaq_koniq/3645413545.jpg",
+        "gt_score": 1.8250359023456177
+    },
+    {
+        "img_path": "spaq_koniq/7738480598.jpg",
+        "gt_score": 1.732145706535364
+    },
+    {
+        "img_path": "spaq_koniq/110356262.jpg",
+        "gt_score": 1.9639034655924594
+    },
+    {
+        "img_path": "spaq_koniq/3854279335.jpg",
+        "gt_score": 1.6432446602384299
+    },
+    {
+        "img_path": "spaq_koniq/6696229175.jpg",
+        "gt_score": 1.7025120244363854
+    },
+    {
+        "img_path": "spaq_koniq/3820650799.jpg",
+        "gt_score": 1.9596696984202921
+    },
+    {
+        "img_path": "spaq_koniq/5561303733.jpg",
+        "gt_score": 1.8951309580797273
+    },
+    {
+        "img_path": "spaq_koniq/3254444597.jpg",
+        "gt_score": 1.7988934176709233
+    },
+    {
+        "img_path": "spaq_koniq/5418130754.jpg",
+        "gt_score": 1.07789381689144
+    },
+    {
+        "img_path": "spaq_koniq/8320423007.jpg",
+        "gt_score": 1.979353001939985
+    },
+    {
+        "img_path": "spaq_koniq/306315468.jpg",
+        "gt_score": 1.7017711823839121
+    },
+    {
+        "img_path": "spaq_koniq/3783312451.jpg",
+        "gt_score": 1.6556852154592367
+    },
+    {
+        "img_path": "spaq_koniq/6329859114.jpg",
+        "gt_score": 1.6242735646890876
+    },
+    {
+        "img_path": "spaq_koniq/1057328504.jpg",
+        "gt_score": 1.8062299117828085
+    },
+    {
+        "img_path": "spaq_koniq/6014996044.jpg",
+        "gt_score": 1.2006963700244773
+    },
+    {
+        "img_path": "spaq_koniq/2280531345.jpg",
+        "gt_score": 1.7145256793413801
+    },
+    {
+        "img_path": "spaq_koniq/4637538714.jpg",
+        "gt_score": 1.1880768422041545
+    },
+    {
+        "img_path": "spaq_koniq/5040853192.jpg",
+        "gt_score": 1.2431899519022576
+    },
+    {
+        "img_path": "spaq_koniq/4296403133.jpg",
+        "gt_score": 1.5395267728920219
+    },
+    {
+        "img_path": "spaq_koniq/6304784314.jpg",
+        "gt_score": 1.4942375606275484
+    },
+    {
+        "img_path": "spaq_koniq/139253033.jpg",
+        "gt_score": 1.670362274989388
+    },
+    {
+        "img_path": "spaq_koniq/322036819.jpg",
+        "gt_score": 1.8905181679416838
+    },
+    {
+        "img_path": "spaq_koniq/3585744087.jpg",
+        "gt_score": 1.5515741109415937
+    },
+    {
+        "img_path": "spaq_koniq/3537044665.jpg",
+        "gt_score": 1.7801579703207309
+    },
+    {
+        "img_path": "spaq_koniq/7967382050.jpg",
+        "gt_score": 1.8210467528322982
+    },
+    {
+        "img_path": "spaq_koniq/5913086401.jpg",
+        "gt_score": 1.481697936951297
+    },
+    {
+        "img_path": "spaq_koniq/3372381586.jpg",
+        "gt_score": 1.9492264060622921
+    },
+    {
+        "img_path": "spaq_koniq/10925112255.jpg",
+        "gt_score": 1.2474233350592476
+    },
+    {
+        "img_path": "spaq_koniq/6001444866.jpg",
+        "gt_score": 1.5476086861917349
+    },
+    {
+        "img_path": "spaq_koniq/2614925521.jpg",
+        "gt_score": 1.7112278132890282
+    },
+    {
+        "img_path": "spaq_koniq/4017312321.jpg",
+        "gt_score": 1.673327337520725
+    },
+    {
+        "img_path": "spaq_koniq/136287514.jpg",
+        "gt_score": 1.1967448539971308
+    },
+    {
+        "img_path": "spaq_koniq/3984248064.jpg",
+        "gt_score": 1.391902099683346
+    },
+    {
+        "img_path": "spaq_koniq/2413968824.jpg",
+        "gt_score": 1.4684059358544719
+    },
+    {
+        "img_path": "spaq_koniq/85119046.jpg",
+        "gt_score": 1.9247646401787053
+    },
+    {
+        "img_path": "spaq_koniq/4728646090.jpg",
+        "gt_score": 1.111840658274353
+    },
+    {
+        "img_path": "spaq_koniq/7124206301.jpg",
+        "gt_score": 1.7025120244363854
+    },
+    {
+        "img_path": "spaq_koniq/4502409601.jpg",
+        "gt_score": 1.2961713835337547
+    },
+    {
+        "img_path": "spaq_koniq/5932521378.jpg",
+        "gt_score": 1.8464869893512277
+    },
+    {
+        "img_path": "spaq_koniq/475853335.jpg",
+        "gt_score": 1.6151590063088137
+    },
+    {
+        "img_path": "spaq_koniq/2421141390.jpg",
+        "gt_score": 1.8682846025148243
+    },
+    {
+        "img_path": "spaq_koniq/7167005638.jpg",
+        "gt_score": 1.6550981330780243
+    },
+    {
+        "img_path": "spaq_koniq/9686480737.jpg",
+        "gt_score": 1.4664763007410488
+    },
+    {
+        "img_path": "spaq_koniq/5184701000.jpg",
+        "gt_score": 1.406175203446621
+    },
+    {
+        "img_path": "spaq_koniq/288113726.jpg",
+        "gt_score": 1.0697928661068816
+    },
+    {
+        "img_path": "spaq_koniq/9668766101.jpg",
+        "gt_score": 1.6044593998441894
+    },
+    {
+        "img_path": "spaq_koniq/10679134563.jpg",
+        "gt_score": 1.7554293138988488
+    },
+    {
+        "img_path": "spaq_koniq/6259804978.jpg",
+        "gt_score": 1.8744161511755983
+    },
+    {
+        "img_path": "spaq_koniq/4882465125.jpg",
+        "gt_score": 1.7772759012915975
+    },
+    {
+        "img_path": "spaq_koniq/9307347958.jpg",
+        "gt_score": 1.4976909863993357
+    },
+    {
+        "img_path": "spaq_koniq/930643510.jpg",
+        "gt_score": 1.2898560774506334
+    },
+    {
+        "img_path": "spaq_koniq/8040993311.jpg",
+        "gt_score": 1.4775407222629677
+    },
+    {
+        "img_path": "spaq_koniq/10466453556.jpg",
+        "gt_score": 1.4942375606275484
+    },
+    {
+        "img_path": "spaq_koniq/8636833629.jpg",
+        "gt_score": 1.6366593975497752
+    },
+    {
+        "img_path": "spaq_koniq/8522546794.jpg",
+        "gt_score": 1.570727620871225
+    },
+    {
+        "img_path": "spaq_koniq/8008251007.jpg",
+        "gt_score": 1.8364940977562252
+    },
+    {
+        "img_path": "spaq_koniq/7607759408.jpg",
+        "gt_score": 1.8506804349312758
+    },
+    {
+        "img_path": "spaq_koniq/5231773522.jpg",
+        "gt_score": 1.2063517507608572
+    },
+    {
+        "img_path": "spaq_koniq/228617373.jpg",
+        "gt_score": 1.8790067487023479
+    },
+    {
+        "img_path": "spaq_koniq/3962058482.jpg",
+        "gt_score": 1.2841541595096584
+    },
+    {
+        "img_path": "spaq_koniq/6276334186.jpg",
+        "gt_score": 1.874282482620716
+    },
+    {
+        "img_path": "spaq_koniq/7919265884.jpg",
+        "gt_score": 1.361724680298154
+    },
+    {
+        "img_path": "spaq_koniq/4094850958.jpg",
+        "gt_score": 1.543448877875708
+    },
+    {
+        "img_path": "spaq_koniq/6643932717.jpg",
+        "gt_score": 1.6242735646890876
+    },
+    {
+        "img_path": "spaq_koniq/5342791481.jpg",
+        "gt_score": 1.7871796875763144
+    },
+    {
+        "img_path": "spaq_koniq/649761301.jpg",
+        "gt_score": 1.8349302495636994
+    },
+    {
+        "img_path": "spaq_koniq/6921873872.jpg",
+        "gt_score": 1.9801479780821352
+    },
+    {
+        "img_path": "spaq_koniq/2569774614.jpg",
+        "gt_score": 1.9395814812281942
+    },
+    {
+        "img_path": "spaq_koniq/82421401.jpg",
+        "gt_score": 1.077070368597413
+    },
+    {
+        "img_path": "spaq_koniq/4034550282.jpg",
+        "gt_score": 1.9479159543185425
+    },
+    {
+        "img_path": "spaq_koniq/1576235224.jpg",
+        "gt_score": 1.5676228582783083
+    },
+    {
+        "img_path": "spaq_koniq/8242906564.jpg",
+        "gt_score": 1.1394720645558345
+    },
+    {
+        "img_path": "spaq_koniq/2508139577.jpg",
+        "gt_score": 1.7842123629335687
+    },
+    {
+        "img_path": "spaq_koniq/3940847938.jpg",
+        "gt_score": 1.4831934366246549
+    },
+    {
+        "img_path": "spaq_koniq/5500159889.jpg",
+        "gt_score": 1.9499388846802743
+    },
+    {
+        "img_path": "spaq_koniq/4016051317.jpg",
+        "gt_score": 1.8506804349312758
+    },
+    {
+        "img_path": "spaq_koniq/8165323576.jpg",
+        "gt_score": 1.1668262326472012
+    },
+    {
+        "img_path": "spaq_koniq/9450353504.jpg",
+        "gt_score": 1.9865014778849068
+    },
+    {
+        "img_path": "spaq_koniq/9686337427.jpg",
+        "gt_score": 1.619712030336298
+    },
+    {
+        "img_path": "spaq_koniq/3749654443.jpg",
+        "gt_score": 1.954398322277683
+    },
+    {
+        "img_path": "spaq_koniq/5359274053.jpg",
+        "gt_score": 1.4660124461464803
+    },
+    {
+        "img_path": "spaq_koniq/7766392832.jpg",
+        "gt_score": 1.3773646791837253
+    },
+    {
+        "img_path": "spaq_koniq/175326787.jpg",
+        "gt_score": 1.9453028356928581
+    },
+    {
+        "img_path": "spaq_koniq/9961801436.jpg",
+        "gt_score": 1.5020787294176268
+    },
+    {
+        "img_path": "spaq_koniq/133829142.jpg",
+        "gt_score": 1.3433158777821261
+    },
+    {
+        "img_path": "spaq_koniq/524406040.jpg",
+        "gt_score": 1.985775162147187
+    },
+    {
+        "img_path": "spaq_koniq/4886277173.jpg",
+        "gt_score": 1.557220670455973
+    },
+    {
+        "img_path": "spaq_koniq/3874382715.jpg",
+        "gt_score": 1.814760820265839
+    },
+    {
+        "img_path": "spaq_koniq/6172964730.jpg",
+        "gt_score": 1.2983496769973737
+    },
+    {
+        "img_path": "spaq_koniq/4711939216.jpg",
+        "gt_score": 1.6978817616084214
+    },
+    {
+        "img_path": "spaq_koniq/4281871655.jpg",
+        "gt_score": 1.558701508367817
+    },
+    {
+        "img_path": "spaq_koniq/2946225988.jpg",
+        "gt_score": 1.7535797775681234
+    },
+    {
+        "img_path": "spaq_koniq/10211880874.jpg",
+        "gt_score": 1.885991598180048
+    },
+    {
+        "img_path": "spaq_koniq/8452429942.jpg",
+        "gt_score": 1.406175203446621
+    },
+    {
+        "img_path": "spaq_koniq/8616708613.jpg",
+        "gt_score": 1.6916372787119909
+    },
+    {
+        "img_path": "spaq_koniq/6513828853.jpg",
+        "gt_score": 1.017233125897554
+    },
+    {
+        "img_path": "spaq_koniq/9590556429.jpg",
+        "gt_score": 1.8870490447800146
+    },
+    {
+        "img_path": "spaq_koniq/11706252.jpg",
+        "gt_score": 1.7405926906850753
+    },
+    {
+        "img_path": "spaq_koniq/6305224063.jpg",
+        "gt_score": 1.3320909981991762
+    },
+    {
+        "img_path": "spaq_koniq/5536150022.jpg",
+        "gt_score": 1.192638376556944
+    },
+    {
+        "img_path": "spaq_koniq/4786690796.jpg",
+        "gt_score": 1.9520588210593526
+    },
+    {
+        "img_path": "spaq_koniq/4629048299.jpg",
+        "gt_score": 1.1756910093434674
+    },
+    {
+        "img_path": "spaq_koniq/6903329459.jpg",
+        "gt_score": 1.667764565338023
+    },
+    {
+        "img_path": "spaq_koniq/9630325643.jpg",
+        "gt_score": 1.7053614169458997
+    },
+    {
+        "img_path": "spaq_koniq/6143005598.jpg",
+        "gt_score": 1.463267618499692
+    },
+    {
+        "img_path": "spaq_koniq/4851066149.jpg",
+        "gt_score": 1.8506804349312758
+    },
+    {
+        "img_path": "spaq_koniq/81006585.jpg",
+        "gt_score": 1.2098160963344702
+    },
+    {
+        "img_path": "spaq_koniq/3285723816.jpg",
+        "gt_score": 1.9527965016236861
+    },
+    {
+        "img_path": "spaq_koniq/6171193930.jpg",
+        "gt_score": 1.8239278052585841
+    },
+    {
+        "img_path": "spaq_koniq/8054439590.jpg",
+        "gt_score": 1.9342800426875506
+    },
+    {
+        "img_path": "spaq_koniq/8771756230.jpg",
+        "gt_score": 1.1621331155726955
+    },
+    {
+        "img_path": "spaq_koniq/7588949536.jpg",
+        "gt_score": 1.673327337520725
+    },
+    {
+        "img_path": "spaq_koniq/4210559322.jpg",
+        "gt_score": 1.7630027975283378
+    },
+    {
+        "img_path": "spaq_koniq/5671296107.jpg",
+        "gt_score": 2.9619435136428898
+    },
+    {
+        "img_path": "spaq_koniq/4525681285.jpg",
+        "gt_score": 2.7100572158015916
+    },
+    {
+        "img_path": "spaq_koniq/6626107981.jpg",
+        "gt_score": 2.635973010554147
+    },
+    {
+        "img_path": "spaq_koniq/5561541116.jpg",
+        "gt_score": 2.5153803875680305
+    },
+    {
+        "img_path": "spaq_koniq/9419143176.jpg",
+        "gt_score": 2.7179014257689635
+    },
+    {
+        "img_path": "spaq_koniq/2322154086.jpg",
+        "gt_score": 2.931136220371676
+    },
+    {
+        "img_path": "spaq_koniq/4436002363.jpg",
+        "gt_score": 2.7419358738171566
+    },
+    {
+        "img_path": "spaq_koniq/2656455723.jpg",
+        "gt_score": 2.603979123686228
+    },
+    {
+        "img_path": "spaq_koniq/1802306299.jpg",
+        "gt_score": 2.2721217157256826
+    },
+    {
+        "img_path": "spaq_koniq/3538380259.jpg",
+        "gt_score": 2.63957710702564
+    },
+    {
+        "img_path": "spaq_koniq/2489209226.jpg",
+        "gt_score": 2.9166298735400904
+    },
+    {
+        "img_path": "spaq_koniq/6648576397.jpg",
+        "gt_score": 2.1594945957521836
+    },
+    {
+        "img_path": "spaq_koniq/8430377800.jpg",
+        "gt_score": 2.916185622166532
+    },
+    {
+        "img_path": "spaq_koniq/5177150402.jpg",
+        "gt_score": 2.184059358544755
+    },
+    {
+        "img_path": "spaq_koniq/5915252762.jpg",
+        "gt_score": 2.2738152225945436
+    },
+    {
+        "img_path": "spaq_koniq/3708130060.jpg",
+        "gt_score": 2.7841414210490374
+    },
+    {
+        "img_path": "spaq_koniq/392558137.jpg",
+        "gt_score": 2.258855911919571
+    },
+    {
+        "img_path": "spaq_koniq/6095610288.jpg",
+        "gt_score": 2.0832225236246344
+    },
+    {
+        "img_path": "spaq_koniq/336052627.jpg",
+        "gt_score": 2.354453030613871
+    },
+    {
+        "img_path": "spaq_koniq/5221875216.jpg",
+        "gt_score": 2.5052041932182907
+    },
+    {
+        "img_path": "spaq_koniq/6904675638.jpg",
+        "gt_score": 2.3551938726663444
+    },
+    {
+        "img_path": "spaq_koniq/432256405.jpg",
+        "gt_score": 2.8611066787227686
+    },
+    {
+        "img_path": "spaq_koniq/2688943738.jpg",
+        "gt_score": 2.7000815208375744
+    },
+    {
+        "img_path": "spaq_koniq/8056188485.jpg",
+        "gt_score": 2.7780799860742365
+    },
+    {
+        "img_path": "spaq_koniq/9195323524.jpg",
+        "gt_score": 2.5414655919682225
+    },
+    {
+        "img_path": "spaq_koniq/10693826785.jpg",
+        "gt_score": 2.9320248922929597
+    },
+    {
+        "img_path": "spaq_koniq/3358149726.jpg",
+        "gt_score": 2.767472474868356
+    },
+    {
+        "img_path": "spaq_koniq/5557351990.jpg",
+        "gt_score": 2.1331697409215153
+    },
+    {
+        "img_path": "spaq_koniq/6974453710.jpg",
+        "gt_score": 2.7154851674731812
+    },
+    {
+        "img_path": "spaq_koniq/46667675.jpg",
+        "gt_score": 2.2785686484164884
+    },
+    {
+        "img_path": "spaq_koniq/11521791886.jpg",
+        "gt_score": 2.872187649593101
+    },
+    {
+        "img_path": "spaq_koniq/9389671360.jpg",
+        "gt_score": 2.5322551232077233
+    },
+    {
+        "img_path": "spaq_koniq/7843358908.jpg",
+        "gt_score": 2.889244059895395
+    },
+    {
+        "img_path": "spaq_koniq/657099880.jpg",
+        "gt_score": 2.6656066926531254
+    },
+    {
+        "img_path": "spaq_koniq/5142063764.jpg",
+        "gt_score": 2.2030321428154425
+    },
+    {
+        "img_path": "spaq_koniq/5043851130.jpg",
+        "gt_score": 2.077290945099916
+    },
+    {
+        "img_path": "spaq_koniq/7339227510.jpg",
+        "gt_score": 2.1987364180749074
+    },
+    {
+        "img_path": "spaq_koniq/5565514955.jpg",
+        "gt_score": 2.6538705809307537
+    },
+    {
+        "img_path": "spaq_koniq/257457837.jpg",
+        "gt_score": 2.1173835738220625
+    },
+    {
+        "img_path": "spaq_koniq/9262147694.jpg",
+        "gt_score": 2.9766205731730415
+    },
+    {
+        "img_path": "spaq_koniq/6264153932.jpg",
+        "gt_score": 2.1760399342653898
+    },
+    {
+        "img_path": "spaq_koniq/3587337138.jpg",
+        "gt_score": 2.580939029513196
+    },
+    {
+        "img_path": "spaq_koniq/2198895718.jpg",
+        "gt_score": 2.5418860698898973
+    },
+    {
+        "img_path": "spaq_koniq/2737304398.jpg",
+        "gt_score": 2.853039731929151
+    },
+    {
+        "img_path": "spaq_koniq/5746784745.jpg",
+        "gt_score": 2.4889899473432244
+    },
+    {
+        "img_path": "spaq_koniq/5642698379.jpg",
+        "gt_score": 2.4618751282226627
+    },
+    {
+        "img_path": "spaq_koniq/9550673458.jpg",
+        "gt_score": 2.8123504068932426
+    },
+    {
+        "img_path": "spaq_koniq/9813135.jpg",
+        "gt_score": 2.5843298461195263
+    },
+    {
+        "img_path": "spaq_koniq/513723164.jpg",
+        "gt_score": 2.9770480603438276
+    },
+    {
+        "img_path": "spaq_koniq/10544775715.jpg",
+        "gt_score": 2.5730014360938225
+    },
+    {
+        "img_path": "spaq_koniq/2405495711.jpg",
+        "gt_score": 2.4581709179602944
+    },
+    {
+        "img_path": "spaq_koniq/49445241.jpg",
+        "gt_score": 2.705027645904055
+    },
+    {
+        "img_path": "spaq_koniq/4757384229.jpg",
+        "gt_score": 2.060470287174021
+    },
+    {
+        "img_path": "spaq_koniq/2952908030.jpg",
+        "gt_score": 2.752513164193399
+    },
+    {
+        "img_path": "spaq_koniq/9701303901.jpg",
+        "gt_score": 2.2197421179529204
+    },
+    {
+        "img_path": "spaq_koniq/4585233162.jpg",
+        "gt_score": 2.393489707994246
+    },
+    {
+        "img_path": "spaq_koniq/1794888173.jpg",
+        "gt_score": 2.6738382710139437
+    },
+    {
+        "img_path": "spaq_koniq/8683910174.jpg",
+        "gt_score": 2.4690268213034723
+    },
+    {
+        "img_path": "spaq_koniq/4099198318.jpg",
+        "gt_score": 2.823310693922428
+    },
+    {
+        "img_path": "spaq_koniq/5631644954.jpg",
+        "gt_score": 2.603979123686228
+    },
+    {
+        "img_path": "spaq_koniq/8524995451.jpg",
+        "gt_score": 2.8411071400354144
+    },
+    {
+        "img_path": "spaq_koniq/3277064835.jpg",
+        "gt_score": 2.319653844295803
+    },
+    {
+        "img_path": "spaq_koniq/3050837263.jpg",
+        "gt_score": 2.874704169145903
+    },
+    {
+        "img_path": "spaq_koniq/2150291485.jpg",
+        "gt_score": 2.8833693565622704
+    },
+    {
+        "img_path": "spaq_koniq/2363413290.jpg",
+        "gt_score": 2.6692742275663606
+    },
+    {
+        "img_path": "spaq_koniq/4704686099.jpg",
+        "gt_score": 2.6873961647847313
+    },
+    {
+        "img_path": "spaq_koniq/8412460969.jpg",
+        "gt_score": 2.019918665267172
+    },
+    {
+        "img_path": "spaq_koniq/331340631.jpg",
+        "gt_score": 2.891226772270325
+    },
+    {
+        "img_path": "spaq_koniq/8442858810.jpg",
+        "gt_score": 2.917065581618003
+    },
+    {
+        "img_path": "spaq_koniq/6795803065.jpg",
+        "gt_score": 2.1009843516896103
+    },
+    {
+        "img_path": "spaq_koniq/4676525770.jpg",
+        "gt_score": 2.462923489617675
+    },
+    {
+        "img_path": "spaq_koniq/3131665013.jpg",
+        "gt_score": 2.7179014257689635
+    },
+    {
+        "img_path": "spaq_koniq/4942239073.jpg",
+        "gt_score": 2.9336568170938637
+    },
+    {
+        "img_path": "spaq_koniq/6874497596.jpg",
+        "gt_score": 2.339636189564382
+    },
+    {
+        "img_path": "spaq_koniq/6232083444.jpg",
+        "gt_score": 2.9466908831507648
+    },
+    {
+        "img_path": "spaq_koniq/3530563948.jpg",
+        "gt_score": 2.874704169145903
+    },
+    {
+        "img_path": "spaq_koniq/5081637571.jpg",
+        "gt_score": 2.7583850431499153
+    },
+    {
+        "img_path": "spaq_koniq/7980164509.jpg",
+        "gt_score": 2.9320248922929597
+    },
+    {
+        "img_path": "spaq_koniq/3519364135.jpg",
+        "gt_score": 2.1301465953201397
+    },
+    {
+        "img_path": "spaq_koniq/6264868738.jpg",
+        "gt_score": 2.390436787448342
+    },
+    {
+        "img_path": "spaq_koniq/7911502338.jpg",
+        "gt_score": 2.8477586835367474
+    },
+    {
+        "img_path": "spaq_koniq/4300400521.jpg",
+        "gt_score": 2.4998341145746865
+    },
+    {
+        "img_path": "spaq_koniq/10279904885.jpg",
+        "gt_score": 2.4030752857083133
+    },
+    {
+        "img_path": "spaq_koniq/6644440429.jpg",
+        "gt_score": 2.1552488342818594
+    },
+    {
+        "img_path": "spaq_koniq/4170535749.jpg",
+        "gt_score": 2.886420780138214
+    },
+    {
+        "img_path": "spaq_koniq/10931213005.jpg",
+        "gt_score": 2.5257467911579563
+    },
+    {
+        "img_path": "spaq_koniq/2815247737.jpg",
+        "gt_score": 2.339636189564382
+    },
+    {
+        "img_path": "spaq_koniq/8456262039.jpg",
+        "gt_score": 2.7545077389500583
+    },
+    {
+        "img_path": "spaq_koniq/4540896523.jpg",
+        "gt_score": 2.1391814265198685
+    },
+    {
+        "img_path": "spaq_koniq/4075989770.jpg",
+        "gt_score": 2.656890903800482
+    },
+    {
+        "img_path": "spaq_koniq/5495551820.jpg",
+        "gt_score": 2.543082814743893
+    },
+    {
+        "img_path": "spaq_koniq/4078925567.jpg",
+        "gt_score": 2.3707515557683077
+    },
+    {
+        "img_path": "spaq_koniq/4003392015.jpg",
+        "gt_score": 2.040566164885873
+    },
+    {
+        "img_path": "spaq_koniq/9232371989.jpg",
+        "gt_score": 2.0215164007630535
+    },
+    {
+        "img_path": "spaq_koniq/8520265759.jpg",
+        "gt_score": 2.8411071400354144
+    },
+    {
+        "img_path": "spaq_koniq/5243003019.jpg",
+        "gt_score": 2.360184072906595
+    },
+    {
+        "img_path": "spaq_koniq/5908187685.jpg",
+        "gt_score": 2.639677220816515
+    },
+    {
+        "img_path": "spaq_koniq/278235103.jpg",
+        "gt_score": 2.1767894131700087
+    },
+    {
+        "img_path": "spaq_koniq/6921149341.jpg",
+        "gt_score": 2.917065581618003
+    },
+    {
+        "img_path": "spaq_koniq/9689861322.jpg",
+        "gt_score": 2.268779415040585
+    },
+    {
+        "img_path": "spaq_koniq/4639008494.jpg",
+        "gt_score": 2.0069174222352855
+    },
+    {
+        "img_path": "spaq_koniq/6658947687.jpg",
+        "gt_score": 2.6145389395213874
+    },
+    {
+        "img_path": "spaq_koniq/2183577836.jpg",
+        "gt_score": 2.2319291527046397
+    },
+    {
+        "img_path": "spaq_koniq/6665024915.jpg",
+        "gt_score": 2.976216617406165
+    },
+    {
+        "img_path": "spaq_koniq/6118739597.jpg",
+        "gt_score": 2.676481438377519
+    },
+    {
+        "img_path": "spaq_koniq/2350031609.jpg",
+        "gt_score": 2.145550241955746
+    },
+    {
+        "img_path": "spaq_koniq/2967177700.jpg",
+        "gt_score": 2.873881156461962
+    },
+    {
+        "img_path": "spaq_koniq/10680153225.jpg",
+        "gt_score": 2.433569370557371
+    },
+    {
+        "img_path": "spaq_koniq/10481974434.jpg",
+        "gt_score": 2.2891788389634264
+    },
+    {
+        "img_path": "spaq_koniq/5748824865.jpg",
+        "gt_score": 2.2785686484164884
+    },
+    {
+        "img_path": "spaq_koniq/7994058325.jpg",
+        "gt_score": 2.866692392610463
+    },
+    {
+        "img_path": "spaq_koniq/4000500172.jpg",
+        "gt_score": 2.8310844968974096
+    },
+    {
+        "img_path": "spaq_koniq/8695656651.jpg",
+        "gt_score": 2.090713259932979
+    },
+    {
+        "img_path": "spaq_koniq/326195053.jpg",
+        "gt_score": 2.7602698438026314
+    },
+    {
+        "img_path": "spaq_koniq/526555735.jpg",
+        "gt_score": 2.7331540562610885
+    },
+    {
+        "img_path": "spaq_koniq/6935219850.jpg",
+        "gt_score": 2.4757659167065555
+    },
+    {
+        "img_path": "spaq_koniq/9032729328.jpg",
+        "gt_score": 2.9341619366751033
+    },
+    {
+        "img_path": "spaq_koniq/7978282630.jpg",
+        "gt_score": 2.7170540574082875
+    },
+    {
+        "img_path": "spaq_koniq/6408985463.jpg",
+        "gt_score": 2.6790765481526617
+    },
+    {
+        "img_path": "spaq_koniq/8165044722.jpg",
+        "gt_score": 2.7002254801519294
+    },
+    {
+        "img_path": "spaq_koniq/4295279371.jpg",
+        "gt_score": 2.839922469705926
+    },
+    {
+        "img_path": "spaq_koniq/5224440098.jpg",
+        "gt_score": 2.59844624490545
+    },
+    {
+        "img_path": "spaq_koniq/7382484290.jpg",
+        "gt_score": 2.3879707390073754
+    },
+    {
+        "img_path": "spaq_koniq/5128049833.jpg",
+        "gt_score": 2.7004698480636784
+    },
+    {
+        "img_path": "spaq_koniq/5712901839.jpg",
+        "gt_score": 2.656890903800482
+    },
+    {
+        "img_path": "spaq_koniq/3455882031.jpg",
+        "gt_score": 2.2494888669174875
+    },
+    {
+        "img_path": "spaq_koniq/5062026548.jpg",
+        "gt_score": 2.2062846201189807
+    },
+    {
+        "img_path": "spaq_koniq/5320512069.jpg",
+        "gt_score": 2.480068373316606
+    },
+    {
+        "img_path": "spaq_koniq/6811037194.jpg",
+        "gt_score": 2.087749891723085
+    },
+    {
+        "img_path": "spaq_koniq/11295475784.jpg",
+        "gt_score": 2.7051662197270017
+    },
+    {
+        "img_path": "spaq_koniq/3073021963.jpg",
+        "gt_score": 2.443354076910805
+    },
+    {
+        "img_path": "spaq_koniq/2539083530.jpg",
+        "gt_score": 2.946539867007283
+    },
+    {
+        "img_path": "spaq_koniq/5619348479.jpg",
+        "gt_score": 2.191329303919502
+    },
+    {
+        "img_path": "spaq_koniq/5248577035.jpg",
+        "gt_score": 2.4128488159265564
+    },
+    {
+        "img_path": "spaq_koniq/5247748944.jpg",
+        "gt_score": 2.7906662684836614
+    },
+    {
+        "img_path": "spaq_koniq/10538085833.jpg",
+        "gt_score": 2.767472474868356
+    },
+    {
+        "img_path": "spaq_koniq/7951947544.jpg",
+        "gt_score": 2.7555660847393026
+    },
+    {
+        "img_path": "spaq_koniq/7877688978.jpg",
+        "gt_score": 2.2972061447408434
+    },
+    {
+        "img_path": "spaq_koniq/2447797924.jpg",
+        "gt_score": 2.239061268501196
+    },
+    {
+        "img_path": "spaq_koniq/20079130.jpg",
+        "gt_score": 2.4891119683871628
+    },
+    {
+        "img_path": "spaq_koniq/6253185409.jpg",
+        "gt_score": 2.5153803875680305
+    },
+    {
+        "img_path": "spaq_koniq/3494678423.jpg",
+        "gt_score": 2.6507898516036352
+    },
+    {
+        "img_path": "spaq_koniq/4743492963.jpg",
+        "gt_score": 2.292963140258494
+    },
+    {
+        "img_path": "spaq_koniq/8730747598.jpg",
+        "gt_score": 2.351838293958075
+    },
+    {
+        "img_path": "spaq_koniq/6657359355.jpg",
+        "gt_score": 2.3537795378388946
+    },
+    {
+        "img_path": "spaq_koniq/8049709940.jpg",
+        "gt_score": 2.9619435136428898
+    },
+    {
+        "img_path": "spaq_koniq/9541303452.jpg",
+        "gt_score": 2.202149687733078
+    },
+    {
+        "img_path": "spaq_koniq/9394014608.jpg",
+        "gt_score": 2.3014758347859874
+    },
+    {
+        "img_path": "spaq_koniq/2167658722.jpg",
+        "gt_score": 2.903892457292284
+    },
+    {
+        "img_path": "spaq_koniq/4631127472.jpg",
+        "gt_score": 2.4329822881761585
+    },
+    {
+        "img_path": "spaq_koniq/5906203942.jpg",
+        "gt_score": 2.8905779948265424
+    },
+    {
+        "img_path": "spaq_koniq/187485230.jpg",
+        "gt_score": 2.5376430654075484
+    },
+    {
+        "img_path": "spaq_koniq/4863093063.jpg",
+        "gt_score": 2.3100025074654043
+    },
+    {
+        "img_path": "spaq_koniq/3048498691.jpg",
+        "gt_score": 2.9986939461672035
+    },
+    {
+        "img_path": "spaq_koniq/3892332557.jpg",
+        "gt_score": 2.917065581618003
+    },
+    {
+        "img_path": "spaq_koniq/9954707815.jpg",
+        "gt_score": 2.9907540379057855
+    },
+    {
+        "img_path": "spaq_koniq/2574200121.jpg",
+        "gt_score": 2.9769028243178464
+    },
+    {
+        "img_path": "spaq_koniq/7107867443.jpg",
+        "gt_score": 2.6129861356549426
+    },
+    {
+        "img_path": "spaq_koniq/4610304834.jpg",
+        "gt_score": 2.2640287576669955
+    },
+    {
+        "img_path": "spaq_koniq/4732496293.jpg",
+        "gt_score": 2.7890803680655285
+    },
+    {
+        "img_path": "spaq_koniq/4042245241.jpg",
+        "gt_score": 2.2322468725773774
+    },
+    {
+        "img_path": "spaq_koniq/6720918207.jpg",
+        "gt_score": 2.6790765481526617
+    },
+    {
+        "img_path": "spaq_koniq/7915889156.jpg",
+        "gt_score": 2.8551751001980508
+    },
+    {
+        "img_path": "spaq_koniq/6775674634.jpg",
+        "gt_score": 2.839922469705926
+    },
+    {
+        "img_path": "spaq_koniq/3603046487.jpg",
+        "gt_score": 2.71930074966733
+    },
+    {
+        "img_path": "spaq_koniq/6337822588.jpg",
+        "gt_score": 2.5786382777974364
+    },
+    {
+        "img_path": "spaq_koniq/2154184161.jpg",
+        "gt_score": 2.932863732143889
+    },
+    {
+        "img_path": "spaq_koniq/10134737015.jpg",
+        "gt_score": 2.9764834043923822
+    },
+    {
+        "img_path": "spaq_koniq/395147567.jpg",
+        "gt_score": 2.2120408029727434
+    },
+    {
+        "img_path": "spaq_koniq/4240917469.jpg",
+        "gt_score": 2.823310693922428
+    },
+    {
+        "img_path": "spaq_koniq/7358753494.jpg",
+        "gt_score": 2.8246698392138025
+    },
+    {
+        "img_path": "spaq_koniq/5023353600.jpg",
+        "gt_score": 2.84670141659132
+    },
+    {
+        "img_path": "spaq_koniq/8986471316.jpg",
+        "gt_score": 2.4289488147793574
+    },
+    {
+        "img_path": "spaq_koniq/8724954192.jpg",
+        "gt_score": 2.433569370557371
+    },
+    {
+        "img_path": "spaq_koniq/2371655336.jpg",
+        "gt_score": 2.213977979894685
+    },
+    {
+        "img_path": "spaq_koniq/8184338593.jpg",
+        "gt_score": 2.365807992913475
+    },
+    {
+        "img_path": "spaq_koniq/526020496.jpg",
+        "gt_score": 2.947403622893397
+    },
+    {
+        "img_path": "spaq_koniq/5980262015.jpg",
+        "gt_score": 2.5252366195527163
+    },
+    {
+        "img_path": "spaq_koniq/3525647615.jpg",
+        "gt_score": 2.829849977871506
+    },
+    {
+        "img_path": "spaq_koniq/4035961068.jpg",
+        "gt_score": 2.2151747247486804
+    },
+    {
+        "img_path": "spaq_koniq/8268523027.jpg",
+        "gt_score": 2.448246430087522
+    },
+    {
+        "img_path": "spaq_koniq/361252644.jpg",
+        "gt_score": 2.3803478836629828
+    },
+    {
+        "img_path": "spaq_koniq/2866556638.jpg",
+        "gt_score": 2.6977564421001228
+    },
+    {
+        "img_path": "spaq_koniq/8430084372.jpg",
+        "gt_score": 2.681905217807561
+    },
+    {
+        "img_path": "spaq_koniq/8212081020.jpg",
+        "gt_score": 2.587960746768779
+    },
+    {
+        "img_path": "spaq_koniq/3093374173.jpg",
+        "gt_score": 2.7497932895252113
+    },
+    {
+        "img_path": "spaq_koniq/7983529291.jpg",
+        "gt_score": 2.342657098904576
+    },
+    {
+        "img_path": "spaq_koniq/80417582.jpg",
+        "gt_score": 2.161402538493348
+    },
+    {
+        "img_path": "spaq_koniq/6832446699.jpg",
+        "gt_score": 2.690301427735612
+    },
+    {
+        "img_path": "spaq_koniq/5277411499.jpg",
+        "gt_score": 2.0284825275251284
+    },
+    {
+        "img_path": "spaq_koniq/8607324496.jpg",
+        "gt_score": 2.680423533702614
+    },
+    {
+        "img_path": "spaq_koniq/8434015762.jpg",
+        "gt_score": 2.6856855894024365
+    },
+    {
+        "img_path": "spaq_koniq/3398709851.jpg",
+        "gt_score": 2.2640287576669955
+    },
+    {
+        "img_path": "spaq_koniq/3913177014.jpg",
+        "gt_score": 2.782431785543313
+    },
+    {
+        "img_path": "spaq_koniq/5328147958.jpg",
+        "gt_score": 2.443354076910805
+    },
+    {
+        "img_path": "spaq_koniq/4029731030.jpg",
+        "gt_score": 2.7484066867532126
+    },
+    {
+        "img_path": "spaq_koniq/6350199154.jpg",
+        "gt_score": 2.8310844968974096
+    },
+    {
+        "img_path": "spaq_koniq/6966682968.jpg",
+        "gt_score": 2.8123504068932426
+    },
+    {
+        "img_path": "spaq_koniq/9064913927.jpg",
+        "gt_score": 2.443354076910805
+    },
+    {
+        "img_path": "spaq_koniq/4042188530.jpg",
+        "gt_score": 2.1993119890368797
+    },
+    {
+        "img_path": "spaq_koniq/8095635777.jpg",
+        "gt_score": 2.9619435136428898
+    },
+    {
+        "img_path": "spaq_koniq/5382913872.jpg",
+        "gt_score": 2.1477096316710083
+    },
+    {
+        "img_path": "spaq_koniq/6782624408.jpg",
+        "gt_score": 2.131193445091487
+    },
+    {
+        "img_path": "spaq_koniq/416573735.jpg",
+        "gt_score": 2.127485965446703
+    },
+    {
+        "img_path": "spaq_koniq/4157144630.jpg",
+        "gt_score": 2.6980185324488755
+    },
+    {
+        "img_path": "spaq_koniq/4773063971.jpg",
+        "gt_score": 2.918727727248545
+    },
+    {
+        "img_path": "spaq_koniq/5634507491.jpg",
+        "gt_score": 2.7655844065307384
+    },
+    {
+        "img_path": "spaq_koniq/2126890271.jpg",
+        "gt_score": 2.455701444452033
+    },
+    {
+        "img_path": "spaq_koniq/2918475321.jpg",
+        "gt_score": 2.5470719642572126
+    },
+    {
+        "img_path": "spaq_koniq/10660571735.jpg",
+        "gt_score": 2.6980185324488755
+    },
+    {
+        "img_path": "spaq_koniq/1947195937.jpg",
+        "gt_score": 2.3176354255818152
+    },
+    {
+        "img_path": "spaq_koniq/3217227849.jpg",
+        "gt_score": 2.638822403063661
+    },
+    {
+        "img_path": "spaq_koniq/21852937.jpg",
+        "gt_score": 2.4623848819284957
+    },
+    {
+        "img_path": "spaq_koniq/8514709398.jpg",
+        "gt_score": 2.295185666415915
+    },
+    {
+        "img_path": "spaq_koniq/6062434084.jpg",
+        "gt_score": 2.810898046633538
+    },
+    {
+        "img_path": "spaq_koniq/4488491323.jpg",
+        "gt_score": 2.072933050673596
+    },
+    {
+        "img_path": "spaq_koniq/3417613077.jpg",
+        "gt_score": 2.68307938256997
+    },
+    {
+        "img_path": "spaq_koniq/8174015928.jpg",
+        "gt_score": 2.351838293958075
+    },
+    {
+        "img_path": "spaq_koniq/3835050024.jpg",
+        "gt_score": 2.872187649593101
+    },
+    {
+        "img_path": "spaq_koniq/4585004484.jpg",
+        "gt_score": 2.995764563864544
+    },
+    {
+        "img_path": "spaq_koniq/6015032576.jpg",
+        "gt_score": 2.4682862613690775
+    },
+    {
+        "img_path": "spaq_koniq/8850126806.jpg",
+        "gt_score": 2.58740669822527
+    },
+    {
+        "img_path": "spaq_koniq/3141055360.jpg",
+        "gt_score": 2.918727727248545
+    },
+    {
+        "img_path": "spaq_koniq/6144141675.jpg",
+        "gt_score": 2.4030752857083133
+    },
+    {
+        "img_path": "spaq_koniq/4887754576.jpg",
+        "gt_score": 2.797391096218285
+    },
+    {
+        "img_path": "spaq_koniq/7203007382.jpg",
+        "gt_score": 2.1040899594225153
+    },
+    {
+        "img_path": "spaq_koniq/7219295732.jpg",
+        "gt_score": 2.4228158813966525
+    },
+    {
+        "img_path": "spaq_koniq/3662491369.jpg",
+        "gt_score": 2.7906662684836614
+    },
+    {
+        "img_path": "spaq_koniq/7483507340.jpg",
+        "gt_score": 2.0257289552947
+    },
+    {
+        "img_path": "spaq_koniq/3201560837.jpg",
+        "gt_score": 2.2867987752558347
+    },
+    {
+        "img_path": "spaq_koniq/6486906969.jpg",
+        "gt_score": 2.089550068673022
+    },
+    {
+        "img_path": "spaq_koniq/5649238461.jpg",
+        "gt_score": 2.5843298461195263
+    },
+    {
+        "img_path": "spaq_koniq/8919875155.jpg",
+        "gt_score": 2.844527037401657
+    },
+    {
+        "img_path": "spaq_koniq/4302524395.jpg",
+        "gt_score": 2.250735143267448
+    },
+    {
+        "img_path": "spaq_koniq/8625160006.jpg",
+        "gt_score": 2.3707515557683077
+    },
+    {
+        "img_path": "spaq_koniq/8830329798.jpg",
+        "gt_score": 2.443354076910805
+    },
+    {
+        "img_path": "spaq_koniq/4617747913.jpg",
+        "gt_score": 2.558042125418865
+    },
+    {
+        "img_path": "spaq_koniq/4213592284.jpg",
+        "gt_score": 2.798958262098526
+    },
+    {
+        "img_path": "spaq_koniq/2868514181.jpg",
+        "gt_score": 2.59844624490545
+    },
+    {
+        "img_path": "spaq_koniq/1428835063.jpg",
+        "gt_score": 2.9166298735400904
+    },
+    {
+        "img_path": "spaq_koniq/7562246986.jpg",
+        "gt_score": 2.5257467911579563
+    },
+    {
+        "img_path": "spaq_koniq/3662558151.jpg",
+        "gt_score": 2.479655337482046
+    },
+    {
+        "img_path": "spaq_koniq/3973813247.jpg",
+        "gt_score": 2.2264894033682943
+    },
+    {
+        "img_path": "spaq_koniq/7253262358.jpg",
+        "gt_score": 2.5942164585055845
+    },
+    {
+        "img_path": "spaq_koniq/4319921272.jpg",
+        "gt_score": 2.258855911919571
+    },
+    {
+        "img_path": "spaq_koniq/8152475637.jpg",
+        "gt_score": 2.2067161785961624
+    },
+    {
+        "img_path": "spaq_koniq/9317715562.jpg",
+        "gt_score": 2.668402323039818
+    },
+    {
+        "img_path": "spaq_koniq/3015139450.jpg",
+        "gt_score": 2.5541207527176497
+    },
+    {
+        "img_path": "spaq_koniq/2641860474.jpg",
+        "gt_score": 2.376604941489832
+    },
+    {
+        "img_path": "spaq_koniq/3194756721.jpg",
+        "gt_score": 2.490931089455031
+    },
+    {
+        "img_path": "spaq_koniq/5645990670.jpg",
+        "gt_score": 2.5418860698898973
+    },
+    {
+        "img_path": "spaq_koniq/5960283649.jpg",
+        "gt_score": 2.3872903540208434
+    },
+    {
+        "img_path": "spaq_koniq/5821971629.jpg",
+        "gt_score": 2.485687908480769
+    },
+    {
+        "img_path": "spaq_koniq/8395711832.jpg",
+        "gt_score": 2.149019531738537
+    },
+    {
+        "img_path": "spaq_koniq/4911990100.jpg",
+        "gt_score": 2.949976065102915
+    },
+    {
+        "img_path": "spaq_koniq/5254718076.jpg",
+        "gt_score": 2.351838293958075
+    },
+    {
+        "img_path": "spaq_koniq/5162032167.jpg",
+        "gt_score": 2.695240374752103
+    },
+    {
+        "img_path": "spaq_koniq/36434642.jpg",
+        "gt_score": 2.887146960268074
+    },
+    {
+        "img_path": "spaq_koniq/3317434594.jpg",
+        "gt_score": 2.135871844512133
+    },
+    {
+        "img_path": "spaq_koniq/9541618071.jpg",
+        "gt_score": 2.2848961934648764
+    },
+    {
+        "img_path": "spaq_koniq/5784134624.jpg",
+        "gt_score": 2.305380740532543
+    },
+    {
+        "img_path": "spaq_koniq/535787632.jpg",
+        "gt_score": 2.2233464370850724
+    },
+    {
+        "img_path": "spaq_koniq/3431390099.jpg",
+        "gt_score": 2.075155576831017
+    },
+    {
+        "img_path": "spaq_koniq/4371356797.jpg",
+        "gt_score": 2.7657204835280385
+    },
+    {
+        "img_path": "spaq_koniq/8937929358.jpg",
+        "gt_score": 2.0776120531102724
+    },
+    {
+        "img_path": "spaq_koniq/5761420767.jpg",
+        "gt_score": 2.9619435136428898
+    },
+    {
+        "img_path": "spaq_koniq/9905676544.jpg",
+        "gt_score": 2.8562116867363523
+    },
+    {
+        "img_path": "spaq_koniq/4297818651.jpg",
+        "gt_score": 2.19566956981487
+    },
+    {
+        "img_path": "spaq_koniq/7072303767.jpg",
+        "gt_score": 2.797391096218285
+    },
+    {
+        "img_path": "spaq_koniq/2232895391.jpg",
+        "gt_score": 2.4776005491478266
+    },
+    {
+        "img_path": "spaq_koniq/2838554535.jpg",
+        "gt_score": 2.1242221158448964
+    },
+    {
+        "img_path": "spaq_koniq/5001805928.jpg",
+        "gt_score": 2.268779415040585
+    },
+    {
+        "img_path": "spaq_koniq/7517892652.jpg",
+        "gt_score": 2.9472664541127367
+    },
+    {
+        "img_path": "spaq_koniq/8522515607.jpg",
+        "gt_score": 2.7225945428434697
+    },
+    {
+        "img_path": "spaq_koniq/4198235482.jpg",
+        "gt_score": 2.15294399234083
+    },
+    {
+        "img_path": "spaq_koniq/5315386438.jpg",
+        "gt_score": 2.7162958857171553
+    },
+    {
+        "img_path": "spaq_koniq/4079839829.jpg",
+        "gt_score": 2.400583814087537
+    },
+    {
+        "img_path": "spaq_koniq/5727908818.jpg",
+        "gt_score": 2.9174929904944227
+    },
+    {
+        "img_path": "spaq_koniq/5235352004.jpg",
+        "gt_score": 2.3577616456054984
+    },
+    {
+        "img_path": "spaq_koniq/4535431418.jpg",
+        "gt_score": 2.903235275522281
+    },
+    {
+        "img_path": "spaq_koniq/5318152871.jpg",
+        "gt_score": 2.663361716736538
+    },
+    {
+        "img_path": "spaq_koniq/8208757707.jpg",
+        "gt_score": 2.4573700076332954
+    },
+    {
+        "img_path": "spaq_koniq/5492904052.jpg",
+        "gt_score": 2.588559119195785
+    },
+    {
+        "img_path": "spaq_koniq/3545702131.jpg",
+        "gt_score": 2.625127693909684
+    },
+    {
+        "img_path": "spaq_koniq/9244573247.jpg",
+        "gt_score": 2.7419358738171566
+    },
+    {
+        "img_path": "spaq_koniq/10923819485.jpg",
+        "gt_score": 2.2785686484164884
+    },
+    {
+        "img_path": "spaq_koniq/463199566.jpg",
+        "gt_score": 2.918727727248545
+    },
+    {
+        "img_path": "spaq_koniq/4704193975.jpg",
+        "gt_score": 2.9166298735400904
+    },
+    {
+        "img_path": "spaq_koniq/3016815898.jpg",
+        "gt_score": 2.624371144449362
+    },
+    {
+        "img_path": "spaq_koniq/1331642031.jpg",
+        "gt_score": 2.9063803597073017
+    },
+    {
+        "img_path": "spaq_koniq/8200520446.jpg",
+        "gt_score": 2.7874648246489158
+    },
+    {
+        "img_path": "spaq_koniq/6612589223.jpg",
+        "gt_score": 2.3281119798592202
+    },
+    {
+        "img_path": "spaq_koniq/8183781293.jpg",
+        "gt_score": 2.1470172559210403
+    },
+    {
+        "img_path": "spaq_koniq/6797193823.jpg",
+        "gt_score": 2.5470719642572126
+    },
+    {
+        "img_path": "spaq_koniq/8596963541.jpg",
+        "gt_score": 2.384086712712849
+    },
+    {
+        "img_path": "spaq_koniq/8494026131.jpg",
+        "gt_score": 2.1477096316710083
+    },
+    {
+        "img_path": "spaq_koniq/3734378087.jpg",
+        "gt_score": 2.6225031550546096
+    },
+    {
+        "img_path": "spaq_koniq/6560010177.jpg",
+        "gt_score": 2.4640976543800837
+    },
+    {
+        "img_path": "spaq_koniq/2953741163.jpg",
+        "gt_score": 2.4481117781652197
+    },
+    {
+        "img_path": "spaq_koniq/289395722.jpg",
+        "gt_score": 2.1046834243510606
+    },
+    {
+        "img_path": "spaq_koniq/3916637949.jpg",
+        "gt_score": 2.59844624490545
+    },
+    {
+        "img_path": "spaq_koniq/9290273110.jpg",
+        "gt_score": 2.724874056851081
+    },
+    {
+        "img_path": "spaq_koniq/2138715193.jpg",
+        "gt_score": 2.9183238413943964
+    },
+    {
+        "img_path": "spaq_koniq/4689181626.jpg",
+        "gt_score": 2.676190150545608
+    },
+    {
+        "img_path": "spaq_koniq/6142185721.jpg",
+        "gt_score": 2.26343529273845
+    },
+    {
+        "img_path": "spaq_koniq/6893965047.jpg",
+        "gt_score": 2.3045766220106567
+    },
+    {
+        "img_path": "spaq_koniq/7644640634.jpg",
+        "gt_score": 2.26343529273845
+    },
+    {
+        "img_path": "spaq_koniq/3491336743.jpg",
+        "gt_score": 2.1025667327725737
+    },
+    {
+        "img_path": "spaq_koniq/2549004146.jpg",
+        "gt_score": 2.242767596665364
+    },
+    {
+        "img_path": "spaq_koniq/5589406824.jpg",
+        "gt_score": 2.246290090952606
+    },
+    {
+        "img_path": "spaq_koniq/6001836316.jpg",
+        "gt_score": 2.428537235861316
+    },
+    {
+        "img_path": "spaq_koniq/5219524859.jpg",
+        "gt_score": 2.4865698633051343
+    },
+    {
+        "img_path": "spaq_koniq/5250708423.jpg",
+        "gt_score": 2.2721217157256826
+    },
+    {
+        "img_path": "spaq_koniq/8391854291.jpg",
+        "gt_score": 2.680423533702614
+    },
+    {
+        "img_path": "spaq_koniq/4430662019.jpg",
+        "gt_score": 2.6594330088825107
+    },
+    {
+        "img_path": "spaq_koniq/6188375845.jpg",
+        "gt_score": 2.2062846201189807
+    },
+    {
+        "img_path": "spaq_koniq/8128596449.jpg",
+        "gt_score": 2.7002254801519294
+    },
+    {
+        "img_path": "spaq_koniq/5189916555.jpg",
+        "gt_score": 2.8551751001980508
+    },
+    {
+        "img_path": "spaq_koniq/5314923965.jpg",
+        "gt_score": 2.752513164193399
+    },
+    {
+        "img_path": "spaq_koniq/262123064.jpg",
+        "gt_score": 2.9339116521979087
+    },
+    {
+        "img_path": "spaq_koniq/2986131608.jpg",
+        "gt_score": 2.769324579999548
+    },
+    {
+        "img_path": "spaq_koniq/3252078614.jpg",
+        "gt_score": 2.6790765481526617
+    },
+    {
+        "img_path": "spaq_koniq/5239610533.jpg",
+        "gt_score": 2.066198122923819
+    },
+    {
+        "img_path": "spaq_koniq/2944165349.jpg",
+        "gt_score": 2.191761181862551
+    },
+    {
+        "img_path": "spaq_koniq/7275267386.jpg",
+        "gt_score": 2.583906354155942
+    },
+    {
+        "img_path": "spaq_koniq/352331466.jpg",
+        "gt_score": 2.1475960387745303
+    },
+    {
+        "img_path": "spaq_koniq/2601219815.jpg",
+        "gt_score": 2.5194772969815666
+    },
+    {
+        "img_path": "spaq_koniq/8230377264.jpg",
+        "gt_score": 2.088319770224987
+    },
+    {
+        "img_path": "spaq_koniq/486068453.jpg",
+        "gt_score": 2.3699254840991726
+    },
+    {
+        "img_path": "spaq_koniq/11149566996.jpg",
+        "gt_score": 2.6721435342926063
+    },
+    {
+        "img_path": "spaq_koniq/2093652366.jpg",
+        "gt_score": 2.4234083293441753
+    },
+    {
+        "img_path": "spaq_koniq/2389241544.jpg",
+        "gt_score": 2.8246698392138025
+    },
+    {
+        "img_path": "spaq_koniq/5724255636.jpg",
+        "gt_score": 2.4289488147793574
+    },
+    {
+        "img_path": "spaq_koniq/5077869968.jpg",
+        "gt_score": 2.2848961934648764
+    },
+    {
+        "img_path": "spaq_koniq/7054855385.jpg",
+        "gt_score": 2.184059358544755
+    },
+    {
+        "img_path": "spaq_koniq/2199234449.jpg",
+        "gt_score": 2.5131641933939637
+    },
+    {
+        "img_path": "spaq_koniq/9538674147.jpg",
+        "gt_score": 2.5263283867879345
+    },
+    {
+        "img_path": "spaq_koniq/2971073872.jpg",
+        "gt_score": 2.6477979894686374
+    },
+    {
+        "img_path": "spaq_koniq/3090534929.jpg",
+        "gt_score": 2.0813199418336756
+    },
+    {
+        "img_path": "spaq_koniq/2848340403.jpg",
+        "gt_score": 2.770884247478435
+    },
+    {
+        "img_path": "spaq_koniq/5380064296.jpg",
+        "gt_score": 2.9769028243178464
+    },
+    {
+        "img_path": "spaq_koniq/5132091056.jpg",
+        "gt_score": 2.1477096316710083
+    },
+    {
+        "img_path": "spaq_koniq/7969415278.jpg",
+        "gt_score": 2.992448774627122
+    },
+    {
+        "img_path": "spaq_koniq/8620919369.jpg",
+        "gt_score": 2.2618477740545684
+    },
+    {
+        "img_path": "spaq_koniq/7188153176.jpg",
+        "gt_score": 2.764385632983041
+    },
+    {
+        "img_path": "spaq_koniq/8283257984.jpg",
+        "gt_score": 2.087749891723085
+    },
+    {
+        "img_path": "spaq_koniq/2166503846.jpg",
+        "gt_score": 2.7806889532316763
+    },
+    {
+        "img_path": "spaq_koniq/11504259765.jpg",
+        "gt_score": 2.3879707390073754
+    },
+    {
+        "img_path": "spaq_koniq/4347675881.jpg",
+        "gt_score": 2.796729179816732
+    },
+    {
+        "img_path": "spaq_koniq/5146611755.jpg",
+        "gt_score": 2.6145389395213874
+    },
+    {
+        "img_path": "spaq_koniq/6860404399.jpg",
+        "gt_score": 2.2560856692019953
+    },
+    {
+        "img_path": "spaq_koniq/4826544292.jpg",
+        "gt_score": 2.1496397056643066
+    },
+    {
+        "img_path": "spaq_koniq/6284871746.jpg",
+        "gt_score": 2.184059358544755
+    },
+    {
+        "img_path": "spaq_koniq/6243575043.jpg",
+        "gt_score": 2.767472474868356
+    },
+    {
+        "img_path": "spaq_koniq/7146833457.jpg",
+        "gt_score": 2.5390162060167265
+    },
+    {
+        "img_path": "spaq_koniq/10813730303.jpg",
+        "gt_score": 2.07866860204759
+    },
+    {
+        "img_path": "spaq_koniq/9455732786.jpg",
+        "gt_score": 2.668402323039818
+    },
+    {
+        "img_path": "spaq_koniq/2730274502.jpg",
+        "gt_score": 2.391019363112149
+    },
+    {
+        "img_path": "spaq_koniq/5480462577.jpg",
+        "gt_score": 2.6900616730260625
+    },
+    {
+        "img_path": "spaq_koniq/8653060124.jpg",
+        "gt_score": 2.7375538535184263
+    },
+    {
+        "img_path": "spaq_koniq/9297933012.jpg",
+        "gt_score": 2.1470172559210403
+    },
+    {
+        "img_path": "spaq_koniq/8182393998.jpg",
+        "gt_score": 2.2655519843169367
+    },
+    {
+        "img_path": "spaq_koniq/8498296013.jpg",
+        "gt_score": 2.3490650884140627
+    },
+    {
+        "img_path": "spaq_koniq/4828138245.jpg",
+        "gt_score": 2.0088602245136484
+    },
+    {
+        "img_path": "spaq_koniq/5824082232.jpg",
+        "gt_score": 2.561888805306702
+    },
+    {
+        "img_path": "spaq_koniq/8262794558.jpg",
+        "gt_score": 2.5994343928204646
+    },
+    {
+        "img_path": "spaq_koniq/6347069171.jpg",
+        "gt_score": 2.947800165368376
+    },
+    {
+        "img_path": "spaq_koniq/6569780821.jpg",
+        "gt_score": 2.6604380271707493
+    },
+    {
+        "img_path": "spaq_koniq/8705060352.jpg",
+        "gt_score": 2.619389023324448
+    },
+    {
+        "img_path": "spaq_koniq/6092502687.jpg",
+        "gt_score": 2.779736414250529
+    },
+    {
+        "img_path": "spaq_koniq/93917546.jpg",
+        "gt_score": 2.8562116867363523
+    },
+    {
+        "img_path": "spaq_koniq/6902342114.jpg",
+        "gt_score": 2.5693664634064497
+    },
+    {
+        "img_path": "spaq_koniq/10856434794.jpg",
+        "gt_score": 2.3699254840991726
+    },
+    {
+        "img_path": "spaq_koniq/2640025600.jpg",
+        "gt_score": 2.488448810539672
+    },
+    {
+        "img_path": "spaq_koniq/6227951538.jpg",
+        "gt_score": 2.5402866819074488
+    },
+    {
+        "img_path": "spaq_koniq/6596306.jpg",
+        "gt_score": 2.1993119890368797
+    },
+    {
+        "img_path": "spaq_koniq/187640892.jpg",
+        "gt_score": 2.044040210627091
+    },
+    {
+        "img_path": "spaq_koniq/7181156093.jpg",
+        "gt_score": 2.635973010554147
+    },
+    {
+        "img_path": "spaq_koniq/5660004991.jpg",
+        "gt_score": 2.205869194668994
+    },
+    {
+        "img_path": "spaq_koniq/4126410943.jpg",
+        "gt_score": 2.1541407371948256
+    },
+    {
+        "img_path": "spaq_koniq/4631601517.jpg",
+        "gt_score": 2.619389023324448
+    },
+    {
+        "img_path": "spaq_koniq/3917849504.jpg",
+        "gt_score": 2.668402323039818
+    },
+    {
+        "img_path": "spaq_koniq/3971662930.jpg",
+        "gt_score": 2.6977564421001228
+    },
+    {
+        "img_path": "spaq_koniq/6133227550.jpg",
+        "gt_score": 2.886420780138214
+    },
+    {
+        "img_path": "spaq_koniq/9527961628.jpg",
+        "gt_score": 2.984168775217115
+    },
+    {
+        "img_path": "spaq_koniq/149836125.jpg",
+        "gt_score": 2.7179014257689635
+    },
+    {
+        "img_path": "spaq_koniq/6183915148.jpg",
+        "gt_score": 2.0136656864756395
+    },
+    {
+        "img_path": "spaq_koniq/10224586444.jpg",
+        "gt_score": 2.123048836576274
+    },
+    {
+        "img_path": "spaq_koniq/8287040167.jpg",
+        "gt_score": 2.4832455720440336
+    },
+    {
+        "img_path": "spaq_koniq/1413089132.jpg",
+        "gt_score": 2.2738152225945436
+    },
+    {
+        "img_path": "spaq_koniq/5530039463.jpg",
+        "gt_score": 2.7497932895252113
+    },
+    {
+        "img_path": "spaq_koniq/71775760.jpg",
+        "gt_score": 2.4581709179602944
+    },
+    {
+        "img_path": "spaq_koniq/171857013.jpg",
+        "gt_score": 2.6977564421001228
+    },
+    {
+        "img_path": "spaq_koniq/8504332753.jpg",
+        "gt_score": 2.511206900408464
+    },
+    {
+        "img_path": "spaq_koniq/8354332729.jpg",
+        "gt_score": 2.829849977871506
+    },
+    {
+        "img_path": "spaq_koniq/8485295618.jpg",
+        "gt_score": 2.798958262098526
+    },
+    {
+        "img_path": "spaq_koniq/5279252148.jpg",
+        "gt_score": 2.8422690282431713
+    },
+    {
+        "img_path": "spaq_koniq/10530470795.jpg",
+        "gt_score": 2.1547052394844517
+    },
+    {
+        "img_path": "spaq_koniq/5873610214.jpg",
+        "gt_score": 2.887859308395444
+    },
+    {
+        "img_path": "spaq_koniq/11404463006.jpg",
+        "gt_score": 2.9469842029679323
+    },
+    {
+        "img_path": "spaq_koniq/4034220859.jpg",
+        "gt_score": 2.6728184294471253
+    },
+    {
+        "img_path": "spaq_koniq/7448606010.jpg",
+        "gt_score": 2.712433501630274
+    },
+    {
+        "img_path": "spaq_koniq/2133766199.jpg",
+        "gt_score": 2.5975293148581846
+    },
+    {
+        "img_path": "spaq_koniq/120328351.jpg",
+        "gt_score": 2.1547052394844517
+    },
+    {
+        "img_path": "spaq_koniq/4458877862.jpg",
+        "gt_score": 2.517438282158235
+    },
+    {
+        "img_path": "spaq_koniq/4023598688.jpg",
+        "gt_score": 2.9619435136428898
+    },
+    {
+        "img_path": "spaq_koniq/5417875149.jpg",
+        "gt_score": 2.1470172559210403
+    },
+    {
+        "img_path": "spaq_koniq/7744113492.jpg",
+        "gt_score": 2.8434087852469774
+    },
+    {
+        "img_path": "spaq_koniq/95721252.jpg",
+        "gt_score": 2.4729877590097833
+    },
+    {
+        "img_path": "spaq_koniq/6251689254.jpg",
+        "gt_score": 2.4586067074029136
+    },
+    {
+        "img_path": "spaq_koniq/6261187277.jpg",
+        "gt_score": 2.823310693922428
+    },
+    {
+        "img_path": "spaq_koniq/7321293264.jpg",
+        "gt_score": 2.7331540562610885
+    },
+    {
+        "img_path": "spaq_koniq/5707373155.jpg",
+        "gt_score": 2.9053701205448372
+    },
+    {
+        "img_path": "spaq_koniq/9766865862.jpg",
+        "gt_score": 2.6029200574437517
+    },
+    {
+        "img_path": "spaq_koniq/3938367619.jpg",
+        "gt_score": 2.797391096218285
+    },
+    {
+        "img_path": "spaq_koniq/4602499723.jpg",
+        "gt_score": 2.5843298461195263
+    },
+    {
+        "img_path": "spaq_koniq/1798554647.jpg",
+        "gt_score": 2.7170540574082875
+    },
+    {
+        "img_path": "spaq_koniq/8844582694.jpg",
+        "gt_score": 2.7711417397508975
+    },
+    {
+        "img_path": "spaq_koniq/52196600.jpg",
+        "gt_score": 2.9910232951418902
+    },
+    {
+        "img_path": "spaq_koniq/2568268182.jpg",
+        "gt_score": 2.7462924607443946
+    },
+    {
+        "img_path": "spaq_koniq/5179986164.jpg",
+        "gt_score": 2.803191645255516
+    },
+    {
+        "img_path": "spaq_koniq/5082407583.jpg",
+        "gt_score": 2.984168775217115
+    },
+    {
+        "img_path": "spaq_koniq/11320098306.jpg",
+        "gt_score": 2.8611066787227686
+    },
+    {
+        "img_path": "spaq_koniq/4778495597.jpg",
+        "gt_score": 2.9764834043923822
+    },
+    {
+        "img_path": "spaq_koniq/2690466413.jpg",
+        "gt_score": 2.59844624490545
+    },
+    {
+        "img_path": "spaq_koniq/5416851305.jpg",
+        "gt_score": 2.517438282158235
+    },
+    {
+        "img_path": "spaq_koniq/6224117679.jpg",
+        "gt_score": 2.9331329893799936
+    },
+    {
+        "img_path": "spaq_koniq/8987485650.jpg",
+        "gt_score": 2.493702565913912
+    },
+    {
+        "img_path": "spaq_koniq/4202847613.jpg",
+        "gt_score": 2.401866921972233
+    },
+    {
+        "img_path": "spaq_koniq/1351464251.jpg",
+        "gt_score": 3.8399513718724605
+    },
+    {
+        "img_path": "spaq_koniq/3277170769.jpg",
+        "gt_score": 3.205985601516815
+    },
+    {
+        "img_path": "spaq_koniq/5527892107.jpg",
+        "gt_score": 3.575275251316419
+    },
+    {
+        "img_path": "spaq_koniq/5138115166.jpg",
+        "gt_score": 3.239209153083811
+    },
+    {
+        "img_path": "spaq_koniq/5630657407.jpg",
+        "gt_score": 3.732557723366277
+    },
+    {
+        "img_path": "spaq_koniq/2286659351.jpg",
+        "gt_score": 3.522580742542445
+    },
+    {
+        "img_path": "spaq_koniq/7993315454.jpg",
+        "gt_score": 3.180041874885356
+    },
+    {
+        "img_path": "spaq_koniq/9139175955.jpg",
+        "gt_score": 3.326357712427594
+    },
+    {
+        "img_path": "spaq_koniq/6131345309.jpg",
+        "gt_score": 3.928634502502706
+    },
+    {
+        "img_path": "spaq_koniq/11209221046.jpg",
+        "gt_score": 3.186487393465037
+    },
+    {
+        "img_path": "spaq_koniq/4483042022.jpg",
+        "gt_score": 3.5289992528733025
+    },
+    {
+        "img_path": "spaq_koniq/11408357925.jpg",
+        "gt_score": 3.192427707746044
+    },
+    {
+        "img_path": "spaq_koniq/5365003071.jpg",
+        "gt_score": 3.826259241529711
+    },
+    {
+        "img_path": "spaq_koniq/8282376526.jpg",
+        "gt_score": 3.273097175682143
+    },
+    {
+        "img_path": "spaq_koniq/1130601148.jpg",
+        "gt_score": 3.9651959753582373
+    },
+    {
+        "img_path": "spaq_koniq/9526812010.jpg",
+        "gt_score": 3.8633013441534265
+    },
+    {
+        "img_path": "spaq_koniq/10990887046.jpg",
+        "gt_score": 3.0685029869440013
+    },
+    {
+        "img_path": "spaq_koniq/358360301.jpg",
+        "gt_score": 3.6162385973702893
+    },
+    {
+        "img_path": "spaq_koniq/5363486044.jpg",
+        "gt_score": 3.0212108778408457
+    },
+    {
+        "img_path": "spaq_koniq/7455132680.jpg",
+        "gt_score": 3.299515882836417
+    },
+    {
+        "img_path": "spaq_koniq/7066539033.jpg",
+        "gt_score": 3.929042733494621
+    },
+    {
+        "img_path": "spaq_koniq/430051470.jpg",
+        "gt_score": 3.2377889587131534
+    },
+    {
+        "img_path": "spaq_koniq/3206690420.jpg",
+        "gt_score": 3.0525707938485036
+    },
+    {
+        "img_path": "spaq_koniq/5258646457.jpg",
+        "gt_score": 3.810544410113588
+    },
+    {
+        "img_path": "spaq_koniq/2065722620.jpg",
+        "gt_score": 3.8833208623999056
+    },
+    {
+        "img_path": "spaq_koniq/8456644085.jpg",
+        "gt_score": 3.205985601516815
+    },
+    {
+        "img_path": "spaq_koniq/5893291303.jpg",
+        "gt_score": 3.5990676787708855
+    },
+    {
+        "img_path": "spaq_koniq/9723956053.jpg",
+        "gt_score": 3.4702638526179137
+    },
+    {
+        "img_path": "spaq_koniq/6922435153.jpg",
+        "gt_score": 3.6051938726663484
+    },
+    {
+        "img_path": "spaq_koniq/6039986831.jpg",
+        "gt_score": 3.361120909022194
+    },
+    {
+        "img_path": "spaq_koniq/2476813465.jpg",
+        "gt_score": 3.1005763333633505
+    },
+    {
+        "img_path": "spaq_koniq/4634635214.jpg",
+        "gt_score": 3.450899268275996
+    },
+    {
+        "img_path": "spaq_koniq/7374960236.jpg",
+        "gt_score": 3.22123823200894
+    },
+    {
+        "img_path": "spaq_koniq/4231049527.jpg",
+        "gt_score": 3.022954035611371
+    },
+    {
+        "img_path": "spaq_koniq/10525460645.jpg",
+        "gt_score": 3.9941359502154157
+    },
+    {
+        "img_path": "spaq_koniq/3172797742.jpg",
+        "gt_score": 3.378667168159743
+    },
+    {
+        "img_path": "spaq_koniq/4156652933.jpg",
+        "gt_score": 3.5328676641736307
+    },
+    {
+        "img_path": "spaq_koniq/6142750214.jpg",
+        "gt_score": 3.292372181295189
+    },
+    {
+        "img_path": "spaq_koniq/6254765942.jpg",
+        "gt_score": 3.8921967300489104
+    },
+    {
+        "img_path": "spaq_koniq/9720517445.jpg",
+        "gt_score": 3.6153662039253214
+    },
+    {
+        "img_path": "spaq_koniq/4122173034.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/7923574034.jpg",
+        "gt_score": 3.2843099202601382
+    },
+    {
+        "img_path": "spaq_koniq/8189726942.jpg",
+        "gt_score": 3.3981402361278223
+    },
+    {
+        "img_path": "spaq_koniq/2678740354.jpg",
+        "gt_score": 3.1233911684745768
+    },
+    {
+        "img_path": "spaq_koniq/10262588616.jpg",
+        "gt_score": 3.350885591191956
+    },
+    {
+        "img_path": "spaq_koniq/7238696504.jpg",
+        "gt_score": 3.0782626396388766
+    },
+    {
+        "img_path": "spaq_koniq/5678053727.jpg",
+        "gt_score": 3.538153998900766
+    },
+    {
+        "img_path": "spaq_koniq/7633437372.jpg",
+        "gt_score": 3.167422347065033
+    },
+    {
+        "img_path": "spaq_koniq/5635139040.jpg",
+        "gt_score": 3.692683174492653
+    },
+    {
+        "img_path": "spaq_koniq/6177131907.jpg",
+        "gt_score": 3.1545624472862306
+    },
+    {
+        "img_path": "spaq_koniq/10468110795.jpg",
+        "gt_score": 3.4462864781379516
+    },
+    {
+        "img_path": "spaq_koniq/4805041131.jpg",
+        "gt_score": 3.208401859812598
+    },
+    {
+        "img_path": "spaq_koniq/11051034136.jpg",
+        "gt_score": 3.624585571689454
+    },
+    {
+        "img_path": "spaq_koniq/5498003598.jpg",
+        "gt_score": 3.624300318973981
+    },
+    {
+        "img_path": "spaq_koniq/4374031327.jpg",
+        "gt_score": 3.430184461371866
+    },
+    {
+        "img_path": "spaq_koniq/4259140344.jpg",
+        "gt_score": 3.024802839307385
+    },
+    {
+        "img_path": "spaq_koniq/3731180333.jpg",
+        "gt_score": 3.7926935821942918
+    },
+    {
+        "img_path": "spaq_koniq/3497202348.jpg",
+        "gt_score": 3.1713738630923807
+    },
+    {
+        "img_path": "spaq_koniq/8107402006.jpg",
+        "gt_score": 3.7822577135645616
+    },
+    {
+        "img_path": "spaq_koniq/156015117.jpg",
+        "gt_score": 3.39997536796999
+    },
+    {
+        "img_path": "spaq_koniq/10644234544.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/4433497740.jpg",
+        "gt_score": 3.358511906438011
+    },
+    {
+        "img_path": "spaq_koniq/4195621541.jpg",
+        "gt_score": 3.0627803485630105
+    },
+    {
+        "img_path": "spaq_koniq/8511620322.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/2575730355.jpg",
+        "gt_score": 3.2114535256555046
+    },
+    {
+        "img_path": "spaq_koniq/8025466958.jpg",
+        "gt_score": 3.4805329503749736
+    },
+    {
+        "img_path": "spaq_koniq/9068148685.jpg",
+        "gt_score": 3.470560076591674
+    },
+    {
+        "img_path": "spaq_koniq/6008172185.jpg",
+        "gt_score": 3.4472290415940234
+    },
+    {
+        "img_path": "spaq_koniq/8236704145.jpg",
+        "gt_score": 3.8237720020249895
+    },
+    {
+        "img_path": "spaq_koniq/2692538398.jpg",
+        "gt_score": 3.138068228004729
+    },
+    {
+        "img_path": "spaq_koniq/7710868262.jpg",
+        "gt_score": 3.0687119270877283
+    },
+    {
+        "img_path": "spaq_koniq/3667890322.jpg",
+        "gt_score": 3.325440782380329
+    },
+    {
+        "img_path": "spaq_koniq/8354855845.jpg",
+        "gt_score": 3.81609082120163
+    },
+    {
+        "img_path": "spaq_koniq/10900020096.jpg",
+        "gt_score": 3.7545047282711765
+    },
+    {
+        "img_path": "spaq_koniq/9602489525.jpg",
+        "gt_score": 3.094037049414273
+    },
+    {
+        "img_path": "spaq_koniq/9657450632.jpg",
+        "gt_score": 3.4373171639806444
+    },
+    {
+        "img_path": "spaq_koniq/5588363134.jpg",
+        "gt_score": 3.3582241209570407
+    },
+    {
+        "img_path": "spaq_koniq/8132808180.jpg",
+        "gt_score": 3.1888263922131737
+    },
+    {
+        "img_path": "spaq_koniq/5217952997.jpg",
+        "gt_score": 3.796401061839076
+    },
+    {
+        "img_path": "spaq_koniq/6686438027.jpg",
+        "gt_score": 3.8682163156989673
+    },
+    {
+        "img_path": "spaq_koniq/9933953566.jpg",
+        "gt_score": 3.6265435684840175
+    },
+    {
+        "img_path": "spaq_koniq/8687755587.jpg",
+        "gt_score": 3.097764556596536
+    },
+    {
+        "img_path": "spaq_koniq/3974701478.jpg",
+        "gt_score": 3.1301346823127596
+    },
+    {
+        "img_path": "spaq_koniq/8385411442.jpg",
+        "gt_score": 3.7002742371258632
+    },
+    {
+        "img_path": "spaq_koniq/4954115704.jpg",
+        "gt_score": 3.3479612146690316
+    },
+    {
+        "img_path": "spaq_koniq/6107208468.jpg",
+        "gt_score": 3.5694339966719073
+    },
+    {
+        "img_path": "spaq_koniq/4147791219.jpg",
+        "gt_score": 3.2364908625010473
+    },
+    {
+        "img_path": "spaq_koniq/11118140253.jpg",
+        "gt_score": 3.9043800861656273
+    },
+    {
+        "img_path": "spaq_koniq/1896792999.jpg",
+        "gt_score": 3.637088252029944
+    },
+    {
+        "img_path": "spaq_koniq/3658667754.jpg",
+        "gt_score": 3.8509539766121836
+    },
+    {
+        "img_path": "spaq_koniq/5037503230.jpg",
+        "gt_score": 3.3690604546288223
+    },
+    {
+        "img_path": "spaq_koniq/5866448510.jpg",
+        "gt_score": 3.7815000341927023
+    },
+    {
+        "img_path": "spaq_koniq/8417650354.jpg",
+        "gt_score": 3.747097614115771
+    },
+    {
+        "img_path": "spaq_koniq/8883829297.jpg",
+        "gt_score": 3.3471813809295883
+    },
+    {
+        "img_path": "spaq_koniq/9589470493.jpg",
+        "gt_score": 3.1754803405325664
+    },
+    {
+        "img_path": "spaq_koniq/3038029410.jpg",
+        "gt_score": 3.0609469515644645
+    },
+    {
+        "img_path": "spaq_koniq/5752256334.jpg",
+        "gt_score": 3.0217807563427486
+    },
+    {
+        "img_path": "spaq_koniq/8087032429.jpg",
+        "gt_score": 3.1990129704346977
+    },
+    {
+        "img_path": "spaq_koniq/7700511938.jpg",
+        "gt_score": 3.3395571811662528
+    },
+    {
+        "img_path": "spaq_koniq/3601117533.jpg",
+        "gt_score": 3.626680882544936
+    },
+    {
+        "img_path": "spaq_koniq/11408307524.jpg",
+        "gt_score": 3.558079034372304
+    },
+    {
+        "img_path": "spaq_koniq/8668135949.jpg",
+        "gt_score": 3.0360277188903346
+    },
+    {
+        "img_path": "spaq_koniq/6961079357.jpg",
+        "gt_score": 3.007701405119247
+    },
+    {
+        "img_path": "spaq_koniq/7138669275.jpg",
+        "gt_score": 3.112988980652241
+    },
+    {
+        "img_path": "spaq_koniq/8171751224.jpg",
+        "gt_score": 3.6834592517049285
+    },
+    {
+        "img_path": "spaq_koniq/3918280584.jpg",
+        "gt_score": 3.31754769883061
+    },
+    {
+        "img_path": "spaq_koniq/6903802628.jpg",
+        "gt_score": 3.380804212541886
+    },
+    {
+        "img_path": "spaq_koniq/3980206588.jpg",
+        "gt_score": 3.328870001896721
+    },
+    {
+        "img_path": "spaq_koniq/233025659.jpg",
+        "gt_score": 3.717602407166798
+    },
+    {
+        "img_path": "spaq_koniq/9923882853.jpg",
+        "gt_score": 3.050005870823817
+    },
+    {
+        "img_path": "spaq_koniq/5090803058.jpg",
+        "gt_score": 3.112988980652241
+    },
+    {
+        "img_path": "spaq_koniq/5838794545.jpg",
+        "gt_score": 3.300823739626238
+    },
+    {
+        "img_path": "spaq_koniq/10186832194.jpg",
+        "gt_score": 3.2700164463550245
+    },
+    {
+        "img_path": "spaq_koniq/3369391628.jpg",
+        "gt_score": 3.889695258255346
+    },
+    {
+        "img_path": "spaq_koniq/2191619969.jpg",
+        "gt_score": 3.15830262075504
+    },
+    {
+        "img_path": "spaq_koniq/4871159312.jpg",
+        "gt_score": 3.587458607433136
+    },
+    {
+        "img_path": "spaq_koniq/9264744599.jpg",
+        "gt_score": 3.347034679533059
+    },
+    {
+        "img_path": "spaq_koniq/5276579774.jpg",
+        "gt_score": 3.006821445667776
+    },
+    {
+        "img_path": "spaq_koniq/9071921017.jpg",
+        "gt_score": 3.309348087764392
+    },
+    {
+        "img_path": "spaq_koniq/6100280225.jpg",
+        "gt_score": 3.0876621649718796
+    },
+    {
+        "img_path": "spaq_koniq/9537434864.jpg",
+        "gt_score": 3.2448104791331165
+    },
+    {
+        "img_path": "spaq_koniq/4632834953.jpg",
+        "gt_score": 3.6347081883223527
+    },
+    {
+        "img_path": "spaq_koniq/7046586351.jpg",
+        "gt_score": 3.1233911684745768
+    },
+    {
+        "img_path": "spaq_koniq/11338371864.jpg",
+        "gt_score": 3.648311885788309
+    },
+    {
+        "img_path": "spaq_koniq/5370690667.jpg",
+        "gt_score": 3.6949497367161372
+    },
+    {
+        "img_path": "spaq_koniq/6163576407.jpg",
+        "gt_score": 3.485247399799822
+    },
+    {
+        "img_path": "spaq_koniq/2700852747.jpg",
+        "gt_score": 3.1641933939684037
+    },
+    {
+        "img_path": "spaq_koniq/8623527706.jpg",
+        "gt_score": 3.04455068055596
+    },
+    {
+        "img_path": "spaq_koniq/6713488045.jpg",
+        "gt_score": 3.178022445614595
+    },
+    {
+        "img_path": "spaq_koniq/5669648365.jpg",
+        "gt_score": 3.247696876740171
+    },
+    {
+        "img_path": "spaq_koniq/281609508.jpg",
+        "gt_score": 3.231211105792238
+    },
+    {
+        "img_path": "spaq_koniq/482147713.jpg",
+        "gt_score": 3.939855022909117
+    },
+    {
+        "img_path": "spaq_koniq/4806281586.jpg",
+        "gt_score": 3.0360277188903346
+    },
+    {
+        "img_path": "spaq_koniq/8608557464.jpg",
+        "gt_score": 3.504994716258561
+    },
+    {
+        "img_path": "spaq_koniq/8321126258.jpg",
+        "gt_score": 3.0307828194037874
+    },
+    {
+        "img_path": "spaq_koniq/6834902092.jpg",
+        "gt_score": 3.1768851880778963
+    },
+    {
+        "img_path": "spaq_koniq/3118439925.jpg",
+        "gt_score": 3.5057071948765426
+    },
+    {
+        "img_path": "spaq_koniq/5745624995.jpg",
+        "gt_score": 3.006394036791356
+    },
+    {
+        "img_path": "spaq_koniq/8575096989.jpg",
+        "gt_score": 3.4212655861770336
+    },
+    {
+        "img_path": "spaq_koniq/2190310.jpg",
+        "gt_score": 3.312754014961654
+    },
+    {
+        "img_path": "spaq_koniq/2980838635.jpg",
+        "gt_score": 3.555964141172371
+    },
+    {
+        "img_path": "spaq_koniq/6897675527.jpg",
+        "gt_score": 3.022557863390798
+    },
+    {
+        "img_path": "spaq_koniq/9941134286.jpg",
+        "gt_score": 3.682206620215231
+    },
+    {
+        "img_path": "spaq_koniq/2433641656.jpg",
+        "gt_score": 3.018516906740941
+    },
+    {
+        "img_path": "spaq_koniq/298323953.jpg",
+        "gt_score": 3.1313836266345634
+    },
+    {
+        "img_path": "spaq_koniq/9618688199.jpg",
+        "gt_score": 3.5506126039874255
+    },
+    {
+        "img_path": "spaq_koniq/6311708784.jpg",
+        "gt_score": 3.2282461973701766
+    },
+    {
+        "img_path": "spaq_koniq/4586207743.jpg",
+        "gt_score": 3.4711040515253084
+    },
+    {
+        "img_path": "spaq_koniq/6065704403.jpg",
+        "gt_score": 3.6832542756429723
+    },
+    {
+        "img_path": "spaq_koniq/6666568019.jpg",
+        "gt_score": 3.575275251316419
+    },
+    {
+        "img_path": "spaq_koniq/3876341199.jpg",
+        "gt_score": 3.937385549400872
+    },
+    {
+        "img_path": "spaq_koniq/6523676619.jpg",
+        "gt_score": 3.1775945665413845
+    },
+    {
+        "img_path": "spaq_koniq/5786468844.jpg",
+        "gt_score": 3.928634502502706
+    },
+    {
+        "img_path": "spaq_koniq/3156288845.jpg",
+        "gt_score": 3.4406414552417446
+    },
+    {
+        "img_path": "spaq_koniq/4991939718.jpg",
+        "gt_score": 3.2364908625010473
+    },
+    {
+        "img_path": "spaq_koniq/2189906236.jpg",
+        "gt_score": 3.1564145524174227
+    },
+    {
+        "img_path": "spaq_koniq/7974813912.jpg",
+        "gt_score": 3.00815445354971
+    },
+    {
+        "img_path": "spaq_koniq/5952909406.jpg",
+        "gt_score": 3.0864049784585914
+    },
+    {
+        "img_path": "spaq_koniq/3826205454.jpg",
+        "gt_score": 3.4848908448012956
+    },
+    {
+        "img_path": "spaq_koniq/4469938423.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/5131861392.jpg",
+        "gt_score": 3.543539143622796
+    },
+    {
+        "img_path": "spaq_koniq/6938575813.jpg",
+        "gt_score": 3.372901180487193
+    },
+    {
+        "img_path": "spaq_koniq/13325497.jpg",
+        "gt_score": 3.419522428406492
+    },
+    {
+        "img_path": "spaq_koniq/4425198356.jpg",
+        "gt_score": 3.5303973192915334
+    },
+    {
+        "img_path": "spaq_koniq/6902428631.jpg",
+        "gt_score": 3.871921204512407
+    },
+    {
+        "img_path": "spaq_koniq/6283537466.jpg",
+        "gt_score": 3.1313836266345634
+    },
+    {
+        "img_path": "spaq_koniq/5451526397.jpg",
+        "gt_score": 3.5783800139093365
+    },
+    {
+        "img_path": "spaq_koniq/3603762742.jpg",
+        "gt_score": 3.097884433951302
+    },
+    {
+        "img_path": "spaq_koniq/6649624069.jpg",
+        "gt_score": 3.5196717757887273
+    },
+    {
+        "img_path": "spaq_koniq/9584563009.jpg",
+        "gt_score": 3.1653901388224
+    },
+    {
+        "img_path": "spaq_koniq/6200906518.jpg",
+        "gt_score": 3.197665984884746
+    },
+    {
+        "img_path": "spaq_koniq/5970029392.jpg",
+        "gt_score": 3.5144593621238105
+    },
+    {
+        "img_path": "spaq_koniq/99355212.jpg",
+        "gt_score": 3.3778419728042723
+    },
+    {
+        "img_path": "spaq_koniq/8651960690.jpg",
+        "gt_score": 3.373764536930135
+    },
+    {
+        "img_path": "spaq_koniq/5592471041.jpg",
+        "gt_score": 3.5289992528733025
+    },
+    {
+        "img_path": "spaq_koniq/5238246589.jpg",
+        "gt_score": 3.9631805449573143
+    },
+    {
+        "img_path": "spaq_koniq/8267153015.jpg",
+        "gt_score": 3.9991223871070742
+    },
+    {
+        "img_path": "spaq_koniq/4243875190.jpg",
+        "gt_score": 3.9477768983217065
+    },
+    {
+        "img_path": "spaq_koniq/5190438831.jpg",
+        "gt_score": 3.2902249001980706
+    },
+    {
+        "img_path": "spaq_koniq/4396087406.jpg",
+        "gt_score": 3.2788592805347165
+    },
+    {
+        "img_path": "spaq_koniq/5996266717.jpg",
+        "gt_score": 3.7953908226766107
+    },
+    {
+        "img_path": "spaq_koniq/6938815179.jpg",
+        "gt_score": 3.1693792883357204
+    },
+    {
+        "img_path": "spaq_koniq/6237051127.jpg",
+        "gt_score": 3.208401859812598
+    },
+    {
+        "img_path": "spaq_koniq/9175070760.jpg",
+        "gt_score": 3.192427707746044
+    },
+    {
+        "img_path": "spaq_koniq/3340734956.jpg",
+        "gt_score": 3.4657161093254847
+    },
+    {
+        "img_path": "spaq_koniq/7972772456.jpg",
+        "gt_score": 3.709909047391094
+    },
+    {
+        "img_path": "spaq_koniq/9497810800.jpg",
+        "gt_score": 3.394101377586301
+    },
+    {
+        "img_path": "spaq_koniq/4764407251.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/10589450596.jpg",
+        "gt_score": 3.394101377586301
+    },
+    {
+        "img_path": "spaq_koniq/10278246465.jpg",
+        "gt_score": 3.794098656306005
+    },
+    {
+        "img_path": "spaq_koniq/11148529964.jpg",
+        "gt_score": 3.116234585728473
+    },
+    {
+        "img_path": "spaq_koniq/5598111719.jpg",
+        "gt_score": 3.2506427876999315
+    },
+    {
+        "img_path": "spaq_koniq/6443396365.jpg",
+        "gt_score": 3.1820994065951846
+    },
+    {
+        "img_path": "spaq_koniq/6290479072.jpg",
+        "gt_score": 3.416706558161795
+    },
+    {
+        "img_path": "spaq_koniq/231161527.jpg",
+        "gt_score": 3.024802839307385
+    },
+    {
+        "img_path": "spaq_koniq/8943413727.jpg",
+        "gt_score": 3.604006625787377
+    },
+    {
+        "img_path": "spaq_koniq/6128722390.jpg",
+        "gt_score": 3.379696115454852
+    },
+    {
+        "img_path": "spaq_koniq/8293797976.jpg",
+        "gt_score": 3.13480665922025
+    },
+    {
+        "img_path": "spaq_koniq/7238571992.jpg",
+        "gt_score": 3.8985795371283976
+    },
+    {
+        "img_path": "spaq_koniq/3683418770.jpg",
+        "gt_score": 3.1527452875348816
+    },
+    {
+        "img_path": "spaq_koniq/6162806548.jpg",
+        "gt_score": 3.347317315251141
+    },
+    {
+        "img_path": "spaq_koniq/200825729.jpg",
+        "gt_score": 3.769181787801328
+    },
+    {
+        "img_path": "spaq_koniq/3502153355.jpg",
+        "gt_score": 3.5899600792267
+    },
+    {
+        "img_path": "spaq_koniq/1429120335.jpg",
+        "gt_score": 3.165501984135864
+    },
+    {
+        "img_path": "spaq_koniq/6255414433.jpg",
+        "gt_score": 3.3957635232168437
+    },
+    {
+        "img_path": "spaq_koniq/8385356062.jpg",
+        "gt_score": 3.5567961028355795
+    },
+    {
+        "img_path": "spaq_koniq/9132059359.jpg",
+        "gt_score": 3.0195645621686817
+    },
+    {
+        "img_path": "spaq_koniq/8399674675.jpg",
+        "gt_score": 3.6201531833413054
+    },
+    {
+        "img_path": "spaq_koniq/7896479602.jpg",
+        "gt_score": 3.6940697772646667
+    },
+    {
+        "img_path": "spaq_koniq/8077634378.jpg",
+        "gt_score": 3.7076836953898655
+    },
+    {
+        "img_path": "spaq_koniq/9037387298.jpg",
+        "gt_score": 3.8754221544920715
+    },
+    {
+        "img_path": "spaq_koniq/5784673341.jpg",
+        "gt_score": 3.654967579093962
+    },
+    {
+        "img_path": "spaq_koniq/5017267795.jpg",
+        "gt_score": 3.298639640476409
+    },
+    {
+        "img_path": "spaq_koniq/6255855320.jpg",
+        "gt_score": 3.00815445354971
+    },
+    {
+        "img_path": "spaq_koniq/8539488665.jpg",
+        "gt_score": 3.5934930257027666
+    },
+    {
+        "img_path": "spaq_koniq/5433512452.jpg",
+        "gt_score": 3.4708396898753175
+    },
+    {
+        "img_path": "spaq_koniq/4268587808.jpg",
+        "gt_score": 3.5343488353188808
+    },
+    {
+        "img_path": "spaq_koniq/9269195837.jpg",
+        "gt_score": 3.508564811819954
+    },
+    {
+        "img_path": "spaq_koniq/3183550454.jpg",
+        "gt_score": 3.419522428406492
+    },
+    {
+        "img_path": "spaq_koniq/7674660830.jpg",
+        "gt_score": 3.6178066248040603
+    },
+    {
+        "img_path": "spaq_koniq/4143494301.jpg",
+        "gt_score": 3.0627803485630105
+    },
+    {
+        "img_path": "spaq_koniq/6561794905.jpg",
+        "gt_score": 3.584250837721397
+    },
+    {
+        "img_path": "spaq_koniq/8468013032.jpg",
+        "gt_score": 3.0827798872503642
+    },
+    {
+        "img_path": "spaq_koniq/5141696799.jpg",
+        "gt_score": 3.769181787801328
+    },
+    {
+        "img_path": "spaq_koniq/6633974935.jpg",
+        "gt_score": 3.9492580181905144
+    },
+    {
+        "img_path": "spaq_koniq/7355708808.jpg",
+        "gt_score": 3.7041449093328587
+    },
+    {
+        "img_path": "spaq_koniq/6844398521.jpg",
+        "gt_score": 3.2356434941403873
+    },
+    {
+        "img_path": "spaq_koniq/5650628470.jpg",
+        "gt_score": 3.074070959422797
+    },
+    {
+        "img_path": "spaq_koniq/818793256.jpg",
+        "gt_score": 3.22123823200894
+    },
+    {
+        "img_path": "spaq_koniq/4639050491.jpg",
+        "gt_score": 3.3316310328974525
+    },
+    {
+        "img_path": "spaq_koniq/8022493551.jpg",
+        "gt_score": 3.1820994065951846
+    },
+    {
+        "img_path": "spaq_koniq/7553660370.jpg",
+        "gt_score": 3.2165237825840913
+    },
+    {
+        "img_path": "spaq_koniq/9977191265.jpg",
+        "gt_score": 3.927096076449833
+    },
+    {
+        "img_path": "spaq_koniq/2580252988.jpg",
+        "gt_score": 3.0367400670177047
+    },
+    {
+        "img_path": "spaq_koniq/11126652126.jpg",
+        "gt_score": 3.0072571537456882
+    },
+    {
+        "img_path": "spaq_koniq/4244935320.jpg",
+        "gt_score": 3.6016987066207973
+    },
+    {
+        "img_path": "spaq_koniq/4597898813.jpg",
+        "gt_score": 3.1617669663286536
+    },
+    {
+        "img_path": "spaq_koniq/2676837522.jpg",
+        "gt_score": 3.2346039391412007
+    },
+    {
+        "img_path": "spaq_koniq/3606644176.jpg",
+        "gt_score": 3.650336571251851
+    },
+    {
+        "img_path": "spaq_koniq/8438205347.jpg",
+        "gt_score": 3.7697462900909526
+    },
+    {
+        "img_path": "spaq_koniq/7662529090.jpg",
+        "gt_score": 3.3758635227776774
+    },
+    {
+        "img_path": "spaq_koniq/319557469.jpg",
+        "gt_score": 3.226130585185656
+    },
+    {
+        "img_path": "spaq_koniq/3331414151.jpg",
+        "gt_score": 3.3123417817051197
+    },
+    {
+        "img_path": "spaq_koniq/7627158600.jpg",
+        "gt_score": 3.325440782380329
+    },
+    {
+        "img_path": "spaq_koniq/8946027655.jpg",
+        "gt_score": 3.7012093064311884
+    },
+    {
+        "img_path": "spaq_koniq/6906058795.jpg",
+        "gt_score": 3.3435470614268725
+    },
+    {
+        "img_path": "spaq_koniq/3112828024.jpg",
+        "gt_score": 3.379696115454852
+    },
+    {
+        "img_path": "spaq_koniq/4088500384.jpg",
+        "gt_score": 3.103376996388003
+    },
+    {
+        "img_path": "spaq_koniq/8460289501.jpg",
+        "gt_score": 3.454860205982307
+    },
+    {
+        "img_path": "spaq_koniq/3020768905.jpg",
+        "gt_score": 3.6201531833413054
+    },
+    {
+        "img_path": "spaq_koniq/7349520418.jpg",
+        "gt_score": 3.050844559939824
+    },
+    {
+        "img_path": "spaq_koniq/8985407469.jpg",
+        "gt_score": 3.538153998900766
+    },
+    {
+        "img_path": "spaq_koniq/325223545.jpg",
+        "gt_score": 3.724868358066067
+    },
+    {
+        "img_path": "spaq_koniq/6164110615.jpg",
+        "gt_score": 3.1087141089444255
+    },
+    {
+        "img_path": "spaq_koniq/8473031499.jpg",
+        "gt_score": 3.2854200929906314
+    },
+    {
+        "img_path": "spaq_koniq/4943600012.jpg",
+        "gt_score": 3.6718572085868164
+    },
+    {
+        "img_path": "spaq_koniq/10375167904.jpg",
+        "gt_score": 3.2364908625010473
+    },
+    {
+        "img_path": "spaq_koniq/2114797362.jpg",
+        "gt_score": 3.1019626615605533
+    },
+    {
+        "img_path": "spaq_koniq/9847211516.jpg",
+        "gt_score": 3.387578240017344
+    },
+    {
+        "img_path": "spaq_koniq/8553006135.jpg",
+        "gt_score": 3.646481570129248
+    },
+    {
+        "img_path": "spaq_koniq/456472871.jpg",
+        "gt_score": 3.495349791424462
+    },
+    {
+        "img_path": "spaq_koniq/5197338148.jpg",
+        "gt_score": 3.8856809478219234
+    },
+    {
+        "img_path": "spaq_koniq/4764809752.jpg",
+        "gt_score": 3.0984144180460644
+    },
+    {
+        "img_path": "spaq_koniq/9762345346.jpg",
+        "gt_score": 3.7897835319124646
+    },
+    {
+        "img_path": "spaq_koniq/4442175074.jpg",
+        "gt_score": 4.606612870136091
+    },
+    {
+        "img_path": "spaq_koniq/4330138497.jpg",
+        "gt_score": 4.165462395115479
+    },
+    {
+        "img_path": "spaq_koniq/11054899145.jpg",
+        "gt_score": 4.036837982505765
+    },
+    {
+        "img_path": "spaq_koniq/6344902938.jpg",
+        "gt_score": 4.295459208096839
+    },
+    {
+        "img_path": "spaq_koniq/5891588921.jpg",
+        "gt_score": 4.181329486499418
+    },
+    {
+        "img_path": "spaq_koniq/4359682859.jpg",
+        "gt_score": 4.384360254393757
+    },
+    {
+        "img_path": "spaq_koniq/9328342385.jpg",
+        "gt_score": 4.258417105473108
+    },
+    {
+        "img_path": "spaq_koniq/10067457634.jpg",
+        "gt_score": 4.403526993733015
+    },
+    {
+        "img_path": "spaq_koniq/8975077146.jpg",
+        "gt_score": 4.013138317829563
+    },
+    {
+        "img_path": "spaq_koniq/9119961649.jpg",
+        "gt_score": 4.577549066539016
+    },
+    {
+        "img_path": "spaq_koniq/2174764653.jpg",
+        "gt_score": 4.073206592354502
+    },
+    {
+        "img_path": "spaq_koniq/8988892733.jpg",
+        "gt_score": 4.165462395115479
+    },
+    {
+        "img_path": "spaq_koniq/7695585576.jpg",
+        "gt_score": 4.6057741810200845
+    }
+]
