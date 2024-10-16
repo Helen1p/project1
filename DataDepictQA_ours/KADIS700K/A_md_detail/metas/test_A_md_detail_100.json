@@ -1,0 +1,2048 @@
+[
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "blur"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_stretch",
+            "blur_zoom"
+        ],
+        "severities": [
+            3,
+            1
+        ],
+        "id": "tree-677847_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tree-677847_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the image's quality, and what factors contribute to your assessment?",
+        "answer": "The image depicts an autumnal scene with a tree displaying colorful leaves, a body of water, and a ground covered with fallen leaves.\n\nThe evaluated image exhibits a significant increase in contrast, which results in loss of detail and color distortion, particularly in the highlights and shadows. Additionally, there is a slight blur, reducing the sharpness and clarity, especially noticeable in the finer details of the leaves and the texture of the water.\n\nOverall, the image quality is compromised, with the high contrast causing an unnatural and harsh appearance, while the blur diminishes the definition. The combination of these distortions creates an image that is visually jarring and less true to the scene's natural beauty."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "blur"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_stretch",
+            "blur_zoom"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "wedding-cake-606301_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wedding-cake-606301_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a celebration cake with blue and white decorations, flanked by champagne glasses and cutlery.\n\nThe evaluated image suffers from severe contrast enhancement, resulting in loss of detail and color distortion, particularly in the highlights and shadows. Additionally, a serious blur distortion obscures fine details, making edges and textures indistinct.\n\nOverall, the image quality is significantly degraded, with the original content barely recognizable due to the extreme contrast manipulation and heavy blurring. These distortions severely impact the visual integrity of the image."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "blur"
+        ],
+        "distortion_names": [
+            "noise_impulse",
+            "blur_lens"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "sunset-69592_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-69592_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a sunset over a body of water with a boat visible in the foreground.\n\nThe evaluated image exhibits obvious noise, which manifests as graininess throughout, reducing detail clarity. Additionally, there is a slight blur, diminishing edge sharpness, particularly noticeable in the sun's reflection and the boat.\n\nOverall, the image quality is compromised, with the noise being the most detrimental factor, as it significantly affects the viewing experience by obscuring finer details and creating a less pleasing aesthetic. The blur is less impactful but still contributes to the diminished visual sharpness."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "table-709710_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/table-709710_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a comprehensive assessment of the image's quality, including both strengths and areas for improvement.",
+        "answer": "The image depicts a dining table set with various dishes, including a salad, olives, and other appetizers, ready for a meal.\n\nThe evaluated image displays excellent quality, with sharp details, balanced color saturation, and appropriate brightness levels. There is no visible noise or compression artifacts, and the focus is well maintained across the entire scene.\n\nIn summary, the evaluated image is of high quality, with no discernible distortions and a clear representation of the content."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "blur_jitter",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            1,
+            2
+        ],
+        "id": "trees-1712708_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/trees-1712708_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Could you assess the overall quality of the image and elaborate on your evaluation?",
+        "answer": "The image depicts frost-covered branches against a muted background.\n\nThe evaluated image exhibits a slight blur, reducing the crispness of the frost details on the branches. Furthermore, there's an obvious desaturation, which makes the colors appear washed out, diminishing the visual impact of the frost contrast against the background.\n\nOverall, the image quality is compromised, with the blur affecting fine details and the significant desaturation leading to a less vibrant and potentially less engaging picture."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "compression"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_HSV",
+            "compression_jpeg"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "violet-739594_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/violet-739594_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Examine the image's quality by considering factors influencing its clarity.",
+        "answer": "The image depicts a cluster of small blue flowers with green foliage.\n\nThe evaluated image exhibits two main distortions: oversaturation, rendering the flowers unnaturally vibrant with loss of detail, and compression artifacts, visible as blocky regions and loss of fine texture in the foliage.\n\nOverall, the image quality is significantly degraded, with the distortions distracting from the natural beauty of the scene and reducing the image's fidelity and clarity."
+    },
+    {
+        "distortion_classes": [
+            "contrast_weaken",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "contrast_weaken_stretch",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "thistle-610865_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/thistle-610865_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How about the overall quality of the image, and why?",
+        "answer": "The image depicts a thistle-like plant with spiky leaves and a fuzzy center.\n\nThe evaluated image shows noticeable contrast reduction, causing it to appear washed out and less vibrant. This weakens the visual impact, making details less discernible. Additionally, there is slight pixelation, evident in the reduced sharpness and granularity of the image, particularly noticeable in the intricate details of the plant's spines and center.\n\nOverall, the image quality is compromised, with the contrast reduction significantly affecting color depth and definition, and the pixelation slightly degrading the clarity and detail, resulting in a less appealing visual experience."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "thermometer-1152023_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/thermometer-1152023_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Could you assess the overall quality of the image and elaborate on your evaluation?",
+        "answer": "The image shows a round thermostat or gauge with numbers and a needle, resting on a textured fabric.\n\nThe image quality is excellent, with sharp focus on the gauge, balanced exposure, and accurate color rendition. There is no visible noise or distortion, and the detail in both the gauge and fabric is well-preserved.\n\nOverall, the image is of high quality, showcasing clear details and maintaining fidelity to the subject matter."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "quantization"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_HSV",
+            "quantization_otsu"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "spring-1766525_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/spring-1766525_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Can you provide a detailed evaluation of the image's quality?",
+        "answer": "The image depicts a close-up of young, green leaves with a blurred background of trees.\n\nThe evaluated image exhibits a high degree of color saturation, leading to unnaturally vivid colors that reduce the visual realism. Additionally, there is evidence of color banding, a form of quantization distortion, which creates visible bands of color, detracting from the image's smooth transitions.\n\nOverall, the image quality is significantly compromised by the exaggerated colors and the pronounced banding effect, which together create a less natural and visually disruptive experience."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "waterdrops-71513_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/waterdrops-71513_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's quality and justify your evaluation.",
+        "answer": "The image depicts green leaves with water droplets on them, suggesting recent rain or dew.\n\nThe image quality is excellent, with sharp focus on the water droplets and leaves, vibrant color reproduction, and appropriate exposure with no visible noise or compression artifacts. The detail in the water droplets and the leaf texture is particularly impressive, indicating a high-resolution capture with good dynamic range.\n\nOverall, the image quality is of a high standard, with clear and crisp details, making it suitable for uses that require a high degree of visual fidelity."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "darken"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "brightness_darken_gamma_HSV"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "trees-1600815_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/trees-1600815_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How do you perceive the quality of the image, and what aspects influence your judgment?",
+        "answer": "The image depicts a forest pathway flanked by tall trees.\n\nThe evaluated image suffers from significant compression artifacts, evidenced by blocky textures and loss of detail, particularly noticeable in the trees' bark and foliage. The darkening of the image is also pronounced, causing a loss of visible detail in the shadows and mid-tones, which diminishes the depth and texture of the scene.\n\nOverall, the image quality is considerably degraded, with the heavy compression and darkening jointly contributing to a substantial loss of detail and vibrancy, resulting in an image that is less appealing and harder to interpret than a higher-quality version would be."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_YCrCb",
+            "contrast_strengthen_scale"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "truck-1567780_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/truck-1567780_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Offer an assessment of the image's quality, highlighting any strengths or weaknesses.",
+        "answer": "The image depicts a vintage pickup truck parked at an outdoor event with other vehicles and people in the background.\n\nThe evaluated image shows noticeable noise, reducing detail clarity, and a serious increase in contrast, which leads to loss of information in shadows and highlights. The noise creates a grainy appearance, while the high contrast makes the image look unnaturally vivid and obscures finer details.\n\nOverall, the image quality is significantly degraded by the distortions, affecting both the aesthetic appeal and the visibility of finer details, which are crucial for accurately representing the scene."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "noise_spatially_correlated",
+            "oversharpen"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "universe-1760522_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/universe-1760522_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Examine the image's quality by considering factors influencing its clarity.",
+        "answer": "The image depicts the moon with visible craters and maria. The evaluated image exhibits significant graininess indicative of serious noise, which obscures fine details and creates a speckled appearance. Additionally, there is an obvious oversharpening effect, evidenced by exaggerated edges and a halo effect around contrasting areas, reducing natural smoothness. Overall, these distortions considerably degrade the image quality, making it less suitable for applications requiring clear and accurate lunar detail."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "contrast_weaken"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "contrast_weaken_scale"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "tomato-718971_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tomato-718971_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Offer an assessment of the image's quality, highlighting any strengths or weaknesses.",
+        "answer": "The image depicts a cluster of tomatoes attached to a vine.\n\nThe evaluated image exhibits obvious pixelation, which reduces the clarity and sharpness, making details like the tomato skin texture and vine fuzziness less distinct. Additionally, the image has a serious weakening of contrast, resulting in a flat appearance with diminished depth and vibrancy; the reds are less vivid, and the shadows are less pronounced.\n\nOverall, the image quality is significantly degraded due to the combined impact of pixelation and reduced contrast, which compromises the visual details and color richness essential for a clear and engaging representation of the subject."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_speckle",
+            "contrast_strengthen_scale"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "stratford-upon-avon-1259492_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/stratford-upon-avon-1259492_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts a bridge over a body of water, with a tree on the right.\n\nThe evaluated image exhibits obvious noise, visible as graininess throughout, reducing detail clarity. The contrast appears excessively heightened, leading to loss of detail in both shadows and highlights, and giving the image an unnatural, harsh appearance.\n\nOverall, the image quality is significantly degraded, with the distortions undermining the natural look and making it difficult to discern finer details. The viewing experience is compromised by these alterations."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "noise"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_scale",
+            "noise_speckle"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "windmill-1504691_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/windmill-1504691_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image features a traditional windmill against a cloudy sky.\n\nThe evaluated image has a significantly increased contrast, resulting in loss of detail, especially in darker areas. The presence of obvious noise distorts the image further, introducing graininess and reducing clarity.\n\nOverall, the image quality is poor due to the excessive contrast and noise, both of which detract from the visual appeal and detail of the subject."
+    },
+    {
+        "distortion_classes": [
+            "saturate_weaken",
+            "noise"
+        ],
+        "distortion_names": [
+            "saturate_weaken_YCrCb",
+            "noise_speckle"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "venice-1535277_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/venice-1535277_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a bustling public square with people and a prominent tower.\n\nThe evaluated image shows significant color desaturation, reducing vibrancy and creating a dull appearance. Additionally, there is a heavy presence of noise, which introduces graininess and obscures fine details.\n\nOverall, the image quality is substantially degraded due to the pronounced desaturation and noise, affecting both the visual appeal and the clarity of the content."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_stretch",
+            "pixelate"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "sunset-1669264_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-1669264_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the overall quality of the image, and why?",
+        "answer": "The image depicts a sunset over a body of water with rocks in the foreground.\n\nThe evaluated image suffers from severe contrast enhancement, causing loss of detail and unnatural color saturation. The pixelation is also severe, resulting in a significant loss of resolution and clarity, which makes it difficult to identify finer details.\n\nOverall, the quality of the evaluated image is poor due to the heavy distortions that detract from the natural beauty and detail originally present in the scene."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "noise"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "noise_speckle"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "weeping-beech-567726_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/weeping-beech-567726_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the image's quality? Elaborate on your evaluation.",
+        "answer": "The image depicts a wintry scene with a snow-covered tree and landscape. The evaluated image exhibits obvious pixelation, reducing detail and causing blockiness, particularly noticeable in the tree's intricate branches. Additionally, there is slight noise present, introducing graininess across the image, which slightly degrades the visual clarity. Overall, the quality of the evaluated image is significantly compromised by the pixelation, which is the dominant distortion, while the noise has a lesser impact on the image's fidelity."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "contrast_weaken"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "contrast_weaken_scale"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "wheat-609889_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wheat-609889_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's quality and justify your evaluation.",
+        "answer": "The image depicts wheat stalks in a field.\n\nThe evaluated image suffers from serious compression, resulting in noticeable blocky artifacts and loss of fine detail, which degrades the texture of the wheat. The contrast is also seriously weakened, making the image appear washed out with reduced color depth and dynamic range, leading to a loss of visual information.\n\nOverall, the quality of the evaluated image is poor, with significant degradation in both detail and color fidelity, which detracts from the image's clarity and vibrancy."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "noise"
+        ],
+        "distortion_names": [
+            "quantization_hist",
+            "noise_impulse"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "tiquila-1050799_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tiquila-1050799_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image shows two bottles of Sierra Tequila with labels that have colorful illustrations and text.\n\nThe evaluated image exhibits significant quantization artifacts, evident in the banding of colors and loss of detail, particularly noticeable in the gradients and finer elements of the labels. Additionally, the presence of noise is quite apparent, manifesting as graininess across the image, which further degrades the visual clarity and text legibility.\n\nOverall, the image quality is considerably compromised by the heavy quantization and obvious noise, resulting in a loss of detail and color fidelity that detracts from the image's aesthetic and informational value."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "compression"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_stretch",
+            "compression_jpeg"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "swan-1147068_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/swan-1147068_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a swan on water. Contrast enhancement has led to loss of detail in the swan's feathers and the water's reflection, making the image appear unnatural. Serious compression artifacts are evident, presenting as blockiness and loss of fine detail throughout the image, particularly noticeable in the water. Overall, the image quality is significantly degraded due to the excessive contrast and compression, resulting in an image that is visually unappealing and less true to the original scene."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "noise"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "noise_impulse"
+        ],
+        "severities": [
+            1,
+            1
+        ],
+        "id": "snow-man-516282_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snow-man-516282_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a festive scene with various Christmas decorations, including figures of Santa Claus and an owl, among pine cones and greenery.\n\nUpon evaluation, the image exhibits signs of slight compression, evidenced by a subtle blockiness in areas of detail, which slightly reduces the crispness of the image. Additionally, there is a presence of slight noise, manifesting as graininess across the image, particularly noticeable in the darker areas and the bokeh background, which detracts from the overall clarity.\n\nOverall, the image quality is somewhat degraded due to the introduced distortions, but the festive scene remains recognizable with its colors and composition largely intact. The image retains a fair amount of its visual appeal despite the slight compression artifacts and noise presence."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "water-837363_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/water-837363_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the image's quality, and what factors contribute to your assessment?",
+        "answer": "The image depicts a puddle with reflections and fallen leaves. The image quality is excellent, with vibrant colors, sharp details, and no visible noise or compression artifacts. Overall, the image is of high quality, displaying clarity and good color accuracy."
+    },
+    {
+        "distortion_classes": [
+            "saturate_weaken",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "saturate_weaken_YCrCb",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "snow-596353_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snow-596353_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How about the overall quality of the image, and why?",
+        "answer": "The image depicts an outdoor snowy scene with individuals and a dog.\n\nThe evaluated image exhibits two distortions: weakened saturation, reducing color vividness and contrast, and severe pixelation, which significantly degrades detail and sharpness, making subjects and textures difficult to discern.\n\nOverall, the image quality is substantially compromised, with the pixelation being particularly detrimental to the visual experience, as it obscures fine details and overall clarity."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_YCrCb",
+            "contrast_strengthen_stretch"
+        ],
+        "severities": [
+            1,
+            2
+        ],
+        "id": "village-699496_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/village-699496_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Can you provide a detailed evaluation of the image's quality?",
+        "answer": "The image depicts a rural scene with a house, trees, and flowers, framed by an opening between dark structures.\n\nThe image has visible noise, which slightly degrades detail, and the contrast appears unnaturally heightened, leading to loss of subtlety in colors and textures.\n\nOverall, the image quality is compromised, particularly in color fidelity and clarity, due to the applied distortions."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "contrast_strengthen_stretch"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "venice-76587_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/venice-76587_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a scenic view of gondolas moored along a waterfront, likely a cityscape with buildings in the background.\n\nThe evaluated image suffers from severe pixelation, which significantly reduces detail and clarity, causing the scene to appear blocky and fragmented. Additionally, there's a serious increase in contrast that further distorts the image by exaggerating the brightness and darkness, leading to a loss of subtle details and an unnatural appearance.\n\nOverall, the quality of the evaluated image is poor due to the heavy pixelation and extreme contrast enhancement, which together degrade the visual experience by obscuring details and creating an unrealistic representation of the scene."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "saturate_weaken_YCrCb"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "tatry-998378_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tatry-998378_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Examine the image's quality by considering factors influencing its clarity.",
+        "answer": "The image depicts a mountainous landscape with green vegetation under a blue sky.\n\nThe evaluated image exhibits an obvious level of noise, resulting in a grainy appearance that obscures fine details. Additionally, there's a serious weakening of saturation, causing the colors to appear washed out and less vibrant, reducing the visual impact of the landscape.\n\nOverall, the image quality is significantly degraded due to the pronounced noise and the substantial loss of color depth, which together diminish the clarity and aesthetic appeal of the scene."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_HSV",
+            "oversharpen"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "wine-leaf-1619257_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wine-leaf-1619257_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a snail on a leaf with a greenish background.\n\nThe evaluated image exhibits an obvious saturation enhancement, resulting in unnaturally vibrant colors that reduce the realism of the scene. Additionally, there is a serious degree of oversharpening, which introduces artifacts and an unnatural edge enhancement around the snail and leaf veins.\n\nOverall, the image quality is significantly compromised by the exaggerated color saturation and harsh sharpening, both of which detract from the natural appearance of the subject matter."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "saturate_weaken_YCrCb"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "snack-794535_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snack-794535_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a comprehensive assessment of the image's quality, including both strengths and areas for improvement.",
+        "answer": "The image depicts a close-up of a hand holding a bottle of oil with a blurred background featuring food items.\n\nThe evaluated image shows noticeable desaturation, causing a loss of vibrancy and making the colors appear washed out, which severely affects the visual appeal of the food. Additionally, slight compression artifacts are present, but they are less prominent than the desaturation and do not significantly degrade the image's sharpness or detail.\n\nOverall, the image quality is compromised mainly by the serious desaturation, which impacts the image's colorfulness and realism. The slight compression has a relatively minor effect on the perceived quality. The result is an image that appears dull and lacks the visual impact that true-to-life colors would provide."
+    },
+    {
+        "distortion_classes": [
+            "saturate_weaken",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "saturate_weaken_HSV",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "yellow-mountain-1202927_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/yellow-mountain-1202927_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a historic wall snaking over a mountainous landscape with autumn foliage and a river.\n\nThe evaluated image shows significant pixelation, which obscures fine details such as the texture of the wall and the leaves. The saturation appears weakened, making the colors look washed out and less vibrant, affecting the visual impact of the autumn colors.\n\nOverall, the image quality is substantially degraded due to the pixelation and desaturation, resulting in a loss of detail and color depth that diminishes the viewer's experience."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_shfit_HSV",
+            "compression_jpeg"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "skyscraper-1513230_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/skyscraper-1513230_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image shows an upward view of a modern building facade with geometric patterns and a glimpse of the sky and tree branches.\n\nThe image is notably darkened, reducing visibility and obscuring details, especially in shadowed areas. Additionally, there is significant compression artifacting, visible as blockiness and loss of detail, which degrades the texture and pattern clarity of the building's facade.\n\nOverall, the image quality is poor due to the severe darkening and strong compression artifacts, which together greatly diminish the visual appeal and detail of the architecture and surrounding elements."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "noise_gaussian_YCrCb",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "the-lighthouse-654649_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/the-lighthouse-654649_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a coastal scene with \"Scotland\" written on the ground and a red and white lighthouse in the background. There is visible noise throughout the image, which slightly degrades detail but does not obscure major elements. The colors appear significantly desaturated, resulting in a washed-out look that impacts the visual appeal and makes the scene less vibrant. Overall, the image quality is compromised, with the desaturation having a more pronounced effect on the aesthetics than the noise."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "brighten"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "brightness_brighten_shfit_RGB"
+        ],
+        "severities": [
+            1,
+            2
+        ],
+        "id": "views-928419_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/views-928419_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the image's quality? Elaborate on your evaluation.",
+        "answer": "The image depicts a landscape with a bright sky, mountains in the background, and a field in the foreground with some animals.\n\nThe image quality is compromised by two distortions: pixelation and excessive brightness. The pixelation is mild, slightly reducing the clarity of finer details. The brightness is significantly increased, washing out most of the image and obscuring details, especially in the sky and the field.\n\nOverall, the image quality is poor due to the overexposure from the increased brightness, which has a more pronounced effect than the pixelation. The image's aesthetic and informational value is diminished as the viewer struggles to discern details."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_shfit_RGB",
+            "compression_jpeg"
+        ],
+        "severities": [
+            3,
+            1
+        ],
+        "id": "winter-502357_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/winter-502357_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a bundle of colorful patterned straps, possibly part of some equipment or gear.\n\nThe evaluated image suffers from a significant darkening effect, reducing visibility and obscuring details, particularly in shadowed areas. Additionally, there is a slight compression artifact present, which can be observed as a subtle blockiness in the image, although it has a minimal impact compared to the darkening.\n\nOverall, the quality of the evaluated image is compromised mainly by the severe darkening, which affects the visibility of details and the vibrancy of colors, while the slight compression does not significantly degrade the image further."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "blur_glass",
+            "saturate_weaken_YCrCb"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "water-672248_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/water-672248_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a young child reaching out toward a stream of water with an adult's hand visible.\n\nThe evaluated image exhibits notable blur, reducing detail and sharpness, particularly affecting the child's facial features and the water's clarity. Furthermore, the saturation appears significantly weakened, resulting in a washed-out look that diminishes the vibrancy of colors, especially the child's orange attire and the background.\n\nOverall, the image quality is considerably degraded due to the combined effects of the pronounced blur and the severe desaturation, which compromise both the detail and the color intensity of the original content."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "noise"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "noise_poisson"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "st-catherines-loch-fyne-1256364_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/st-catherines-loch-fyne-1256364_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a seascape with a boat on the water during sunset or sunrise, with hills in the background. The image is heavily pixelated, resulting in a loss of fine details, making the boat and landscape features blocky and indistinct. Additionally, there is an obvious presence of noise, seen as random speckles of color, which further degrades the image by reducing clarity and creating a grainy appearance. Overall, the quality of the evaluated image is poor, with significant loss of detail and clarity due to the serious pixelation and obvious noise, which detract from the visual experience."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_YCrCb",
+            "oversharpen"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "snow-1171510_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snow-1171510_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts a snowy forest scene with trees and a frozen body of water.\n\nThe evaluated image exhibits a high degree of color saturation, causing an unnatural enhancement of hues, particularly in the blues and oranges. This distorts the natural appearance of the snow and foliage, making them appear overly vibrant. Additionally, there is an obvious oversharpening effect present, which introduces artifacts around edges and a general harshness to textures, reducing the image's visual comfort.\n\nOverall, the image quality is significantly compromised by the exaggerated saturation and sharpening, resulting in an image that appears artificial and potentially visually jarring to the viewer."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "contrast_strengthen_stretch"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "weather-1094559_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/weather-1094559_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image depicts a sunset or sunrise with vibrant colors, silhouetting a forest against a dramatic sky.\n\nThe evaluated image shows significant blocky artifacts and loss of detail, indicative of serious compression. Additionally, the contrast appears unnaturally enhanced, leading to a loss of dynamic range and color balance, which is especially noticeable in the brighter areas of the sky.\n\nOverall, the quality of the evaluated image is poor. The heavy compression and exaggerated contrast disrupt the natural beauty of the scene, making it less visually appealing and more difficult to discern finer details."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "darken"
+        ],
+        "distortion_names": [
+            "noise_poisson",
+            "brightness_darken_gamma_RGB"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "sunset-89255_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-89255_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a sunset scene with trees and their reflection on water.\n\nNoise is visible throughout the image, slightly compromising detail clarity. The darkening is severe, significantly obscuring features and creating a silhouette effect, which impacts the visibility of the scenery.\n\nOverall, the image quality is considerably degraded, with the darkening having a more pronounced effect than the noise, leading to a loss of detail and a diminished viewing experience."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "tulips-740444_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tulips-740444_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the image's quality, and what factors contribute to your assessment?",
+        "answer": "The image depicts a close-up of tulips with a soft-focus background. Compression artifacts are evident, manifesting as blocky textures and loss of fine details, particularly in the petals and leaves. The saturation appears weakened, leading to a washed-out look with muted colors that diminish the vibrancy typically associated with tulips. Overall, the image quality is significantly degraded due to the obvious compression and desaturation, resulting in a less appealing and less detailed representation of the subject."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "contrast_weaken"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "contrast_weaken_scale"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "sunset-1347697_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-1347697_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Could you assess the overall quality of the image and elaborate on your evaluation?",
+        "answer": "The image depicts a sunset over the ocean with a boat and a person visible in the foreground.\n\nThe evaluated image exhibits significant compression artifacts, resulting in a loss of detail and the presence of blocky regions, particularly noticeable in the sky and water. The contrast appears to be severely reduced, flattening the image's depth and making it difficult to distinguish finer details in the sunset and the silhouettes.\n\nOverall, the quality of the evaluated image is poor, with the heavy compression and weakened contrast greatly diminishing the visual clarity and richness that would be expected in such a scene."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "contrast_strengthen_scale"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "wedding-1183273_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wedding-1183273_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's quality and justify your evaluation.",
+        "answer": "The image depicts a bride and groom in a garden setting, with the groom holding a sign.\n\nThe evaluated image shows noticeable contrast enhancement, resulting in loss of detail and color distortion, particularly in the highlights and shadows. The compression appears slight, with minimal visible artifacts.\n\nOverall, the image quality is compromised, primarily due to the excessive contrast, which affects the natural look of the scene and diminishes the visual appeal."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_gamma_RGB",
+            "compression_jpeg"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "village-402247_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/village-402247_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a scenic view of a historic town perched atop cliffs surrounded by vegetation.\n\nThe evaluated image suffers from an obvious darkening, reducing visibility and detail, particularly in shadowed areas. Furthermore, serious compression artifacts are present, causing a loss of fine detail and introducing blocky, pixelated regions, especially noticeable in the sky and on the cliffs.\n\nOverall, the image quality is significantly degraded, with the darkening affecting the mood and clarity, and the compression undermining the image's sharpness and texture fidelity."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "compression"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_YCrCb",
+            "compression_jpeg_2000"
+        ],
+        "severities": [
+            3,
+            1
+        ],
+        "id": "south-tyrol-1119842_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/south-tyrol-1119842_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a mountainous landscape with a foreground of a flower-strewn field. The evaluated image exhibits a saturation distortion that has significantly intensified the colors, resulting in an unnatural and overly vivid appearance, particularly in the green and yellow tones of the field. Additionally, there is a slight compression artifact, which may not be as immediately noticeable but could contribute to a minor loss of detail and introduce subtle blockiness in areas of subtle color gradation. Overall, the image quality is compromised mainly by the severe oversaturation, which distracts from the natural beauty of the scene and diminishes the realism, while the compression has a relatively minor impact."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "noise"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_scale",
+            "noise_spatially_correlated"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "wintry-583169_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wintry-583169_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a serene nighttime scene with a full moon illuminating a tree.\n\nThe evaluated image has heightened contrast, which overemphasizes the bright areas and darkens the shadows, reducing detail visibility. Additionally, there is a slight presence of noise, visible as graininess throughout the image, particularly in the darker areas, which slightly detracts from the image clarity.\n\nOverall, the image quality is moderately affected. The increased contrast reduces the subtlety of the scene's lighting, while the noise compromises the image's smoothness, but the scene remains recognizable and maintains its nocturnal ambiance."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_gamma_RGB",
+            "compression_jpeg"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "tree-739886_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tree-739886_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the image's quality, and what factors contribute to your assessment?",
+        "answer": "The image depicts a pile of cut logs and branches, presumably for timber or firewood.\n\nThe evaluated image suffers from serious darkening, which obscures details and reduces the visibility of the wood's texture and color. Additionally, obvious compression artifacts are present, leading to a loss of fine detail and the presence of blocky regions, particularly noticeable in areas of subtle color transitions.\n\nOverall, the image quality is significantly compromised, with the darkening affecting the visibility and the compression reducing the clarity and detail, making the image less suitable for purposes where accurate color representation and detail are important."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "darken"
+        ],
+        "distortion_names": [
+            "noise_spatially_correlated",
+            "brightness_darken_gamma_RGB"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "toddler-682532_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/toddler-682532_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Offer an assessment of the image's quality, highlighting any strengths or weaknesses.",
+        "answer": "The image depicts a young child playing with a bucket by the water.\n\nThe evaluated image exhibits obvious noise, which introduces a grainy texture, reducing detail clarity. Additionally, the image is seriously darkened, causing loss of detail in shadows and a significant decrease in visibility.\n\nOverall, the image quality is poor due to the high noise level and excessive darkening, which severely degrade the visual experience by obscuring details and diminishing the vibrancy of the scene."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "oversharpen"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "tortillas-520808_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tortillas-520808_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How about the overall quality of the image, and why?",
+        "answer": "The image features a variety of Mexican foods, including tacos and tortillas, with a decorative candle in the background. The evaluated image exhibits significant pixelation, causing loss of detail and making the food and objects appear blocky. Additionally, oversharpening is evident, introducing halo artifacts around edges and an unnatural enhancement of textures. These distortions notably degrade the visual appeal and clarity of the image. Overall, the image quality is considerably compromised, resulting in an experience that is visually unpleasing and less realistic."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_impulse",
+            "contrast_strengthen_scale"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "water-1572561_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/water-1572561_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a tranquil forest scene with trees reflecting on a still water body.\n\nThe evaluated image has significant noise, appearing as random speckles throughout, reducing detail clarity. Moreover, the contrast appears unnaturally high, leading to overly vivid colors and loss of subtle shading, which diminishes the natural look of the scene.\n\nOverall, the image quality is poor due to the excessive noise and unnatural contrast enhancement, both of which detract from the visual experience by creating a harsh and unrealistic representation of the original scene."
+    },
+    {
+        "distortion_classes": [
+            "oversharpen",
+            "brighten"
+        ],
+        "distortion_names": [
+            "oversharpen",
+            "brightness_brighten_gamma_HSV"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "waterfall-1136453_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/waterfall-1136453_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image features a scenic waterfall with surrounding greenery. The evaluated image exhibits significant oversharpening, causing unnatural edge enhancement and halos around the trees and rocks, detracting from the realism. Brightness is also excessively increased, resulting in washed-out areas where detail is lost, especially in the water and sky. Overall, the image suffers from a loss of natural appearance and detail due to the severe levels of sharpening and brightening, leading to a subpar visual experience."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "noise"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "noise_gaussian_YCrCb"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "steak-433983_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/steak-433983_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's clarity and explain how it contributes to the overall quality.",
+        "answer": "The image depicts a plate of food with grilled meat, green beans, potatoes, and a side salad, accompanied by a beverage.\n\nThe evaluated image suffers from severe compression artifacts, presenting as blocky regions and loss of detail, particularly noticeable in the meat texture and potato edges. Additionally, there is significant noise throughout the image, giving it a grainy appearance that further degrades detail and color fidelity.\n\nOverall, the image quality is poor, with heavy distortion from compression and noise significantly reducing clarity and visual appeal. The distortions make it difficult to discern fine details and true colors of the food, diminishing the image's utility for accurate representation."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "oversharpen"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "softball-1611191_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/softball-1611191_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image depicts a sports scene, likely a softball game, with a catcher in focus and players in the background.\n\nThe evaluated image exhibits significant noise, which manifests as graininess and reduces detail clarity. Additionally, there is a serious oversharpening effect, characterized by exaggerated edges and an artificial appearance, further degrading visual information.\n\nOverall, the image quality is poor due to the pronounced noise and excessive sharpening, which compromise the naturalness and legibility of the scene."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "noise"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "noise_gaussian_YCrCb"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "the-banks-1174964_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/the-banks-1174964_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's clarity and explain how it contributes to the overall quality.",
+        "answer": "The image depicts a river scene with a bridge, boats, and people.\n\nThe evaluated image exhibits two major distortions: severe pixelation, which significantly reduces detail and clarity, making it difficult to discern individual elements, and serious noise that introduces graininess and further degrades the visual information.\n\nOverall, the image quality is poor, with the content barely recognizable due to the heavy pixelation and noise, which severely compromise the viewing experience."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "quantization"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_scale",
+            "quantization_hist"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "snake-849905_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snake-849905_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a snake against a background of what appears to be ground substrate.\n\nThe evaluated image suffers from serious contrast enhancement, leading to loss of detail due to over-saturation in brighter areas and under-representation in shadows. Additionally, serious quantization is evident, as the color depth is reduced, causing banding and a loss of smooth gradients.\n\nOverall, the image quality is significantly degraded, with unnatural color representation and compromised detail, making it less suitable for accurate representation or enjoyable viewing."
+    },
+    {
+        "distortion_classes": [
+            "saturate_strengthen",
+            "noise"
+        ],
+        "distortion_names": [
+            "saturate_strengthen_YCrCb",
+            "noise_poisson"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "winter-1024941_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/winter-1024941_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts snow-covered pine trees against a clear blue sky. The evaluated image exhibits an obvious saturation increase, causing the colors to appear unnaturally vibrant and reducing detail visibility. Additionally, slight noise is present, introducing graininess that further degrades fine details. Despite these distortions, the image retains recognizable content but suffers from reduced aesthetic and practical quality."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "noise_gaussian_YCrCb",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "sunset-671688_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-671688_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Can you provide a detailed evaluation of the image's quality?",
+        "answer": "The image depicts a sunset over water with silhouetted buildings. Noise is apparent, reducing clarity and introducing graininess. Pixelation is severe, obscuring details and making the image blocky. The distortions significantly degrade the visual experience, making it difficult to appreciate finer elements. Overall, the image quality is poor due to pronounced noise and extreme pixelation."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "quantization"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "quantization_otsu"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "submarine-1054327_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/submarine-1054327_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a maritime scene with a submarine docked at a pier with people around.\n\nThe evaluated image suffers from obvious pixelation, causing loss of detail and making the scene blocky, particularly noticeable on the submarine and people. Quantization is also obvious, with color gradients being reduced to fewer distinct tones, affecting the water and sky's smooth appearance.\n\nOverall, the image quality is significantly degraded, with both pixelation and quantization impairing the visual clarity and color fidelity, making it difficult to discern finer details and resulting in a less realistic representation of the scene."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "noise"
+        ],
+        "distortion_names": [
+            "compression_jpeg_2000",
+            "noise_gaussian_YCrCb"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "tomatoes-936200_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tomatoes-936200_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the overall quality of the image, and why?",
+        "answer": "The image depicts a variety of tomatoes on a plate.\n\nCompression artifacts are evident, with loss of detail and blocky appearance, especially noticeable in the tomato textures. Noise is also quite pronounced, giving the image a grainy look and further degrading detail.\n\nOverall, the image quality is significantly compromised by the compression and noise, affecting the visual clarity and the natural appearance of the tomatoes."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "blur_motion",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "stone-tower-1259715_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/stone-tower-1259715_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the image's quality? Elaborate on your evaluation.",
+        "answer": "The image depicts a stack of rocks in sharp focus against a blurred natural background.\n\nIn the evaluated image, there's a slight blur reducing the sharpness and detail of the rock textures. Additionally, the colors appear significantly desaturated, giving the image a washed-out look, which diminishes the visual impact of the natural setting.\n\nOverall, the image quality is compromised by the introduced blur and severe desaturation, resulting in a loss of detail and vibrancy that detracts from the image's aesthetic appeal."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "quantization"
+        ],
+        "distortion_names": [
+            "blur_motion",
+            "quantization_hist"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "zurich-1207285_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/zurich-1207285_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a building with windows, a Swiss flag, and a street lamp.\n\nThe evaluated image suffers from severe blur, obscuring fine details like window frames and texture on the building's fa\u00e7ade. The quantization is also severe, resulting in a drastic reduction of color depth, causing banding in areas that should display smooth gradients, such as the sky and the flag.\n\nOverall, the image quality is poor, with the sharpness and color fidelity heavily compromised, making it difficult to discern details and appreciate the original scene's nuances."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "blur"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "blur_gaussian"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "temple-flower-354000_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/temple-flower-354000_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image depicts a close-up of orange flowers with a blurred background. Compression artifacts are noticeable, with a loss of detail and blockiness, particularly in areas of subtle color transitions. The image also suffers from a heavy blur, reducing the sharpness and clarity of the flowers and leaves, making fine details indiscernible. Overall, the image quality is significantly degraded due to these distortions, resulting in a visual experience that is far from optimal, with poor definition and a lack of fine texture representation."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "noise"
+        ],
+        "distortion_names": [
+            "quantization_hist",
+            "noise_spatially_correlated"
+        ],
+        "severities": [
+            3,
+            1
+        ],
+        "id": "venice-1506296_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/venice-1506296_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image depicts a coastal scene with buildings and a large boat.\n\nThere's significant blockiness due to heavy quantization, reducing detail and causing color banding. Slight noise is visible, adding graininess but less impactful than quantization.\n\nOverall, the image quality is poor, with the main subject and background details obscured by severe compression artifacts and mild noise, detracting from the visual experience."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "blur"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "blur_zoom"
+        ],
+        "severities": [
+            3,
+            1
+        ],
+        "id": "zealand-iris-1367902_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/zealand-iris-1367902_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a cluster of white flowers with a blurred background.\n\nThe evaluated image exhibits significant compression artifacts, manifesting as blockiness and loss of detail, particularly noticeable in areas of subtle color gradation. Additionally, there is a slight blur, reducing the sharpness of the flower edges and fine details.\n\nOverall, the image quality is compromised, with the compression severely affecting the visual clarity and the blur slightly diminishing the definition, resulting in a less vivid and detailed representation of the subject."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_weaken"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "contrast_weaken_scale"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "skyscrapers-1074307_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/skyscrapers-1074307_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image depicts a cityscape with modern buildings and moored boats on a river.\n\nThe evaluated image has noticeable noise, reducing detail clarity, and a serious reduction in contrast, flattening the image and making it difficult to distinguish between different elements.\n\nOverall, the image quality is significantly degraded, with both distortions impacting the visual experience and making it challenging to appreciate the scene's details and colors."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "quantization"
+        ],
+        "distortion_names": [
+            "brightness_darken_gamma_RGB",
+            "quantization_median"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "sunset-334848_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-334848_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image depicts a sunset over the ocean with clouds in the sky.\n\nThe image has been darkened to an obvious degree, reducing visibility and detail, particularly in the darker areas. Additionally, serious quantization is evident, resulting in a significant reduction of color depth, which causes banding in the sky and ocean, and loss of detail throughout.\n\nOverall, the image quality is poor due to the combination of darkness and severe color quantization, which severely affects the visual experience by obscuring details and introducing color banding."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "tombstone-694108_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tombstone-694108_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a moss-covered stone sculpture, possibly a historic or decorative element, set against a blurred background of trees.\n\nThe evaluated image exhibits excellent sharpness, with fine details like the texture of the moss and the weathering on the stone clearly visible. Color reproduction appears natural, and there is no visible noise, suggesting a high-quality capture with proper exposure and contrast levels.\n\nIn summary, the evaluated image is of high quality, demonstrating strong technical execution in terms of detail, color accuracy, and overall clarity."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "oversharpen"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "street-649591_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/street-649591_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a comprehensive assessment of the image's quality, including both strengths and areas for improvement.",
+        "answer": "The image depicts a cobblestone street lined with buildings and a tree, likely captured during the daytime.\n\nThe evaluated image exhibits obvious noise, which manifests as graininess throughout, reducing detail clarity. Additionally, oversharpening is evident, seen as exaggerated edges and unnatural texture enhancement, particularly noticeable on the cobblestones and building facades.\n\nOverall, the image quality is significantly compromised due to the pronounced noise and oversharpening, resulting in a loss of natural appearance and a decrease in visual comfort for viewers."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "quantization"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "quantization_otsu"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "statue-1043100_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/statue-1043100_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts a statue in a garden setting.\n\nPixelation is severe, causing loss of detail and making the statue's features indistinct. Quantization is noticeable, with a reduced color palette creating banding in areas that should display smooth gradients, such as the foliage and the statue.\n\nOverall, the image quality is poor, with significant degradation in both detail and color fidelity, which severely impacts the visual clarity and the aesthetic appeal of the scene."
+    },
+    {
+        "distortion_classes": null,
+        "distortion_names": null,
+        "severities": 0,
+        "id": "spain-713000_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/spain-713000_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image depicts a person wearing a blue embroidered cloak with golden patterns, holding a staff.\n\nThe image is clear and sharp, with no visible distortions. The colors are vibrant, and the detail in the embroidery is well-preserved, indicating high-quality resolution and accurate color reproduction.\n\nOverall, the image is of high quality, showing excellent detail, color fidelity, and no signs of compression or artifacts."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "quantization"
+        ],
+        "distortion_names": [
+            "blur_zoom",
+            "quantization_otsu"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "spin-759713_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/spin-759713_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Can you provide a detailed evaluation of the image's quality?",
+        "answer": "The image depicts a branch with thorns and leaves against a blue sky. The evaluated image suffers from severe blur, obscuring fine details and making edges indistinct, particularly noticeable on the leaves and thorns. Additionally, serious quantization artifacts are present, manifesting as blocky regions and color banding in the sky, which degrade the natural gradient. The overall quality of the evaluated image is poor due to these distortions, resulting in a significant loss of detail and unnatural color representation, which greatly diminishes the visual clarity and fidelity of the image."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "noise_poisson",
+            "saturate_weaken_YCrCb"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "truss-1588091_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/truss-1588091_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts a half-timbered house with distinctive red and white patterns, surrounded by greenery and set against a clear sky.\n\nThe evaluated image exhibits serious noise, evidenced by the significant graininess throughout, which obscures details and texture. Additionally, the colors appear muted due to obvious saturation weakening, resulting in a less vibrant and more washed-out appearance compared to an expected natural coloration.\n\nOverall, the combination of heavy noise and reduced saturation significantly degrades the visual quality, making the image less appealing and more challenging to view for fine details. The distortions collectively reduce the clarity and vividness that would be desirable in a high-quality image."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "noise_poisson",
+            "pixelate"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "statue-255534_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/statue-255534_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a statue against a sky and building backdrop. The evaluated image suffers from serious noise, presenting as graininess throughout, which obscures fine details. Additionally, obvious pixelation results in blocky artifacts, particularly noticeable in the statue and sky, further degrading clarity. Overall, these distortions significantly reduce the image's aesthetic and practical quality, making it difficult to discern finer details and resulting in a less pleasing visual experience."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "noise"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "noise_spatially_correlated"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "stairs-1733209_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/stairs-1733209_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How do you perceive the quality of the image, and what aspects influence your judgment?",
+        "answer": "The image depicts an indoor staircase beside a window. The evaluated image suffers from obvious pixelation, causing loss of detail and making edges blocky, and obvious noise, introducing graininess that further degrades clarity. The combination of these distortions significantly reduces the visual quality, obscuring finer details and textures, and gives the image a coarse, less natural appearance. Overall, the image quality is poor, with the distortions heavily impacting the ability to discern fine details and the overall aesthetic of the image."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "blur"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "blur_lens"
+        ],
+        "severities": [
+            1,
+            2
+        ],
+        "id": "water-771717_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/water-771717_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Offer an assessment of the image's quality, highlighting any strengths or weaknesses.",
+        "answer": "The image depicts a young child walking near water, wearing a striped garment.\n\nThe evaluated image exhibits noticeable blur, which significantly impacts the sharpness and detail, rendering features like facial expressions and clothing textures indistinct. There is also a slight presence of noise, evident in the granularity on the image, but it is less impactful than the blur.\n\nOverall, the image quality is compromised, with the blur being the predominant factor affecting the clarity and the slight noise further degrading the visual fidelity. The resulting image is of subpar quality, with diminished detail and a loss of the finer aspects of the original content."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "saturate_strengthen"
+        ],
+        "distortion_names": [
+            "noise_speckle",
+            "saturate_strengthen_YCrCb"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "sparrow-426961_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sparrow-426961_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's clarity and explain how it contributes to the overall quality.",
+        "answer": "The image depicts a bird perched on a wire fence with an out-of-focus background.\n\nThe evaluated image exhibits significant noise, evident as grainy texture disrupting the clarity, especially noticeable in the bird's feathers and the fence. Additionally, the colors appear unnaturally intense due to over-saturation, resulting in loss of detail and an overall harshness, particularly in the background where color gradients should be smooth.\n\nOverall, the image quality is poor due to the extreme noise and over-saturation, which compromise the natural appearance and detail of the subject and its surroundings."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_gamma_RGB",
+            "compression_jpeg"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "tree-1434843_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/tree-1434843_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's clarity and explain how it contributes to the overall quality.",
+        "answer": "The image depicts a close-up of a tree trunk with intertwined roots or vines.\n\nThe evaluated image exhibits significant darkening, obscuring details and reducing visibility, particularly in shadowed areas. Additionally, compression artifacts are evident, presenting as blockiness and loss of fine detail, which affects the texture of the tree bark and roots.\n\nOverall, the image quality is considerably degraded due to the severe darkening and noticeable compression, which together diminish the clarity and detail that are essential for appreciating the natural textures in the scene."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "quantization_otsu",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            1
+        ],
+        "id": "sweets-599061_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sweets-599061_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the image's quality? Elaborate on your evaluation.",
+        "answer": "The image shows a selection of colorful cupcakes with sprinkles.\n\nThe evaluated image suffers from two types of distortions. The quantization distortion is obvious, leading to a significant reduction in color depth, which flattens the image and causes a loss of detail. The pixelation is slight, introducing a subtle blocky appearance, but it does not severely affect the overall recognition of the subject.\n\nOverall, the image quality is moderately compromised. The cupcakes are still identifiable, but the distortions noticeably degrade the visual experience, particularly in terms of color fidelity and fine detail."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "noise_spatially_correlated",
+            "pixelate"
+        ],
+        "severities": [
+            1,
+            1
+        ],
+        "id": "utah-144327_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/utah-144327_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Could you assess the overall quality of the image and elaborate on your evaluation?",
+        "answer": "The image depicts a landscape with rocky terrain and a green valley with buildings.\n\nNoise is visible in the image as random speckles, slightly reducing detail clarity, particularly in the sky and rock textures. Pixelation is also present, causing loss of fine details, noticeable in the foliage and distant features, but it remains slight.\n\nOverall, the image quality is moderately affected by the distortions. Fine details are compromised but the general composition and color are maintained, making the image acceptable for contexts where high fidelity is not critical."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "quantization_median",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "waterfall-563185_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/waterfall-563185_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a waterfall cascading over a rocky cliff surrounded by vegetation.\n\nTwo distortions are present: quantization reduces color depth, causing color banding and loss of gradation in the waterfall and foliage. Pixelation obscures fine details, making the rock face and water texture blocky and less natural.\n\nOverall, the image quality is significantly degraded, with both distortions contributing to a loss of detail and color fidelity that detracts from the visual experience. The scene's natural beauty is compromised, and it becomes difficult to appreciate the subtleties of the landscape."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "oversharpen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "oversharpen"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "sunset-194557_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-194557_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Please evaluate the image's quality and provide your reasons.",
+        "answer": "The image depicts a sunset over a body of water with mountains in the background and a beach in the foreground.\n\nThe evaluated image exhibits noticeable noise, which introduces graininess and reduces detail clarity, particularly in the sky and water areas. Additionally, serious oversharpening is evident, causing unnatural edge enhancement and halo artifacts around the sun and horizon, which detract from the natural smoothness of the scene.\n\nOverall, the image quality is significantly compromised by the added distortions, resulting in a less pleasing and unnatural appearance compared to a distortion-free version. The visual artifacts disrupt the image's aesthetic and could be distracting to viewers."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "blur_jitter",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "strawberry-1778458_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/strawberry-1778458_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image features a jar of jam and several strawberries on a white surface. The evaluated image exhibits an obvious blur, reducing the sharpness and detail of the strawberries and the text on the jar. Additionally, the colors appear washed out due to a serious weakening of saturation, making the image look pale and less vibrant. These distortions significantly impair the visual clarity and color fidelity. Overall, the quality of the evaluated image is poor, with substantial loss of detail and color depth affecting the visual appeal and information content."
+    },
+    {
+        "distortion_classes": [
+            "compression",
+            "saturate_strengthen"
+        ],
+        "distortion_names": [
+            "compression_jpeg",
+            "saturate_strengthen_HSV"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "woman-680313_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/woman-680313_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the quality of the image with detailed reasons.",
+        "answer": "The image depicts a person wearing a gold dress with a detailed belt, posing with one hand near the face.\n\nThe evaluated image exhibits significant compression artifacts, with blocky regions and loss of detail, particularly noticeable in the background and dress texture. The saturation is excessively amplified, causing color distortion, especially in the skin tones and dress, resulting in an unnatural, overly-vivid appearance.\n\nOverall, the image quality is poor due to the heavy compression and extreme color saturation, which undermine the visual integrity and naturalness of the photograph."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "darken"
+        ],
+        "distortion_names": [
+            "blur_motion",
+            "brightness_darken_gamma_RGB"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "snake-1571919_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snake-1571919_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "What is your opinion on the quality of the image? Explain your viewpoint.",
+        "answer": "The image depicts a snake on a textured surface, possibly wood. The evaluated image suffers from two distortions: a slight blur and significant darkening. The blur slightly reduces the sharpness of the snake's scales and the wood texture, impacting the overall clarity. The serious darkening, however, has a more profound effect, obscuring details and making the image appear underexposed, which diminishes the vibrancy of the colors and the visibility of finer details. Overall, the image quality is compromised, with the darkening being the most detrimental factor, as it significantly affects the ability to discern features and appreciate the image's content."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "saturate_weaken"
+        ],
+        "distortion_names": [
+            "quantization_median",
+            "saturate_weaken_HSV"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "trees-698883_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/trees-698883_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Examine the image's quality by considering factors influencing its clarity.",
+        "answer": "The image depicts a tree with lush foliage against a cloudy sky. There is noticeable banding in the sky, indicating quantization artifacts, which degrade the smooth gradation of the sky's color. Additionally, the colors appear muted, suggesting a reduction in saturation that diminishes the vibrancy of the scene. The overall quality of the image is significantly compromised by these distortions, leading to a loss of detail and a less engaging visual experience."
+    },
+    {
+        "distortion_classes": [
+            "pixelate",
+            "saturate_strengthen"
+        ],
+        "distortion_names": [
+            "pixelate",
+            "saturate_strengthen_HSV"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "statue-1085916_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/statue-1085916_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the image's quality and justify your evaluation.",
+        "answer": "The image depicts a bronze statue of a standing figure in a natural setting. The evaluated image suffers from obvious pixelation, causing loss of detail and making the statue's features and the surrounding environment blocky and less recognizable. Additionally, the colors appear overly vibrant due to obvious saturation enhancement, which distorts the natural color balance and makes the image visually harsh. The overall quality of the evaluated image is significantly degraded, with the distortions detracting from the visual clarity and realism that would be present in a high-fidelity representation."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "noise"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_stretch",
+            "noise_speckle"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "still-life-1565010_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/still-life-1565010_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the overall quality of the image, and why?",
+        "answer": "The image depicts a basket filled with fruits and a flower, placed on a table.\n\nThe evaluated image has heightened contrast, making colors appear more vivid but less natural. The shadows and highlights are exaggerated, reducing detail in these areas. Additionally, the image suffers from serious noise, visible as grainy speckles throughout, which significantly degrades the clarity and sharpness.\n\nOverall, the image quality is poor due to the excessive contrast and pervasive noise, both of which detract from the visual appeal and make the content harder to appreciate."
+    },
+    {
+        "distortion_classes": [
+            "quantization",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "quantization_median",
+            "pixelate"
+        ],
+        "severities": [
+            3,
+            2
+        ],
+        "id": "snow-648571_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/snow-648571_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Analyze the image's quality, and detail your findings.",
+        "answer": "The image depicts a snow-covered red stroller attached to a bike rack, set against a snowy background. The evaluated image exhibits significant quantization, resulting in a loss of color depth and visible banding in what should be smooth gradients. Additionally, pixelation is evident, with large, blocky artifacts obscuring fine details, such as the structure of the snowflakes and the texture of the stroller fabric. Overall, the image quality is poor, with both distortions severely degrading the visual fidelity, making it difficult to discern finer details and resulting in an unnatural appearance."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_YCrCb",
+            "contrast_strengthen_scale"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "wall-1191139_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wall-1191139_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Assess the image's quality from a professional standpoint.",
+        "answer": "The image depicts a wall surface with an array of stones set in a grid pattern.\n\nThe evaluated image shows slight noise, visible as a fine graininess across the image, which marginally affects detail sharpness. Additionally, the contrast appears significantly heightened, causing loss of detail in the brighter areas and an unnatural, harsh appearance of the stones and mortar lines.\n\nOverall, the image quality is compromised, with the main issue being the excessive contrast that reduces the natural look and detail of the stones, while the noise has a lesser impact on the visual experience."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "noise"
+        ],
+        "distortion_names": [
+            "brightness_darken_shfit_RGB",
+            "noise_speckle"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "stegosuarus-334979_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/stegosuarus-334979_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Evaluate the quality of the image and provide a comprehensive explanation.",
+        "answer": "The image depicts a toy dinosaur with distinct colors and features. The evaluated image has been significantly darkened, obscuring details and making it difficult to discern fine textures. Additionally, there is a high level of noise present, which further degrades the visual clarity, introducing graininess and reducing the sharpness of the image. Overall, the image quality is poor due to the combination of darkness and excessive noise, which severely affects the visibility of details and the aesthetic appeal of the image."
+    },
+    {
+        "distortion_classes": [
+            "noise",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "noise_gaussian_RGB",
+            "contrast_strengthen_stretch"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "urban-1080926_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/urban-1080926_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the image's quality, and what factors contribute to your assessment?",
+        "answer": "The image depicts a colorful graffiti artwork featuring stylized characters.\n\nThe evaluated image exhibits significant noise, which obscures fine details and introduces graininess, particularly noticeable in the characters' faces and the background. Additionally, the contrast appears to be excessively enhanced, resulting in loss of detail in both highlights and shadows and creating an unnatural, harsh appearance.\n\nOverall, the image quality is substantially degraded due to the severe noise and over-strengthened contrast, which together compromise the visual integrity and aesthetic of the artwork."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_scale",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "winter-1119283_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/winter-1119283_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How would you rate the overall quality of the image, and why?",
+        "answer": "The image depicts a snowy landscape with trees and a clear sky. The evaluated image suffers from two significant distortions: contrast enhancement and pixelation, both of which are quite pronounced. The contrast enhancement has made the dark areas darker and the bright areas brighter, leading to a loss of detail in shadows and highlights. The pixelation has reduced the image resolution, causing loss of detail and making the scene appear blocky and less natural. The overall quality of the evaluated image is poor due to these distortions, as they significantly degrade the visual experience by reducing clarity and altering the natural appearance of the scene."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "brightness_darken_gamma_HSV",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            3
+        ],
+        "id": "sun-996539_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sun-996539_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a thorough evaluation of the image's quality.",
+        "answer": "The image depicts a view looking up at a tree against the sky, with sunlight filtering through the leaves.\n\nThe image has been significantly darkened, reducing visibility and detail, particularly in the tree's lower regions. Additionally, the image is heavily pixelated, which further degrades detail and clarity, making it difficult to discern finer features of the tree and leaves.\n\nOverall, the image quality is poor due to the combination of obvious darkening and serious pixelation, which severely impacts the ability to appreciate the content and details within the image."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "contrast_strengthen"
+        ],
+        "distortion_names": [
+            "blur_lens",
+            "contrast_strengthen_stretch"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "sunset-74705_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-74705_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Offer an assessment of the image's quality, highlighting any strengths or weaknesses.",
+        "answer": "The image depicts a sunset over a mountainous landscape with a balcony in the foreground. The evaluated image suffers from significant blurring, obscuring details such as the mountain edges and architectural features. Additionally, the contrast appears overly enhanced, resulting in loss of detail and exaggerated brightness and darkness in various areas, particularly around the sun. The overall quality of the evaluated image is poor due to these distortions, which detract from the clarity and natural appearance of the scene."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "blur"
+        ],
+        "distortion_names": [
+            "brightness_darken_shfit_RGB",
+            "blur_glass"
+        ],
+        "severities": [
+            3,
+            3
+        ],
+        "id": "sun-flower-558054_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sun-flower-558054_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How does the image's quality impact its overall effectiveness or appeal?",
+        "answer": "The image depicts a sunflower against a dark background. The image is severely darkened, causing loss of detail in the shadows and mid-tones. Additionally, there's a serious level of blur, which obscures fine details such as the texture of the petals and leaves, making the image appear smeared. Overall, the quality of the evaluated image is poor due to the combination of heavy darkening and blurring, which significantly diminishes the visibility of details and the vibrancy of the subject."
+    },
+    {
+        "distortion_classes": [
+            "contrast_strengthen",
+            "blur"
+        ],
+        "distortion_names": [
+            "contrast_strengthen_scale",
+            "blur_lens"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "sunset-1226115_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/sunset-1226115_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How does the image's quality impact its overall effectiveness or appeal?",
+        "answer": "The image depicts a coastal scene at twilight with rocks in the foreground and a sunset over the water.\n\nThe evaluated image shows significant contrast enhancement, resulting in oversaturated colors and loss of detail. Additionally, the image is noticeably blurred, reducing the definition of edges and textures, which compromises the visual information of the scene.\n\nOverall, the image quality is poor due to the excessive contrast and blur, which detract from the natural beauty of the scene and hinder the viewer's ability to appreciate the finer details of the landscape."
+    },
+    {
+        "distortion_classes": [
+            "brighten",
+            "pixelate"
+        ],
+        "distortion_names": [
+            "brightness_brighten_shfit_HSV",
+            "pixelate"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "wood-690288_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/wood-690288_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Could you assess the overall quality of the image and elaborate on your evaluation?",
+        "answer": "The image depicts a close-up of a wristwatch with a wooden design.\n\nThe evaluated image has been subjected to brightening and pixelation, both to an obvious degree. The brightening washes out details and diminishes the contrast, affecting the visibility of the watch's features. Pixelation significantly reduces the resolution, causing loss of detail and making the watch face and hands appear blocky.\n\nOverall, the image quality is compromised with a marked reduction in detail and contrast, which detracts from the aesthetic and functional aspects of the image."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "brighten"
+        ],
+        "distortion_names": [
+            "blur_jitter",
+            "brightness_brighten_gamma_RGB"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "twins-1703406_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/twins-1703406_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a comprehensive assessment of the image's quality, including both strengths and areas for improvement.",
+        "answer": "The image depicts two individuals in front of an architectural structure, with a focus on the interaction between them.\n\nThe evaluated image exhibits a slight blur, reducing the sharpness and detail, which particularly affects the definition of facial features and textures. Additionally, there is a serious increase in brightness, leading to overexposure that washes out color depth and diminishes contrast, especially noticeable in the sky and building details.\n\nOverall, the image quality is compromised, with the blur impacting fine details and the excessive brightness affecting the visibility of elements, resulting in a less visually appealing image."
+    },
+    {
+        "distortion_classes": [
+            "blur",
+            "saturate_strengthen"
+        ],
+        "distortion_names": [
+            "blur_jitter",
+            "saturate_strengthen_YCrCb"
+        ],
+        "severities": [
+            1,
+            3
+        ],
+        "id": "women-481916_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/women-481916_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "Provide a comprehensive assessment of the image's quality, including both strengths and areas for improvement.",
+        "answer": "The image depicts two individuals practicing meditation outdoors. The evaluated image exhibits a slight blur, reducing the sharpness and detail of subjects and background. Additionally, there is a serious increase in saturation, causing colors to appear unnaturally vivid and distorting true color representation. These distortions make the image less realistic and potentially strain the viewer's eyes. Overall, the quality of the evaluated image is significantly compromised due to the unnatural color balance and loss of fine detail, which detracts from the visual experience."
+    },
+    {
+        "distortion_classes": [
+            "darken",
+            "compression"
+        ],
+        "distortion_names": [
+            "brightness_darken_shfit_HSV",
+            "compression_jpeg_2000"
+        ],
+        "severities": [
+            2,
+            2
+        ],
+        "id": "toy-218517_0",
+        "image_ref": null,
+        "image_A": "KADIS700K/refA_md_detail/dist_imgs_test100/toy-218517_0.png",
+        "image_B": null,
+        "task_type": "quality_single_A_noref",
+        "query": "How do you perceive the quality of the image, and what aspects influence your judgment?",
+        "answer": "The image depicts a toy giraffe against a plain background. The evaluated image exhibits an obvious darkening, resulting in loss of detail in shadow areas. Additionally, there is clear compression, visible as blocky artifacts, particularly noticeable in what should be smooth background gradients. This compression also affects the sharpness of the giraffe, reducing the clarity of edges and textures. Overall, the image quality is significantly degraded due to these distortions, impacting both the aesthetic and the detail retention of the subject."
+    }
+]
