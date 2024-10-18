@@ -48,16 +48,32 @@ q_template = {
   'Which region demonstrates the least extent of '],
 #   失真order
   'order': 
-  ['Which region follows the distortion addition sequence of ',
-  'Which region incorporates distortion in the order of ',
-
-  'Which region add  first, followed by , and then  in distortion addition process',
-
-  'Which region add [] last',
-  'Which region add [] first']
+  ['Which region follows the distortion addition sequence of {}?',
+  'Which region incorporates distortion in the order of {}?',
+  'Which region add {} first, followed by {} in distortion addition process?',
+  'Which region add {} last in distortion addition process?',
+  'Which region add {} first in distortion addition process?']
 }
 q_template_choice = ['A. region ', 'B. region ', 'C. region ']
 a_template = ['region ']
+
+
+# 不要ABC算了。。。
+
+'''
+region的描述：
+baseline：[semantic label] + [spatial description]
+'segment'问题怎么处理？？？
+ours：[semantic label] + [spatial description], bbox, mask
+ABC直接删掉算了
+'''
+
+'''
+baseline：一次性训练：LORA text_loss
+grounding只回答[semantic label] + [spatial description]
+ours：一次性训练：LORA text_loss, attn seg_loss: BCE, DICE
+grounding回答[semantic label] + [spatial description]+mask/bbox
+'''
 
 def os_walk(input_img, input_json, out_path, p, question: Tuple[int, int, int]):
 	# question: 'all', 'single', 'order'
@@ -84,15 +100,10 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 		rand_choice=random.sample(list(set(range(len(annotations['annotations'])))-set([region])), flag-1)
 		for f in range(len(rand_choice_abc)):
 			q_template_choice[rand_choice_abc[f]]+=str(rand_choice[f])
-		# q_template_choice[rand_choice_abc[0]]+=str(rand_choice[0])
-		# q_template_choice[rand_choice_abc[1]]+=str(rand_choice[1])
 		answer_index = list(set(range(flag)).difference(set(rand_choice_abc)))[0]
 		q_template_choice[answer_index]+=str(region)
 		q_template_choice2str=', '.join(q_template_choice)
 		exist_qu+=q_template_choice2str
-		# A. region 2.
-		# answer = q_template_choice[answer_index]+'.'
-		# A.
 		answer = q_template_choice[answer_index].split('.')[0]+'.'
 		return exist_qu, answer
 
@@ -100,7 +111,6 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 	with open(os.path.join(input_json, name.split('.')[0]+'_info.json')) as f:
 		annotations = json.load(f)
 		all_answer=[]
-		# dis_count={}
 		dis_region_id={}
 		dis_region_level={}
 
@@ -122,31 +132,22 @@ def grounding(name, input_json, p, question: Tuple[int, int, int]):
 				else:
 					dis_region_level[d]=[level[distortion.index(d)]]
 			dis_region_level_out = {k:v for k, v in dis_region_level.items() if len(set(v))>1}
-			# dis_count_out={ k:v for k,v in dis_count.items() if v>1 }	
 			
 			order_choice=random.sample(range(len(q_template['order'])), question[2])
 			if len(distortion)>1:
 				for i in order_choice:
 					if i <2:
 						qu=q_template['order'][i]
-						for di in range(len(distortion)):
-							qu+=distortion[di]
-							if di==len(distortion)-1:
-								qu+='? '
-							else:
-								qu+=', '
+						qu=qu.format((',').join(distortion))
 					elif i==2:
-					# 'Which region add  first, followed by , and then  in distortion addition process',
-						if len(distortion)==2:
-							qu='Which region add '+distortion[0]+' first, followed by '+distortion[1]+' in distortion addition process? '
-						elif len(distortion)==3:
-							qu='Which region add '+distortion[0]+' first, followed by '+distortion[1]+', and then '+distortion[2]+' in distortion addition process? '
+						qu=q_template['order'][i]
+						qu=qu.format(distortion[0], distortion[1])
 					elif i==3:
-					# 'Which region add [] last'
-						qu='Which region add '+ distortion[-1]+' last? '
+						qu=q_template['order'][i]
+						qu=qu.format(distortion[-1])
 					elif i==4:
-					# 'Which region add [] first'
-						qu='Which region add '+ distortion[0]+' first? '
+						qu=q_template['order'][i]
+						qu=qu.format(distortion[0])
 
 					if random.random()<p:
 						qu, order_answer = gen_choice(region=m, exist_qu=qu)
